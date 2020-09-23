@@ -60,7 +60,7 @@ To fully integrate with Adjust, we need the APP token and API tokens of the appl
 ### Adjust Partner Terms&Conditions Settings
 
 {{% notice warning %}}
-If you have an UA from one of these adjust partners, you have to accept terms&conditions. it is important for us to see the content of the campaign.
+If you have an UA from one of these adjust partners, you have to accept terms&conditions. It is important for us to see the content of the campaign.
 {{% /notice %}}
 
 ##### 1. Facebook Terms&Conditions
@@ -71,7 +71,7 @@ If you have an UA from one of these adjust partners, you have to accept terms&co
 
 ##### 2. Twitter Terms&Conditions
 
-Ask your twitter account manager to do enabled the data access between your account and Adjust in Twitter’s AMM Program 
+Ask your twitter account manager to enable the data access between your account and Adjust in Twitter’s AMM Program 
 
 * Twitter’s AMM Program via [this form](https://business.twitter.com/en/form/mact-data-opt-in.html?ref=adjust).
 
