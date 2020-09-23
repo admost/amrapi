@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://admost.github.io/amrapi"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 

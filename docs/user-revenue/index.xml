@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>User Ad Revenue on Documentation for Admost API Services</title>
-    <link>/user-revenue/</link>
+    <link>https://admost.github.io/amrapi/user-revenue/</link>
     <description>Recent content in User Ad Revenue on Documentation for Admost API Services</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/user-revenue/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://admost.github.io/amrapi/user-revenue/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ad Revenue</title>
-      <link>/user-revenue/user-ad-revenue/</link>
+      <link>https://admost.github.io/amrapi/user-revenue/user-ad-revenue/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/user-revenue/user-ad-revenue/</guid>
+      <guid>https://admost.github.io/amrapi/user-revenue/user-ad-revenue/</guid>
       <description>Download the report from the api response when ready.
  If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The date parameter must belong to 2 days before (however our suggestion is 4 days for more accuracy)
   The download file name is generated with appID, date and timestamp</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Network Base Ad Revenue</title>
-      <link>/user-revenue/user-network-base-ad-revenue/</link>
+      <link>https://admost.github.io/amrapi/user-revenue/user-network-base-ad-revenue/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/user-revenue/user-network-base-ad-revenue/</guid>
+      <guid>https://admost.github.io/amrapi/user-revenue/user-network-base-ad-revenue/</guid>
       <description>Download the report from the api response when ready.
  If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The date parameter must belong to 2 days before (however our suggestion is 4 days for more accuracy)
   The download file name is generated with appID, date and timestamp</description>
