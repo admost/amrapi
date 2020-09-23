@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="description" content="Tells how to get credential from google play">
+<meta name="author" content="Mathieu Cornic">
+
+    <link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
+    <title>Get Credential :: Documentation for Admost API Services</title>
+
+    
+    <link href="/css/nucleus.css?1600849192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1600849192" rel="stylesheet">
+    <link href="/css/hybrid.css?1600849192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1600849192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1600849192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1600849192" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1600849192" rel="stylesheet">
+    <link href="/css/theme.css?1600849192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1600849192" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1600849192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/subscription/google/get-credential/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" style="width:60%;"> <img src="https://www.admost.com/img/logo-white.svg" alt="logo-white"></a>
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/user-revenue/" title="User Ad Revenue" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-revenue/">
+          <b>1. </b>User Ad Revenue
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/user-revenue/user-ad-revenue/" title="Ad Revenue" class="dd-item ">
+        <a href="/user-revenue/user-ad-revenue/">
+        Ad Revenue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/user-revenue/user-network-base-ad-revenue/" title="Network Base Ad Revenue" class="dd-item ">
+        <a href="/user-revenue/user-network-base-ad-revenue/">
+        Network Base Ad Revenue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/publisher-app-api/" title="Publisher Applications" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/publisher-app-api/">
+          <b>2. </b>Publisher Applications
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/adjust-raw-data-export/" title="Adjust Raw Data Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/adjust-raw-data-export/">
+          <b>3. </b>Adjust Raw Data Integration
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/" title="Subscription Settings" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/subscription/">
+          <b>4. </b>Subscription Settings
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/apple/" title="Apple" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/apple/">
+          <b>4.1 </b>Apple
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/apple/shared-secret/" title="Get Shared Secret" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/apple/shared-secret/">
+          Get Shared Secret
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/apple/realtime-notification/" title="Server to Server Notifications" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/apple/realtime-notification/">
+          Server to Server Notifications
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/google/" title="Google" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/subscription/google/">
+          <b>4.2 </b>Google
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/google/get-credential/" title="Get Credential" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/subscription/google/get-credential/">
+          Get Credential
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/google/realtime-notification/" title="Server to Server Notification" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/google/realtime-notification/">
+          Server to Server Notification
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/server-to-server/" title="Server to Server Rewarded Structure" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/server-to-server/">
+          <b>5. </b>Server to Server Rewarded Structure
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Admost API Documentations</a> > <a href='/subscription/'>Subscription Settings</a> > <a href='/subscription/google/'>Google</a> > Get Credential
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#link-to-a-google-developer-project">Link to a Google Developer Project</a></li>
+        <li><a href="#grant-financial-access-to-admost">Grant Financial Access to Admost</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Get Credential
+            </h1>
+          
+
+        
+
+
+
+	<p>Step-by-step guide for creating your Play service credentials</p>
+<p>In order for Admost&rsquo;s servers to communicate with Google on your behalf you need to provide a set of service credentials. The process for configuring these credentials is a bit complex, but the added level of control improves security by only providing Admost with the access we need.</p>
+<h3 id="link-to-a-google-developer-project">Link to a Google Developer Project</h3>
+<p>Your Play Developer account needs to be linked to a Google Developer Project.</p>
+<ul>
+<li>Go to your <a href="https://play.google.com/apps/publish#ApiAccessPlace">Play Console settings</a></li>
+</ul>
+<p><img src="/images/google-play-console-1.png?classes=shadow" alt="Play Console"></p>
+<ul>
+<li>Select API access</li>
+</ul>
+<p><img src="/images/google-play-api-access.png?classes=shadow&amp;width=20pc" alt="Play API Access"></p>
+<ul>
+<li>Select Link to connect your Play account to a Google Developer Project</li>
+</ul>
+<p><img src="/images/google-play-link.png?classes=shadow" alt="Play Link App"></p>
+<p>### Create Service Account</p>
+<p>Next we need to create a service account. This is done from the Google API Console</p>
+<ul>
+<li>Select Create Service Account</li>
+</ul>
+<p><img src="/images/google-play-create-service-account.png?classes=shadow" alt="Play Create Service Account"></p>
+<ul>
+<li>Follow the link to the Google API Console</li>
+</ul>
+<p><img src="/images/google-play-create-service-account-2.png?classes=shadow" alt="Play Navigate API Console"></p>
+<ul>
+<li>Create Service account key credentials</li>
+</ul>
+<p><img src="/images/google-play-account-key.png?chasses=shadow" alt="Play Account Key"></p>
+<ul>
+<li>Name it and assign it Project Owner Role</li>
+</ul>
+<p>When you hit create, a JSON file will be downloaded. These are the credentials that Admost will need to communicate with Google</p>
+<p><img src="/images/google-play-account2.png?chasses=shadow" alt="Play Account Create"></p>
+<ul>
+<li>Set the Role to Project &gt; Owner</li>
+</ul>
+<p><img src="/images/google-play-project-owner.png?chasses=shadow" alt="Play Set Project Owner"></p>
+<ul>
+<li>Download your JSON credential</li>
+</ul>
+<p><img src="/images/google-play-download-json.png?chasses=shadow" alt="Play Download JSON"></p>
+<h3 id="grant-financial-access-to-admost">Grant Financial Access to Admost</h3>
+<ul>
+<li>Back in the Play Console, select Grant Access on the newly created Admost service account</li>
+</ul>
+<p><img src="/images/google-play-grant-access.png?chasses=shadow" alt="Play Grant Access"></p>
+<ul>
+<li>Set the Role to Finance and Add Manage Orders Permissions</li>
+</ul>
+<p><img src="/images/google-play-finance-permission.png?chasses=shadow" alt="Play Finance Permission"></p>
+<p>Hit save and you&rsquo;re done. Send the credentials JSON that were downloaded in step 2 to us and we&rsquo;ll be ready to handle Google Play purchases!</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1600849192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1600849192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1600849192"></script>
+    <script src="/js/jquery.sticky.js?1600849192"></script>
+    <script src="/js/featherlight.min.js?1600849192"></script>
+    <script src="/js/highlight.pack.js?1600849192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1600849192"></script>
+    <script src="/js/learn.js?1600849192"></script>
+    <script src="/js/hugo-learn.js?1600849192"></script>
+
+    <link href="/mermaid/mermaid.css?1600849192" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1600849192"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

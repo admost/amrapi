@@ -1,0 +1,27 @@
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Admost API Documentation"
+theme = "hugo-theme-learn"
+themesdir = "themes"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[params]
+  description = "Documentation for Admost API Services"
+  author = "Mathieu Cornic"
+  showVisitedLinks = false
+  disableBreadcrumb = false
+  disableNextPrev = true
+  disableSearch = true
+  # themeVariant = "mine"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Documentation for Admost API Services"
+weight = 1
+languageName = "English"

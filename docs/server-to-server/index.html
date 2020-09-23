@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="description" content="Tells how to use admost server to server validation in rewarded or offerwall videos">
+<meta name="author" content="Mathieu Cornic">
+
+    <link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
+    <title>Server to Server Rewarded Structure :: Documentation for Admost API Services</title>
+
+    
+    <link href="/css/nucleus.css?1600849192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1600849192" rel="stylesheet">
+    <link href="/css/hybrid.css?1600849192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1600849192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1600849192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1600849192" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1600849192" rel="stylesheet">
+    <link href="/css/theme.css?1600849192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1600849192" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1600849192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/server-to-server/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" style="width:60%;"> <img src="https://www.admost.com/img/logo-white.svg" alt="logo-white"></a>
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/user-revenue/" title="User Ad Revenue" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-revenue/">
+          <b>1. </b>User Ad Revenue
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/user-revenue/user-ad-revenue/" title="Ad Revenue" class="dd-item ">
+        <a href="/user-revenue/user-ad-revenue/">
+        Ad Revenue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/user-revenue/user-network-base-ad-revenue/" title="Network Base Ad Revenue" class="dd-item ">
+        <a href="/user-revenue/user-network-base-ad-revenue/">
+        Network Base Ad Revenue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/publisher-app-api/" title="Publisher Applications" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/publisher-app-api/">
+          <b>2. </b>Publisher Applications
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/adjust-raw-data-export/" title="Adjust Raw Data Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/adjust-raw-data-export/">
+          <b>3. </b>Adjust Raw Data Integration
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/" title="Subscription Settings" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/">
+          <b>4. </b>Subscription Settings
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/apple/" title="Apple" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/apple/">
+          <b>4.1 </b>Apple
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/apple/shared-secret/" title="Get Shared Secret" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/apple/shared-secret/">
+          Get Shared Secret
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/apple/realtime-notification/" title="Server to Server Notifications" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/apple/realtime-notification/">
+          Server to Server Notifications
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/google/" title="Google" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/google/">
+          <b>4.2 </b>Google
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/google/get-credential/" title="Get Credential" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/google/get-credential/">
+          Get Credential
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/google/realtime-notification/" title="Server to Server Notification" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/google/realtime-notification/">
+          Server to Server Notification
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/server-to-server/" title="Server to Server Rewarded Structure" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/server-to-server/">
+          <b>5. </b>Server to Server Rewarded Structure
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Admost API Documentations</a> > Server to Server Rewarded Structure
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#parameters">Parameters</a></li>
+        <li><a href="#s2s-callback-verification">S2S callback verification</a></li>
+        <li><a href="#callback-sample">Callback Sample</a></li>
+        <li><a href="#expected-response-codes-by-request">Expected Response Codes by Request</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Server to Server Rewarded Structure
+            </h1>
+          
+
+        
+
+
+
+	<p><code>Publisher URL:</code> Callback URL identified by the publisher.</p>
+<p><code>Method:</code> you must have the capacity to receive GET syntax requests to a valid endpoint</p>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>app_id</td>
+<td>Admost application id</td>
+</tr>
+<tr>
+<td>app_user_id</td>
+<td>Application User ID. ( The ID that is used to identify the users to be rewarded, <code>must be set at SDK side.</code>)</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td>Callback sending time, epoch type.</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>in-game currency type of the reward (gold, coins…)</td>
+</tr>
+<tr>
+<td>reward</td>
+<td>in-game reward amount</td>
+</tr>
+<tr>
+<td>custom_data</td>
+<td>It’s not required. Query string typed, will be sent url encoded. Custom information that is set when the users watched rewarded video. <code>Must be set with the corresponding method at SDK side</code></td>
+</tr>
+<tr>
+<td>event_id</td>
+<td>Unique ID generated for callback</td>
+</tr>
+<tr>
+<td>network</td>
+<td>Ad network that showed the ad</td>
+</tr>
+<tr>
+<td>verifier</td>
+<td>Required for security check, it is a md5 hash of the following</td>
+</tr>
+<tr>
+<td>activity_kind</td>
+<td>Ad network activity type. Rewarded or offerwall</td>
+</tr>
+</tbody>
+</table>
+<h3 id="s2s-callback-verification">S2S callback verification</h3>
+<ul>
+<li>Calculation of the md5 hash verifier</li>
+</ul>
+<p>verifier = md5(app_id + app_user_id + currency + event_id + network + reward + created_at + customer_S2S_Verifier)</p>
+<p><code>customer_S2S_Verifier:</code> The secret token identified by Admost</p>
+<h3 id="callback-sample">Callback Sample</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">http://publisher.doman.com?app_id=c9e86d87-453e-0d9a-3d00-56adc9ec4dc3&amp;app_user_id=00054aee-2021-38fd-db3f-053403ad937a&amp;created_at=1552308270&amp;currency=Coin&amp;custom_data=rewarded%3Dlobby&amp;event_id=855912E3-7637-4359-9461-81C41492AF08&amp;network=applovin&amp;reward=3&amp;verifier=d3721f221c163890f90742b5c2d710e9&amp;activity_kind=rewarded
+</code></pre></div><h3 id="expected-response-codes-by-request">Expected Response Codes by Request</h3>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Bad Request. (Shouldn&rsquo;t retry.)</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error ( Retry again. 10sec. / 1min.  / 10min. / 1h / 5h / 24h time intervals)</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable ( Retry again. 10sec. / 1min. / 10min. / 1h / 5h / 24h time intervals)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1600849192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1600849192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1600849192"></script>
+    <script src="/js/jquery.sticky.js?1600849192"></script>
+    <script src="/js/featherlight.min.js?1600849192"></script>
+    <script src="/js/highlight.pack.js?1600849192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1600849192"></script>
+    <script src="/js/learn.js?1600849192"></script>
+    <script src="/js/hugo-learn.js?1600849192"></script>
+
+    <link href="/mermaid/mermaid.css?1600849192" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1600849192"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

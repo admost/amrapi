@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="description" content="Tells how to get shared secret from apple store">
+<meta name="author" content="Mathieu Cornic">
+
+    <link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
+    <title>Get Shared Secret :: Documentation for Admost API Services</title>
+
+    
+    <link href="/css/nucleus.css?1600849192" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1600849192" rel="stylesheet">
+    <link href="/css/hybrid.css?1600849192" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1600849192" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1600849192" rel="stylesheet">
+    <link href="/css/auto-complete.css?1600849192" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1600849192" rel="stylesheet">
+    <link href="/css/theme.css?1600849192" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1600849192" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1600849192"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/subscription/apple/shared-secret/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" style="width:60%;"> <img src="https://www.admost.com/img/logo-white.svg" alt="logo-white"></a>
+    </div>
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/user-revenue/" title="User Ad Revenue" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user-revenue/">
+          <b>1. </b>User Ad Revenue
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/user-revenue/user-ad-revenue/" title="Ad Revenue" class="dd-item ">
+        <a href="/user-revenue/user-ad-revenue/">
+        Ad Revenue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/user-revenue/user-network-base-ad-revenue/" title="Network Base Ad Revenue" class="dd-item ">
+        <a href="/user-revenue/user-network-base-ad-revenue/">
+        Network Base Ad Revenue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/publisher-app-api/" title="Publisher Applications" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/publisher-app-api/">
+          <b>2. </b>Publisher Applications
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/adjust-raw-data-export/" title="Adjust Raw Data Integration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/adjust-raw-data-export/">
+          <b>3. </b>Adjust Raw Data Integration
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/" title="Subscription Settings" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/subscription/">
+          <b>4. </b>Subscription Settings
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/apple/" title="Apple" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/subscription/apple/">
+          <b>4.1 </b>Apple
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/apple/shared-secret/" title="Get Shared Secret" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/subscription/apple/shared-secret/">
+          Get Shared Secret
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/apple/realtime-notification/" title="Server to Server Notifications" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/apple/realtime-notification/">
+          Server to Server Notifications
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/google/" title="Google" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/google/">
+          <b>4.2 </b>Google
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/google/get-credential/" title="Get Credential" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/google/get-credential/">
+          Get Credential
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/subscription/google/realtime-notification/" title="Server to Server Notification" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/subscription/google/realtime-notification/">
+          Server to Server Notification
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/server-to-server/" title="Server to Server Rewarded Structure" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/server-to-server/">
+          <b>5. </b>Server to Server Rewarded Structure
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Admost API Documentations</a> > <a href='/subscription/'>Subscription Settings</a> > <a href='/subscription/apple/'>Apple</a> > Get Shared Secret
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#getting-your-app-connect-app-specific-shared-secret">Getting your App Connect App-Specific Shared Secret</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Get Shared Secret
+            </h1>
+          
+
+        
+
+
+
+	<h3 id="getting-your-app-connect-app-specific-shared-secret">Getting your App Connect App-Specific Shared Secret</h3>
+<p>The App-Specific Shared Secret allows Admost to connect with Apple on your behalf.</p>
+<ol>
+<li>Log in to <a href="https://appstoreconnect.apple.com/">App Store Connect</a></li>
+<li>Navigate to &ldquo;My Apps&rdquo; and select your app</li>
+<li>Navigate to Features in the top bar</li>
+<li>Select &ldquo;In-App Purchases&rdquo; from the left side menu</li>
+<li>Select App-Specific Share Secret from the right side above your in-app products.</li>
+<li>Generate and copy your shared secret</li>
+</ol>
+<p><img src="/images/apple-shared-secret.png?classes=shadow" alt="Apple Shared Secret"></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1600849192"></script>
+    <script src="/js/perfect-scrollbar.min.js?1600849192"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1600849192"></script>
+    <script src="/js/jquery.sticky.js?1600849192"></script>
+    <script src="/js/featherlight.min.js?1600849192"></script>
+    <script src="/js/highlight.pack.js?1600849192"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1600849192"></script>
+    <script src="/js/learn.js?1600849192"></script>
+    <script src="/js/hugo-learn.js?1600849192"></script>
+
+    <link href="/mermaid/mermaid.css?1600849192" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1600849192"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
