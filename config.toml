@@ -10,7 +10,7 @@ defaultContentLanguageInSubdir= true
 
 [params]
   description = "Documentation for Admost API Services"
-  author = "Mathieu Cornic"
+  author = "Gokhan MANKARA <gokhan.mankara@kokteyl.com>"
   showVisitedLinks = false
   disableBreadcrumb = false
   disableNextPrev = true
