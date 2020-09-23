@@ -14,22 +14,22 @@ To fully integrate with Adjust, we need the APP token and API tokens of the appl
 
  - Adjust Dashboard Menu -> My Account -> User Details
 
-![API TOKEN](/images/adjust-user-details.png?classes=shadow)
+![API TOKEN](/amrapi/images/adjust-user-details.png?classes=shadow)
 
  **2. Add API Token Admost Dashboard**
  
  - Admost Dashboard -> Settings -> Adjust Key
 
-![Admost Adjust Settings](/images/admost-adjust-settings.png?classes=shadow&width=10pc)
-![Admost Adjust Key Setting](/images/adjust-key.png?classes=shadow&width=20pc)
+![Admost Adjust Settings](/amrapi/images/admost-adjust-settings.png?classes=shadow&width=10pc)
+![Admost Adjust Key Setting](/amrapi/images/adjust-key.png?classes=shadow&width=20pc)
 
  **3. Get App Token from Adjust Dashboard Menu -> Apps**
 
-![Admost App Token](/images/adjust-app-token.png?classes=shadow)
+![Admost App Token](/amrapi/images/adjust-app-token.png?classes=shadow)
 
 **4. Add App Token to Admost Dashboard -> My Apps -> Edit App -> Adjust App Token** 
 
-![Admost App Token Setting](/images/admost-app-token.png?classes=shadow)
+![Admost App Token Setting](/amrapi/images/admost-app-token.png?classes=shadow)
 
 ### Configure Amazon S3 CSV Upload Settings in Adjust App Settings
 
@@ -37,15 +37,15 @@ To fully integrate with Adjust, we need the APP token and API tokens of the appl
 
 - Admost Dashboard -> Settings -> Adjust Key
 
-![Create AWS Bucket](/images/adjust-key.png?classes=shadow&width=20pc)
+![Create AWS Bucket](/amrapi/images/adjust-key.png?classes=shadow&width=20pc)
 
 **2. Add AWS S3 Bucket Information to Adjust Raw Data Export Settings**
 
-![AWS Bucket Info](/images/aws-bucket-info.png?classes=shadow&width=20pc)
+![AWS Bucket Info](/amrapi/images/aws-bucket-info.png?classes=shadow&width=20pc)
 
 - Adjust App Settings -> All Settings -> Raw Data Export -> CSV Upload -> Storage Provider -> Amazon S3 Bucket
 
-![Adjust CSV Upload Settings](/images/adjust-csv-upload.png?classes=shadow&width=20pc)
+![Adjust CSV Upload Settings](/amrapi/images/adjust-csv-upload.png?classes=shadow&width=20pc)
 
 **Select Events for Export:** install and updated attribution
 
@@ -55,7 +55,7 @@ To fully integrate with Adjust, we need the APP token and API tokens of the appl
 {idfa||gps_adid},{idfv},{adid},{tracker},{tracker_name},{app_name},{activity_kind},{created_at},{installed_at},{installed_at_hour},{conversion_duration},{cost_type},{cost_amount},{cost_currency},{nonce},{reporting_cost},{match_type},{network_name},{campaign_name},{adgroup_name},{creative_name},{is_organic},{country},{city},{os_name},{mac_md5},{device_name},{device_type},{device_manufacturer},{ip_address},{fb_campaign_id},{fb_campaign_group_id},{fb_adgroup_id},{store}
 ```
 
-![Adjust Select Event for Export](/images/adjust-events-for-export.png?classes=shadow)
+![Adjust Select Event for Export](/amrapi/images/adjust-events-for-export.png?classes=shadow)
 
 ### Adjust Partner Terms&Conditions Settings
 
@@ -67,7 +67,7 @@ If you have an UA from one of these adjust partners, you have to accept terms&co
 
  * make sure sign the facebook terms and conditions 
 
-![Facebook Terms](/images/facebook-terms.png?classes=shadow)
+![Facebook Terms](/amrapi/images/facebook-terms.png?classes=shadow)
 
 ##### 2. Twitter Terms&Conditions
 
@@ -77,4 +77,4 @@ Ask your twitter account manager to do enabled the data access between your acco
 
 Also ask your adjust account manager to check `Approved By Twitter` settings.
 
-![Approved By Twitter](/images/approved-by-twitter.png?classes=shadow)
+![Approved By Twitter](/amrapi/images/approved-by-twitter.png?classes=shadow)

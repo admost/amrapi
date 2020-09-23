@@ -1,111 +1,111 @@
 [
 {
-	"uri": "https://admost.github.io/amrapi/user-revenue/user-ad-revenue/",
+	"uri": "/amrapi/user-revenue/user-ad-revenue/",
 	"title": "Ad Revenue",
 	"tags": [],
 	"description": "You can get user ad revenue information without ad network",
 	"content": "  Download the report from the api response when ready.\n If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The date parameter must belong to 2 days before (however our suggestion is 4 days for more accuracy)\n  The download file name is generated with appID, date and timestamp\n :appID:_:date:_:timestamp:.tar.gz Extracted file format: csv    Allows only a request per minute per application id\n  By default, when a request is made twice for the same day, it returns the previously created csv file. If you want to get a new file from the same day, you can use “create_new_file” parameter.\n  You can get the admost application id using by Admost Publisher Applications API\n  Authentication: Bearer Token authentication.\nMethod: GET\nURL: https://partners.admost.com/v1/userAdRevenue\nRequest Parameters:    Name Type Description     date string YYYY-MM-DD   app_id string Application admost id   report_type int Optional. Default value 1 ( 1 - User Ad Revenue)   create_new_file int Optional. Default value false 0-\u0026gt; false, 1-\u0026gt; true   is_realtime int Optional. Default value false.0-\u0026gt; false, 1-\u0026gt; true    Request Example URL: https://partners.admost.com/v1/userAdRevenue?app_id={application_id}\u0026amp;date={date}\nResponse Example URL: https://partners.admost.com/downloads/reports/userAdRevenue/c9e86d87-453e-0d9a-3d00-56adc9ec4dc3_2019-04-01_1554291219.tar.gz\nResponse Status Codes:    Code Description     200 OK. The request has succeeded. Returns with a link to download the report   400 BAD REQUEST. The request must belong to two days before etc.   401 UNAUTHORIZED   429 TOO MANY REQUESTS. The user has sent too many requests in a given amount of time (\u0026ldquo;rate limiting\u0026rdquo;).   500 INTERNAL SERVER ERROR    Report Column Description  The report is generated with columns titles.     Name Description     UserID Admost user id   LaunchedAt User first session time ( UTC )   Country User country   IDFA User idfa id   AdjustUserID User adjust device id   AdRevenue User revenue   IAPRevenue User in-app revenue   InterstitialImpCount Number of interstitials seen by user   RewardedImpCount Number of rewarded seen by user   OfferwallImpCount Number of offerwall seen by user   NativeInterstitialImpCount Number of native interstitial seen by user   BannerImpCount Number of banner seen by user   NativeImpCount Number of native banner seen by user   InterstitialClickCount Number of total interstitial click by user   RewardedClickCount Number of total rewarded click by user   OfferwallClickCount Number of total offer click by user   NativeInterstitialClickCount Number of total native interstitial click by user   BannerClickCount Number of banner click by user   NativeClickCount Number of native click by user    "
 },
 {
-	"uri": "https://admost.github.io/amrapi/user-revenue/user-network-base-ad-revenue/",
+	"uri": "/amrapi/user-revenue/user-network-base-ad-revenue/",
 	"title": "Network Base Ad Revenue",
 	"tags": [],
 	"description": "You can get user ad revenue information with ad network",
 	"content": "  Download the report from the api response when ready.\n If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The date parameter must belong to 2 days before (however our suggestion is 4 days for more accuracy)\n  The download file name is generated with appID, date and timestamp\n :appID:_:date:_bynetwork_:timestamp:.tar.gz Extracted file format: csv    Allows only a request per minute per application id\n  By default, when a request is made twice for the same day, it returns the previously created csv file. If you want to get a new file from the same day, you can use “create_new_file” parameter.\n  You can get the admost application id using by Admost Publisher Applications API\n  Authentication: Bearer Token authentication.\nMethod: GET\nURL: https://partners.admost.com/v2/userAdRevenue\nRequest Parameters:    Name Type Description     date string YYYY-MM-DD   app_id string Application admost id   report_type int Optional. Default value 1 ( 1 - User Ad Revenue)   create_new_file int Optional. Default value false 0-\u0026gt; false, 1-\u0026gt; true   is_realtime int Optional. Default value false.0-\u0026gt; false, 1-\u0026gt; true    Request Example URL: https://partners.admost.com/v2/userAdRevenue?app_id={application_id}\u0026amp;date={date}\nResponse Example URL: https://partners.admost.com/downloads/reports/userAdRevenue/c9e86d87-453e-0d9a-3d00-56adc9ec4dc3_bynetwork_1554291219.tar.gz\nResponse Status Codes:    Code Description     200 OK. The request has succeeded. Returns with a link to download the report   400 BAD REQUEST. The request must belong to two days before etc.   401 UNAUTHORIZED   429 TOO MANY REQUESTS. The user has sent too many requests in a given amount of time (\u0026ldquo;rate limiting\u0026rdquo;).   500 INTERNAL SERVER ERROR    Report Column Description  The report is generated with columns titles.     Name Description     UserID Admost user id   LaunchedAt User first session time ( UTC )   Network Ad network   Country User country   IDFA User idfa id   AdjustUserID User adjust device id   AdRevenue Network user revenue   InterstitialImpCount Number of interstitials seen by user   RewardedImpCount Number of rewarded seen by user   OfferwallImpCount Number of offerwall seen by user   NativeInterstitialImpCount Number of native interstitial seen by user   BannerImpCount Number of banner seen by user   NativeImpCount Number of native banner seen by user    "
 },
 {
-	"uri": "https://admost.github.io/amrapi/user-revenue/",
+	"uri": "/amrapi/user-revenue/",
 	"title": "User Ad Revenue",
 	"tags": [],
 	"description": "User ad revenue represents the value of the revenue generated by users from ads",
 	"content": "User Ad Revenue  Ad Revenue  You can get user ad revenue information without ad network\n Network Base Ad Revenue  You can get user ad revenue information with ad network\n "
 },
 {
-	"uri": "https://admost.github.io/amrapi/publisher-app-api/",
+	"uri": "/amrapi/publisher-app-api/",
 	"title": "Publisher Applications",
 	"tags": [],
 	"description": "Publisher&#39;s application informations. application id, application name, platform",
 	"content": " Publisher\u0026rsquo;s application informations  URL : https://partners.admost.com/v1/apps?key=[key]\nMETHOD : GET\nRequest Parameters    Name Type Description     key string Publisher Token    Response    Name Description     app_id Admost Application ID   name Application Name   package_name Application bundle id/package name   platform (ios, android etc.)    Response Status Codes    Code Description     200 OK. The request has succeeded. Returns with a link to download the report   400 BAD REQUEST   401 UNAUTHORIZED   429 TOO MANY REQUESTS   500 INTERNAL SERVER ERROR    "
 },
 {
-	"uri": "https://admost.github.io/amrapi/adjust-raw-data-export/",
+	"uri": "/amrapi/adjust-raw-data-export/",
 	"title": "Adjust Raw Data Integration",
 	"tags": [],
 	"description": "You can see UA user install and cost information on the dashboard with adjust integration",
 	"content": "To fully integrate with Adjust, we need the APP token and API tokens of the application\nAPP token and API token Settings 1. Get API Token from Adjust Dashboard Menu\n Adjust Dashboard Menu -\u0026gt; My Account -\u0026gt; User Details  2. Add API Token Admost Dashboard\n Admost Dashboard -\u0026gt; Settings -\u0026gt; Adjust Key  3. Get App Token from Adjust Dashboard Menu -\u0026gt; Apps\n4. Add App Token to Admost Dashboard -\u0026gt; My Apps -\u0026gt; Edit App -\u0026gt; Adjust App Token\nConfigure Amazon S3 CSV Upload Settings in Adjust App Settings 1. Create AWS Bucket\n Admost Dashboard -\u0026gt; Settings -\u0026gt; Adjust Key  2. Add AWS S3 Bucket Information to Adjust Raw Data Export Settings\n Adjust App Settings -\u0026gt; All Settings -\u0026gt; Raw Data Export -\u0026gt; CSV Upload -\u0026gt; Storage Provider -\u0026gt; Amazon S3 Bucket  Select Events for Export: install and updated attribution\nCSV Definition:\n{idfa||gps_adid},{idfv},{adid},{tracker},{tracker_name},{app_name},{activity_kind},{created_at},{installed_at},{installed_at_hour},{conversion_duration},{cost_type},{cost_amount},{cost_currency},{nonce},{reporting_cost},{match_type},{network_name},{campaign_name},{adgroup_name},{creative_name},{is_organic},{country},{city},{os_name},{mac_md5},{device_name},{device_type},{device_manufacturer},{ip_address},{fb_campaign_id},{fb_campaign_group_id},{fb_adgroup_id},{store} Adjust Partner Terms\u0026amp;Conditions Settings If you have an UA from one of these adjust partners, you have to accept terms\u0026amp;conditions. it is important for us to see the content of the campaign.\n 1. Facebook Terms\u0026amp;Conditions  make sure sign the facebook terms and conditions  2. Twitter Terms\u0026amp;Conditions Ask your twitter account manager to do enabled the data access between your account and Adjust in Twitter’s AMM Program\n Twitter’s AMM Program via this form.  Also ask your adjust account manager to check Approved By Twitter settings.\n"
 },
 {
-	"uri": "https://admost.github.io/amrapi/subscription/",
+	"uri": "/amrapi/subscription/",
 	"title": "Subscription Settings",
 	"tags": [],
 	"description": "We need credential for Admost subscription tracking. Tells how to get credential from stores.",
 	"content": "  Apple  Tells how to get credential and activate realtime subscription notification in apple store\n Google  Tells how to get credential and activate realtime subscription notification in google play\n "
 },
 {
-	"uri": "https://admost.github.io/amrapi/server-to-server/",
+	"uri": "/amrapi/server-to-server/",
 	"title": "Server to Server Rewarded Structure",
 	"tags": [],
 	"description": "Tells how to use admost server to server validation in rewarded or offerwall videos",
 	"content": "Publisher URL: Callback URL identified by the publisher.\nMethod: you must have the capacity to receive GET syntax requests to a valid endpoint\nParameters    Name Description     app_id Admost application id   app_user_id Application User ID. ( The ID that is used to identify the users to be rewarded, must be set at SDK side.)   created_at Callback sending time, epoch type.   currency in-game currency type of the reward (gold, coins…)   reward in-game reward amount   custom_data It’s not required. Query string typed, will be sent url encoded. Custom information that is set when the users watched rewarded video. Must be set with the corresponding method at SDK side   event_id Unique ID generated for callback   network Ad network that showed the ad   verifier Required for security check, it is a md5 hash of the following   activity_kind Ad network activity type. Rewarded or offerwall    S2S callback verification  Calculation of the md5 hash verifier  verifier = md5(app_id + app_user_id + currency + event_id + network + reward + created_at + customer_S2S_Verifier)\ncustomer_S2S_Verifier: The secret token identified by Admost\nCallback Sample http://publisher.doman.com?app_id=c9e86d87-453e-0d9a-3d00-56adc9ec4dc3\u0026amp;app_user_id=00054aee-2021-38fd-db3f-053403ad937a\u0026amp;created_at=1552308270\u0026amp;currency=Coin\u0026amp;custom_data=rewarded%3Dlobby\u0026amp;event_id=855912E3-7637-4359-9461-81C41492AF08\u0026amp;network=applovin\u0026amp;reward=3\u0026amp;verifier=d3721f221c163890f90742b5c2d710e9\u0026amp;activity_kind=rewarded Expected Response Codes by Request    Code Description     200 OK   400 Bad Request. (Shouldn\u0026rsquo;t retry.)   500 Internal Server Error ( Retry again. 10sec. / 1min. / 10min. / 1h / 5h / 24h time intervals)   503 Service Unavailable ( Retry again. 10sec. / 1min. / 10min. / 1h / 5h / 24h time intervals)    "
 },
 {
-	"uri": "https://admost.github.io/amrapi/subscription/apple/",
+	"uri": "/amrapi/subscription/apple/",
 	"title": "Apple",
 	"tags": [],
 	"description": "Tells how to get credential and activate realtime subscription notification in apple store",
 	"content": "  Get Shared Secret  Tells how to get shared secret from apple store\n Server to Server Notifications  Tells how to activate realtime notification\n "
 },
 {
-	"uri": "https://admost.github.io/amrapi/subscription/google/",
+	"uri": "/amrapi/subscription/google/",
 	"title": "Google",
 	"tags": [],
 	"description": "Tells how to get credential and activate realtime subscription notification in google play",
 	"content": "  Get Credential  Tells how to get credential from google play\n Server to Server Notification  Tells how to activate realtime notification in google play\n "
 },
 {
-	"uri": "https://admost.github.io/amrapi/",
+	"uri": "/amrapi/",
 	"title": "Admost API Documentations",
 	"tags": [],
 	"description": "",
 	"content": "Admost API Documentations  User Ad Revenue  User ad revenue represents the value of the revenue generated by users from ads\n Publisher Applications  Publisher\u0026#39;s application informations. application id, application name, platform\n Adjust Raw Data Integration  You can see UA user install and cost information on the dashboard with adjust integration\n Subscription Settings  We need credential for Admost subscription tracking. Tells how to get credential from stores.\n Server to Server Rewarded Structure  Tells how to use admost server to server validation in rewarded or offerwall videos\n "
 },
 {
-	"uri": "https://admost.github.io/amrapi/categories/",
+	"uri": "/amrapi/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://admost.github.io/amrapi/subscription/google/get-credential/",
+	"uri": "/amrapi/subscription/google/get-credential/",
 	"title": "Get Credential",
 	"tags": [],
 	"description": "Tells how to get credential from google play",
 	"content": "Step-by-step guide for creating your Play service credentials\nIn order for Admost\u0026rsquo;s servers to communicate with Google on your behalf you need to provide a set of service credentials. The process for configuring these credentials is a bit complex, but the added level of control improves security by only providing Admost with the access we need.\nLink to a Google Developer Project Your Play Developer account needs to be linked to a Google Developer Project.\n Go to your Play Console settings   Select API access   Select Link to connect your Play account to a Google Developer Project  ### Create Service Account\nNext we need to create a service account. This is done from the Google API Console\n Select Create Service Account   Follow the link to the Google API Console   Create Service account key credentials   Name it and assign it Project Owner Role  When you hit create, a JSON file will be downloaded. These are the credentials that Admost will need to communicate with Google\n Set the Role to Project \u0026gt; Owner   Download your JSON credential  Grant Financial Access to Admost  Back in the Play Console, select Grant Access on the newly created Admost service account   Set the Role to Finance and Add Manage Orders Permissions  Hit save and you\u0026rsquo;re done. Send the credentials JSON that were downloaded in step 2 to us and we\u0026rsquo;ll be ready to handle Google Play purchases!\n"
 },
 {
-	"uri": "https://admost.github.io/amrapi/subscription/apple/shared-secret/",
+	"uri": "/amrapi/subscription/apple/shared-secret/",
 	"title": "Get Shared Secret",
 	"tags": [],
 	"description": "Tells how to get shared secret from apple store",
 	"content": "Getting your App Connect App-Specific Shared Secret The App-Specific Shared Secret allows Admost to connect with Apple on your behalf.\n Log in to App Store Connect Navigate to \u0026ldquo;My Apps\u0026rdquo; and select your app Navigate to Features in the top bar Select \u0026ldquo;In-App Purchases\u0026rdquo; from the left side menu Select App-Specific Share Secret from the right side above your in-app products. Generate and copy your shared secret  "
 },
 {
-	"uri": "https://admost.github.io/amrapi/subscription/google/realtime-notification/",
+	"uri": "/amrapi/subscription/google/realtime-notification/",
 	"title": "Server to Server Notification",
 	"tags": [],
 	"description": "Tells how to activate realtime notification in google play",
 	"content": " Ensure Google Cloud Pub/Sub is enabled for your project. You can enable it here  "
 },
 {
-	"uri": "https://admost.github.io/amrapi/subscription/apple/realtime-notification/",
+	"uri": "/amrapi/subscription/apple/realtime-notification/",
 	"title": "Server to Server Notifications",
 	"tags": [],
 	"description": "Tells how to activate realtime notification",
 	"content": "Apple Server-to-Server Subscription Notifications  Log in to App Store Connect and select your app. Under the App Information section paste the entire URL.  Admost Subscription Status URL: https://subscription.admost.com/v1/notification/ios\n"
 },
 {
-	"uri": "https://admost.github.io/amrapi/tags/",
+	"uri": "/amrapi/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

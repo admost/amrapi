@@ -3,77 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://admost.github.io/amrapi/user-revenue/user-ad-revenue/</loc>
+    <loc>/amrapi/user-revenue/user-ad-revenue/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/user-revenue/user-network-base-ad-revenue/</loc>
+    <loc>/amrapi/user-revenue/user-network-base-ad-revenue/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/user-revenue/</loc>
+    <loc>/amrapi/user-revenue/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/publisher-app-api/</loc>
+    <loc>/amrapi/publisher-app-api/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/adjust-raw-data-export/</loc>
+    <loc>/amrapi/adjust-raw-data-export/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/subscription/</loc>
+    <loc>/amrapi/subscription/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/server-to-server/</loc>
+    <loc>/amrapi/server-to-server/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/subscription/apple/</loc>
+    <loc>/amrapi/subscription/apple/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/subscription/google/</loc>
+    <loc>/amrapi/subscription/google/</loc>
     <lastmod>2020-09-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/</loc>
+    <loc>/amrapi/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/categories/</loc>
+    <loc>/amrapi/categories/</loc>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/subscription/google/get-credential/</loc>
+    <loc>/amrapi/subscription/google/get-credential/</loc>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/subscription/apple/shared-secret/</loc>
+    <loc>/amrapi/subscription/apple/shared-secret/</loc>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/subscription/google/realtime-notification/</loc>
+    <loc>/amrapi/subscription/google/realtime-notification/</loc>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/subscription/apple/realtime-notification/</loc>
+    <loc>/amrapi/subscription/apple/realtime-notification/</loc>
   </url>
   
   <url>
-    <loc>https://admost.github.io/amrapi/tags/</loc>
+    <loc>/amrapi/tags/</loc>
   </url>
   
 </urlset>

@@ -14,4 +14,4 @@ The App-Specific Shared Secret allows Admost to connect with Apple on your behal
 5. Select App-Specific Share Secret from the right side above your in-app products.
 6. Generate and copy your shared secret
 
-![Apple Shared Secret](/images/apple-shared-secret.png?classes=shadow)
+![Apple Shared Secret](/amrapi/images/apple-shared-secret.png?classes=shadow)

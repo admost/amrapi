@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Server to Server Rewarded Structure on Documentation for Admost API Services</title>
-    <link>https://admost.github.io/amrapi/server-to-server/</link>
+    <link>/amrapi/server-to-server/</link>
     <description>Recent content in Server to Server Rewarded Structure on Documentation for Admost API Services</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://admost.github.io/amrapi/server-to-server/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/amrapi/server-to-server/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

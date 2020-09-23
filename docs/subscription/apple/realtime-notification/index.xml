@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Server to Server Notifications on Documentation for Admost API Services</title>
-    <link>https://admost.github.io/amrapi/subscription/apple/realtime-notification/</link>
+    <link>/amrapi/subscription/apple/realtime-notification/</link>
     <description>Recent content in Server to Server Notifications on Documentation for Admost API Services</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="https://admost.github.io/amrapi/subscription/apple/realtime-notification/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/amrapi/subscription/apple/realtime-notification/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
