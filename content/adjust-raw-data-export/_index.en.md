@@ -47,15 +47,16 @@ To fully integrate with Adjust, we need the APP token and API tokens of the appl
 
 ![Adjust CSV Upload Settings](/amrapi/images/adjust-csv-upload.png?classes=shadow&width=20pc)
 
-**Select Events for Export:** install and updated attribution
+**3. Select Events for Export:** 
+- install and updated attribution
 
-**CSV Definition:**
+![Adjust Select Event for Export](/amrapi/images/adjust-events-for-export.png?classes=shadow)
+
+**4. Add CSV Definition:**
 
 ```text
 {idfa||gps_adid},{idfv},{adid},{tracker},{tracker_name},{app_name},{activity_kind},{created_at},{installed_at},{installed_at_hour},{conversion_duration},{cost_type},{cost_amount},{cost_currency},{nonce},{reporting_cost},{match_type},{network_name},{campaign_name},{adgroup_name},{creative_name},{is_organic},{country},{city},{os_name},{mac_md5},{device_name},{device_type},{device_manufacturer},{ip_address},{fb_campaign_id},{fb_campaign_group_id},{fb_adgroup_id},{store}
 ```
-
-![Adjust Select Event for Export](/amrapi/images/adjust-events-for-export.png?classes=shadow)
 
 ### Adjust Partner Terms&Conditions Settings
 
