@@ -63,4 +63,8 @@ When you hit create, a JSON file will be downloaded. These are the credentials t
 
 ![Play Finance Permission](/amrapi/images/google-play-finance-permission.png?chasses=shadow)
 
-Hit save and you're done. Send the credentials JSON that were downloaded in step 2 to us and we'll be ready to handle Google Play purchases!
+Hit save and you're done. 
+
+Add the credential JSON that were downloaded in step 2 to `Android Store Credentials` and we'll be ready to handle Google Play purchases!
+
+![Add Google Store Credential](/amrapi/images/google-subscription-credential.png?chasses=shadow)
