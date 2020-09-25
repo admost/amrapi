@@ -23,7 +23,7 @@ Your Play Developer account needs to be linked to a Google Developer Project.
 
 ![Play Link App](/amrapi/images/google-play-link.png?classes=shadow)
 
-### Create Service Account
+### Create Service Account
 
 Next we need to create a service account. This is done from the Google API Console
 
@@ -67,4 +67,4 @@ Hit save and you're done.
 
 Add the credential JSON that were downloaded in step 2 to `Android Store Credentials` and we'll be ready to handle Google Play purchases!
 
-![Add Google Store Credential](/amrapi/images/google-subscription-credential.png?chasses=shadow)
+![Add Google Store Credential](/amrapi/images/google-subscription-credential.png?chasses=shadow&width=20pc)
