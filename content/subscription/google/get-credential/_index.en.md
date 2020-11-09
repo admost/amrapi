@@ -7,43 +7,43 @@ Step-by-step guide for creating your Play service credentials
 
 In order for Admost's servers to communicate with Google on your behalf you need to provide a set of service credentials. The process for configuring these credentials is a bit complex, but the added level of control improves security by only providing Admost with the access we need.
 
-### Link to a Google Developer Project
+### 1. Link to a Google Developer Project
 
 Your Play Developer account needs to be linked to a Google Developer Project.
 
-+ Go to your [Play Console settings](https://play.google.com/apps/publish#ApiAccessPlace)
+#### 1a. Open the Settings > Developer account menus and select API access
 
-![Play Console](/amrapi/images/google-play-console-1.png?classes=shadow)
+![Play API Access](/amrapi/images/google_developer_api_access.png?classes=shadow&width=20pc)
 
-+ Select API access
+#### 1b. Select Link to connect your Play account to a Google Developer Project
 
-![Play API Access](/amrapi/images/google-play-api-access.png?classes=shadow&width=20pc)
+![Get API Access](/amrapi/images/google_developer_get_api_access.png?classes=shadow&width=20pc)
 
-+ Select Link to connect your Play account to a Google Developer Project
+#### 1c. Agree to the terms and conditions
 
-![Play Link App](/amrapi/images/google-play-link.png?classes=shadow)
+![Agree Terms](/amrapi/images/google_developer_agree_terms.png?classes=shadow&width=20pc)
 
-### Create Service Account
+### 2. Create Service Account
 
 Next we need to create a service account. This is done from the Google API Console
 
-+ Select Create Service Account
+#### 2a. Select Create Service Account
 
-![Play Create Service Account](/amrapi/images/google-play-create-service-account.png?classes=shadow)
+![Play Create Service Account](/amrapi/images/google_play_service_accounts.png?classes=shadow)
 
-+ Follow the link to the Google API Console
+#### 2b. Follow the link to the Google API Console
 
-![Play Navigate API Console](/amrapi/images/google-play-create-service-account-2.png?classes=shadow)
+![Play Navigate API Console](/amrapi/images/google_play_create_new_service_account.png?classes=shadow)
 
-+ Create Service account key credentials
+#### 2c. Create Service account key credentials
 
-![Play Account Key](/amrapi/images/google-play-account-key.png?chasses=shadow)
+![Play Account Key](/amrapi/images/google-play-account-key-credential.png?chasses=shadow)
 
-+ Name it and assign it Project Owner Role
+#### 2d. Name it and assign it Project Owner Role
 
 When you hit create, a JSON file will be downloaded. These are the credentials that Admost will need to communicate with Google
 
-![Play Account Create](/amrapi/images/google-play-account2.png?chasses=shadow)
+![Play Account Create](/amrapi/images/google_play_account_details.png?chasses=shadow)
 
 + Set the Role to Project > Owner
 
@@ -53,18 +53,41 @@ When you hit create, a JSON file will be downloaded. These are the credentials t
 
 ![Play Download JSON](/amrapi/images/google-play-download-json.png?chasses=shadow)
 
-### Grant Financial Access to Admost
+### 3. Grant Financial Access to Admost
 
-+ Back in the Play Console, select Grant Access on the newly created Admost service account
+#### 3a. Back in the Play Console, select Grant Access on the newly created RevenueCat service account
 
-![Play Grant Access](/amrapi/images/google-play-grant-access.png?chasses=shadow)
+![Play Grant Access](/amrapi/images/google_play_grant_access.png?chasses=shadow)
 
-+ Set the Role to Finance and Add Manage Orders Permissions
+#### 3b. Grant the following permissions
 
-![Play Finance Permission](/amrapi/images/google-play-finance-permission.png?chasses=shadow)
+* View app information and download bulk reports (read-only)
+* View financial data, orders, and cancellation survey responses
+* Manage orders and subscriptions
+
+![Play Finance Permission](/amrapi/images/google_play_access_permissions.png?chasses=shadow)
+
+#### 3c.Click Invite User at the bottom and send the invite
+
+![Play Send Invite](/amrapi/images/google_play_send_invite.png?chasses=shadow)
+
+You will be redirected to Users and Permissions where you should see your newly created service account as Active.
+
+#### 3d. Apply permissions to your apps
+
+In the Users and Permissions section, click on the service account and add your apps to the account. Click Apply on the sheet that appears.
+
+![Play App Permission](/amrapi/images/google_play_app_permission.png?chasses=shadow)
+
+![App Permission](/amrapi/images/google_play_permission_for_app.png?chasses=shadow)
+
 
 Hit save and you're done. 
 
 Add the credential JSON that were downloaded in step 2 to `Android Store Credentials` and we'll be ready to handle Google Play purchases!
 
 ![Add Google Store Credential](/amrapi/images/google-subscription-credential.png?chasses=shadow&width=20pc)
+
+{{% notice warning %}}
+It can take up to 36 hours for your Play Service Credentials to work properly with the Android Developer API.
+{{% /notice %}}
