@@ -41,7 +41,7 @@ To fully integrate with Adjust, we need the APP token and API tokens of the appl
 
 **2. Add AWS S3 Bucket Information to Adjust Raw Data Export Settings**
 
-- You can get your AWS Bucket information from Admost Dashboard -> Settings -> Adjust Settings. If you can't see the informations. Please click the create aws bucket button.
+- You can get your AWS Bucket information from Admost Dashboard -> Settings -> Adjust Settings. If you can't see the informations, click the create aws bucket button.
 
 ![AWS Bucket Info](/amrapi/images/aws-bucket-info.png?classes=shadow&width=20pc)
 
