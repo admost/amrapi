@@ -62,24 +62,25 @@ https:\//partners.admost.com/downloads/reports/userAdRevenue/c9e86d87-453e-0d9a-
 
 - The report is generated with columns titles.
 
-| Name                         | Description                                       |
-| ---------------------------- | ------------------------------------------------- |
-| UserID                       | Admost user id                                    |
-| LaunchedAt                   | User first session time ( UTC )                   |
-| Country                      | User country                                      |
-| IDFA                         | User idfa id                                      |
-| AdjustUserID                 | User adjust device id                             |
-| AdRevenue                    | User revenue                                      |
-| IAPRevenue                   | User in-app revenue                               |
-| InterstitialImpCount         | Number of interstitials seen by user              |
-| RewardedImpCount             | Number of rewarded seen by user                   |
-| OfferwallImpCount            | Number of offerwall seen by user                  |
-| NativeInterstitialImpCount   | Number of native interstitial seen by user        |
-| BannerImpCount               | Number of banner seen by user                     |
-| NativeImpCount               | Number of native banner seen by user              |
-| InterstitialClickCount       | Number of total interstitial click by user        |
-| RewardedClickCount           | Number of total rewarded click by user            |
-| OfferwallClickCount          | Number of total offer click by user               |
-| NativeInterstitialClickCount | Number of total native interstitial click by user |
-| BannerClickCount             | Number of banner click by user                    |
-| NativeClickCount             | Number of native click by user                    |
+| Name                         | Description                                                                                                                  |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| UserID                       | Admost user id                                                                                                               |
+| LaunchedAt                   | User first session time ( UTC )                                                                                              |
+| Country                      | User country                                                                                                                 |
+| IDFA                         | User idfa id                                                                                                                 |
+| AdjustUserID                 | User adjust device id                                                                                                        |
+| AdRevenue                    | User revenue                                                                                                                 |
+| IAPRevenue                   | User in-app revenue                                                                                                          |
+| InterstitialImpCount         | Number of interstitials seen by user                                                                                         |
+| RewardedImpCount             | Number of rewarded seen by user                                                                                              |
+| OfferwallImpCount            | Number of offerwall seen by user                                                                                             |
+| NativeInterstitialImpCount   | Number of native interstitial seen by user                                                                                   |
+| BannerImpCount               | Number of banner seen by user                                                                                                |
+| NativeImpCount               | Number of native banner seen by user                                                                                         |
+| InterstitialClickCount       | Number of total interstitial click by user                                                                                   |
+| RewardedClickCount           | Number of total rewarded click by user                                                                                       |
+| OfferwallClickCount          | Number of total offer click by user                                                                                          |
+| NativeInterstitialClickCount | Number of total native interstitial click by user                                                                            |
+| BannerClickCount             | Number of banner click by user                                                                                               |
+| NativeClickCount             | Number of native click by user                                                                                               |
+| PublisherApplicationUserID   | Publisher's custom user ID/IDs. They are separated with "##" if the publisher sent multiple id for this user with Admost SDK |
