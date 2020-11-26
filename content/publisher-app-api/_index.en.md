@@ -29,10 +29,10 @@ description : "Publisher's application informations. application id, application
 
 #### Response Status Codes
 
-| Code | Description                                                               |
-| ---- | ------------------------------------------------------------------------- |
-| 200  | OK. The request has succeeded. Returns with a link to download the report |
-| 400  | BAD REQUEST                                                               |
-| 401  | UNAUTHORIZED                                                              |
-| 429  | TOO MANY REQUESTS                                                         |
-| 500  | INTERNAL SERVER ERROR                                                     |  |
+| Code | Description                    |
+| ---- | ------------------------------ |
+| 200  | OK. The request has succeeded. |
+| 400  | BAD REQUEST                    |
+| 401  | UNAUTHORIZED                   |
+| 429  | TOO MANY REQUESTS              |
+| 500  | INTERNAL SERVER ERROR          |
