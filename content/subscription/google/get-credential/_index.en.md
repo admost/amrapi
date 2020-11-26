@@ -29,15 +29,15 @@ Next we need to create a service account. This is done from the Google API Conso
 
 #### 2a. Select Create Service Account
 
-![Play Create Service Account](/amrapi/images/google_play_service_accounts.png?classes=shadow)
+![Play Create Service Account](/amrapi/images/google_play_service_accounts.png?classes=shadow&width=700px)
 
 #### 2b. Follow the link to the Google API Console
 
-![Play Navigate API Console](/amrapi/images/google_play_create_new_service_account.png?classes=shadow)
+![Play Navigate API Console](/amrapi/images/google_play_create_new_service_account.png?classes=shadow&width=700px)
 
 #### 2c. Create Service account key credentials
 
-![Play Account Key](/amrapi/images/google-play-account-key-credential.png?chasses=shadow)
+![Play Account Key](/amrapi/images/google-play-account-key-credential.png?chasses=shadow&width=700px)
 
 #### 2d. Name it and assign it Project Owner Role
 
@@ -57,7 +57,7 @@ When you hit create, a JSON file will be downloaded. These are the credentials t
 
 #### 3a. Back in the Play Console, select Grant Access on the newly created RevenueCat service account
 
-![Play Grant Access](/amrapi/images/google_play_grant_access.png?chasses=shadow)
+![Play Grant Access](/amrapi/images/google_play_grant_access.png?chasses=shadow&width=700px)
 
 #### 3b. Grant the following permissions
 
@@ -69,7 +69,7 @@ When you hit create, a JSON file will be downloaded. These are the credentials t
 
 #### 3c.Click Invite User at the bottom and send the invite
 
-![Play Send Invite](/amrapi/images/google_play_send_invite.png?chasses=shadow)
+![Play Send Invite](/amrapi/images/google_play_send_invite.png?chasses=shadow&width=700px)
 
 You will be redirected to Users and Permissions where you should see your newly created service account as Active.
 
@@ -79,7 +79,7 @@ In the Users and Permissions section, click on the service account and add your 
 
 ![Play App Permission](/amrapi/images/google_play_app_permission.png?chasses=shadow)
 
-![App Permission](/amrapi/images/google_play_permission_for_app.png?chasses=shadow)
+![App Permission](/amrapi/images/google_play_permission_for_app.png?chasses=shadow&width=700px)
 
 
 Hit save and you're done. 
