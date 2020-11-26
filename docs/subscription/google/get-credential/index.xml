@@ -5,10 +5,6 @@
     <link>/amrapi/subscription/google/get-credential/</link>
     <description>Recent content in Get Credential on Documentation for Admost API Services</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    
-	<atom:link href="/amrapi/subscription/google/get-credential/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-US</language><atom:link href="/amrapi/subscription/google/get-credential/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

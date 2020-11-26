@@ -88,7 +88,7 @@
 	"title": "Get Shared Secret",
 	"tags": [],
 	"description": "Tells how to get shared secret from apple store",
-	"content": "Getting your App Connect App-Specific Shared Secret The App-Specific Shared Secret allows Admost to connect with Apple on your behalf.\n Log in to App Store Connect Navigate to \u0026ldquo;My Apps\u0026rdquo; and select your app Navigate to Features in the top bar Select \u0026ldquo;In-App Purchases\u0026rdquo; from the left side menu Select App-Specific Share Secret from the right side above your in-app products. Generate and copy your shared secret  "
+	"content": "Getting your App Connect App-Specific Shared Secret The App-Specific Shared Secret allows Admost to connect with Apple on your behalf.\n Log in to App Store Connect Navigate to \u0026ldquo;My Apps\u0026rdquo; and select your app Navigate to Features in the top bar Select \u0026ldquo;In-App Purchases\u0026rdquo; from the left side menu Select App-Specific Share Secret from the right side above your in-app products. Generate and copy your shared secret  Add the App-Specific Share Secret to iOS App-Specific Shared Secret on Admost dashboard and we’ll be ready to handle Apple subscription purchases!\n"
 },
 {
 	"uri": "/amrapi/subscription/google/realtime-notification/",
