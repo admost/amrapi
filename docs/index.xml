@@ -15,7 +15,7 @@
       <guid>/amrapi/user-revenue/user-ad-revenue/</guid>
       <description>Download the report from the api response when ready.
  If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The date parameter must belong to 2 days before (however our suggestion is 4 days for more accuracy)
-  The download file name is generated with appID, date and timestamp</description>
+ If you want to get current date data. You can use is_realtime parameter.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <guid>/amrapi/user-revenue/user-network-base-ad-revenue/</guid>
       <description>Download the report from the api response when ready.
  If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The date parameter must belong to 2 days before (however our suggestion is 4 days for more accuracy)
-  The download file name is generated with appID, date and timestamp</description>
+ If you want to get current date data. You can use is_realtime parameter.</description>
     </item>
     
   </channel>

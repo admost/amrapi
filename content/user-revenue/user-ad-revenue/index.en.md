@@ -10,6 +10,7 @@ description : "You can get user ad revenue information without ad network"
     - If you are getting **404 response** status when trying to download the file. The file is not prepared yet. Please wait a while and try again.
 
 - The date parameter must belong to 2 days before (however our suggestion is `4 days` for more accuracy)
+  - If you want to get current date data. You can use `is_realtime` parameter.
 
 - The download file name is generated with appID, date and timestamp
     - :appID:\_:date:\_:timestamp:.tar.gz
@@ -17,7 +18,7 @@ description : "You can get user ad revenue information without ad network"
 
 - Allows only a request per minute per application id
 
-- By default, when a request is made twice for the same day, it returns the previously created csv file. If you want to get a new file from the same day, you can use “create_new_file” parameter.
+- By default, when a request is made twice for the same day, it returns the previously created csv file. If you want to get a new file from the same day, you can use `create_new_file` parameter.
 
 - You can get the admost application id using by Admost [Publisher Applications API](https://admost.github.io/amrapi/publisher-app-api/)
 
