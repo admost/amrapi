@@ -5,7 +5,7 @@ weight: 1
 description : "You can get user ad revenue information without ad network"
 ---
 
-{{%expand "`INFO` 2021-01-28 - Added new report columns" %}}
+{{%expand "Updates: 2021-01-28 - Added new report columns" %}}
 - InterstitialRevenue
 - RewardedRevenue	
 - NativeInterstitialRevenue
