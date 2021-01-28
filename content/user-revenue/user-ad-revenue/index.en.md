@@ -5,6 +5,17 @@ weight: 1
 description : "You can get user ad revenue information without ad network"
 ---
 
+{{% notice Updates %}}
+2021-01-28
+* Added new report columns
+  - FullBannerRevenue
+  - FullVideoRevenue	
+  - FullNativeRevenue
+  - FullOfferwallRevenue	
+  - BannerRevenue	
+  - NativeRevenue
+{{% /notice %}}
+
 - Download the report from the api response when ready.  
   
     - If you are getting **404 response** status when trying to download the file. The file is not prepared yet. Please wait a while and try again.
@@ -85,3 +96,9 @@ https:\//partners.admost.com/downloads/reports/userAdRevenue/c9e86d87-453e-0d9a-
 | BannerClickCount             | Number of banner click by user                                                                                               |
 | NativeClickCount             | Number of native click by user                                                                                               |
 | PublisherApplicationUserID   | Publisher's custom user ID/IDs. They are separated with "##" if the publisher sent multiple id for this user with Admost SDK |
+| InterstitialRevenue          | User interstitials Revenue                                                                                                   |
+| RewardedRevenue              | User rewarded revenue                                                                                                        |
+| NativeInterstitialRevenue    | User native interstitial revenue                                                                                             |
+| OfferwallRevenue             | User offerwall revenue                                                                                                       |
+| BannerRevenue                | User banner revenue                                                                                                          |
+| NativeRevenue                | User native revenue                                                                                                          |
