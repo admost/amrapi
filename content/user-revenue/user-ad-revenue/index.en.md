@@ -5,15 +5,14 @@ weight: 1
 description : "You can get user ad revenue information without ad network"
 ---
 
-{{% notice Updates %}}
-2021-01-28
-* Added new report columns
-  - FullBannerRevenue
-  - FullVideoRevenue	
-  - FullNativeRevenue
-  - FullOfferwallRevenue	
-  - BannerRevenue	
-  - NativeRevenue
+{{% notice info %}}
+2021-01-28 - Added new report columns
+  + FullBannerRevenue
+  + FullVideoRevenue	
+  + FullNativeRevenue
+  + FullOfferwallRevenue	
+  + BannerRevenue	
+  + NativeRevenue
 {{% /notice %}}
 
 - Download the report from the api response when ready.  

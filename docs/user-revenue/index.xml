@@ -13,8 +13,8 @@
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/amrapi/user-revenue/user-ad-revenue/</guid>
-      <description>2021-01-28
- Added new report columns  FullBannerRevenue FullVideoRevenue FullNativeRevenue FullOfferwallRevenue BannerRevenue NativeRevenue       Download the report from the api response when ready.
+      <description>2021-01-28 - Added new report columns
+ FullBannerRevenue FullVideoRevenue FullNativeRevenue FullOfferwallRevenue BannerRevenue NativeRevenue     Download the report from the api response when ready.
  If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The date parameter must belong to 2 days before (however our suggestion is 4 days for more accuracy)</description>
     </item>
     
