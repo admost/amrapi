@@ -27,7 +27,7 @@ description : "You can get user ad revenue information without ad network"
 
 - Allows only a request per minute per application id
 
-- By default, when a request is made twice for the same day, it returns the previously created csv file. If you want to get a new file from the same day, you can use `create_new_file` parameter.
+- By default, when a request is made twice for the same day, it returns the previously created csv file. If you want to get a new file from the same day, you must use `create_new_file` parameter.
 
 - You can get the admost application id using by Admost [Publisher Applications API](https://admost.github.io/amrapi/publisher-app-api/)
 
