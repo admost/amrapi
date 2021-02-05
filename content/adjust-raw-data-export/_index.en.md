@@ -6,6 +6,10 @@ pre: "<b>3. </b>"
 description : "You can see UA user install and cost information on the dashboard with adjust integration"
 ---
 
+{{% notice info %}}
+You can find Adjust SDK integration document on their [help page](https://help.adjust.com/en/sdk).
+{{% /notice %}}
+
 To fully integrate with Adjust, we need the APP token and API tokens of the application
 
 ### APP token and API token Settings
