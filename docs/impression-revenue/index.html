@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.79.0" />
-    <meta name="description" content="Publisher&#39;s application informations. application id, application name, platform">
+    <meta name="description" content="You can get placement and country base impression and revenue data">
 <meta name="author" content="Gokhan MANKARA">
 
     <link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
-    <title>Publisher Applications :: Documentation for Admost API Services</title>
+    <title>Impression and Revenue API :: Documentation for Admost API Services</title>
 
     
     <link href="/amrapi/css/nucleus.css?1614589582" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/amrapi/publisher-app-api/">
+  <body class="" data-url="/amrapi/impression-revenue/">
     <nav id="sidebar" class="">
 
 
@@ -136,8 +136,8 @@
   
     
     <li data-nav-id="/amrapi/publisher-app-api/" title="Publisher Applications" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/amrapi/publisher-app-api/">
@@ -424,8 +424,8 @@
   
     
     <li data-nav-id="/amrapi/impression-revenue/" title="Impression and Revenue API" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/amrapi/impression-revenue/">
@@ -483,7 +483,7 @@
             
           
           
-            <a href='/amrapi/'>Admost API Documentations</a> > Publisher Applications
+            <a href='/amrapi/'>Admost API Documentations</a> > Impression and Revenue API
           
         
           
@@ -518,7 +518,7 @@
           
             <h1>
               
-              Publisher Applications
+              Impression and Revenue API
             </h1>
           
 
@@ -527,9 +527,9 @@
 
 
 	<ul>
-<li>Publisher&rsquo;s application informations</li>
+<li>Application&rsquo;s placement and country base impression and revenue data</li>
 </ul>
-<p><code>URL</code> : https://partners.admost.com/v1/apps?key=[key]</p>
+<p><code>Endpoint:</code> http://amr-api.admost.com/api/publisher/v1/reporting?apiKey=[apiKey]&amp;startdate=[YYYY-MM-DD]&amp;enddate=[YYYY-MM-DD]&amp;app=[appid]</p>
 <p><code>METHOD</code> : <strong>GET</strong></p>
 <h4 id="request-parameters">Request Parameters</h4>
 <table>
@@ -542,9 +542,24 @@
 </thead>
 <tbody>
 <tr>
-<td>key</td>
+<td>apiKey</td>
 <td>string</td>
-<td>Publisher Token</td>
+<td>Publisher&rsquo;s token</td>
+</tr>
+<tr>
+<td>startdate</td>
+<td>string</td>
+<td>Report start date</td>
+</tr>
+<tr>
+<td>enddate</td>
+<td>string</td>
+<td>Report end date</td>
+</tr>
+<tr>
+<td>appid</td>
+<td>string</td>
+<td>Admost application ID</td>
 </tr>
 </tbody>
 </table>
@@ -558,51 +573,40 @@
 </thead>
 <tbody>
 <tr>
-<td>app_id</td>
-<td>Admost Application ID</td>
+<td>AdNetwork</td>
+<td>Ad Network Name</td>
 </tr>
 <tr>
-<td>name</td>
+<td>AppName</td>
 <td>Application Name</td>
 </tr>
 <tr>
-<td>package_name</td>
-<td>Application bundle id/package name</td>
+<td>AppType</td>
+<td>Application type android/ios</td>
 </tr>
 <tr>
-<td>platform</td>
-<td>(ios, android etc.)</td>
-</tr>
-</tbody>
-</table>
-<h4 id="response-status-codes">Response Status Codes</h4>
-<table>
-<thead>
-<tr>
-<th>Code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td>OK. The request has succeeded.</td>
+<td>Placement</td>
+<td>Placement Name</td>
 </tr>
 <tr>
-<td>400</td>
-<td>BAD REQUEST</td>
+<td>CountryCode</td>
+<td>Country short code</td>
 </tr>
 <tr>
-<td>401</td>
-<td>UNAUTHORIZED</td>
+<td>Country</td>
+<td>Country Name</td>
 </tr>
 <tr>
-<td>429</td>
-<td>TOO MANY REQUESTS</td>
+<td>Impression</td>
+<td>Impression count</td>
 </tr>
 <tr>
-<td>500</td>
-<td>INTERNAL SERVER ERROR</td>
+<td>Revenue</td>
+<td>Revenue amount ($)</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>Which day the data belongs to</td>
 </tr>
 </tbody>
 </table>
@@ -697,7 +701,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -713,9 +716,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -866,6 +866,7 @@
             
             
                 
+                    
                     
                 
                 
