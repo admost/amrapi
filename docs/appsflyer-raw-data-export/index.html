@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.79.0" />
-    <meta name="description" content="Tells how to activate realtime notification">
+    <meta name="description" content="You can see UA&#39;s user install information on the dashboard with appsflyer integration">
 <meta name="author" content="Gokhan MANKARA">
 
     <link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
-    <title>Server to Server Notifications :: Documentation for Admost API Services</title>
+    <title>Appsflyer raw data export :: Documentation for Admost API Services</title>
 
     
     <link href="/amrapi/css/nucleus.css?1615715584" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/amrapi/subscription/apple/realtime-notification/">
+  <body class="" data-url="/amrapi/appsflyer-raw-data-export/">
     <nav id="sidebar" class="">
 
 
@@ -184,7 +184,7 @@
   
     
     <li data-nav-id="/amrapi/subscription/" title="Subscription Settings" class="dd-item 
-        parent
+        
         
         
         ">
@@ -213,7 +213,7 @@
   
     
     <li data-nav-id="/amrapi/subscription/apple/" title="Apple" class="dd-item 
-        parent
+        
         
         
         ">
@@ -268,8 +268,8 @@
   
     
     <li data-nav-id="/amrapi/subscription/apple/realtime-notification/" title="Server to Server Notifications" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/amrapi/subscription/apple/realtime-notification/">
@@ -448,8 +448,8 @@
   
     
     <li data-nav-id="/amrapi/appsflyer-raw-data-export/" title="Appsflyer raw data export" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/amrapi/appsflyer-raw-data-export/">
@@ -507,19 +507,7 @@
             
           
           
-            
-            
-          
-          
-            
-            
-          
-          
-            <a href='/amrapi/'>Admost API Documentations</a> > <a href='/amrapi/subscription/'>Subscription Settings</a> > <a href='/amrapi/subscription/apple/'>Apple</a> > Server to Server Notifications
-          
-        
-          
-        
+            <a href='/amrapi/'>Admost API Documentations</a> > Appsflyer raw data export
           
         
           
@@ -534,7 +522,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#apple-server-to-server-subscription-notifications">Apple Server-to-Server Subscription Notifications</a></li>
+        <li><a href="#create-a-new-hostname-with-an-a-record">Create a New Hostname with an A Record</a></li>
       </ul>
     </li>
   </ul>
@@ -554,7 +542,7 @@
           
             <h1>
               
-              Server to Server Notifications
+              Appsflyer raw data export
             </h1>
           
 
@@ -562,12 +550,34 @@
 
 
 
-	<h3 id="apple-server-to-server-subscription-notifications">Apple Server-to-Server Subscription Notifications</h3>
+	
+<div class="notices info" ><p>You can find Appsflyer SDK integration document on their <a href="https://support.appsflyer.com/hc/en-us/categories/201114756-SDK-integration-">help page</a>.</p>
+</div>
+
+<h3 id="create-a-new-hostname-with-an-a-record">Create a New Hostname with an A Record</h3>
+<p>In this step, we need your domain address with <code>callback</code> subdomain. You’ll add a new <code>callback</code> hostname to your domain and point it to a <code>195.244.38.50</code> IP address by your domain registrar.</p>
+<p><img src="/amrapi/images/dns_a_record.png?classes=shadow&amp;width=10pc" alt="Domain DNS A Record"></p>
+<p>### AppsFlyer Push API Settings</p>
+<ol>
+<li>Go to <a href="https://hq.appsflyer.com/login">AppsFlyer’s dashboard</a>, and select Apps -&gt; Integration -&gt; API access -&gt; Push API. Push API is available only for AppsFlyer premium plan, so please contact AppsFlyer if you don&rsquo;t see it.</li>
+<li>Click <strong>Add Endpoint</strong>.</li>
+<li>Push API version <strong>2.0</strong></li>
+<li>Select an HTTP method: <strong>POST</strong></li>
+<li>Enter the <strong>Endpoint URL</strong>.
 <ul>
-<li>Log in to App Store Connect and select your app. Under the App Information section paste the entire URL.</li>
+<li><code>https://callback.yourdomainaddress.com/v1/appsflyer/install</code></li>
 </ul>
-<p><code>Admost Subscription Status URL:</code> https://subscription.admost.com/v1/notification/ios</p>
-<p><img src="/amrapi/images/ios-subscription-notification.png" alt="IOSRealtimeNotification"></p>
+</li>
+<li>Select <strong>Install</strong> <strong>Non-organic</strong> event type.</li>
+<li>Select <strong>all</strong> message fields.</li>
+<li>We don&rsquo;t need in-app events.</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+
+<div class="notices warning" ><p>If you are using Facebook, you have to accept terms&amp;conditions. Go <a href="https://www.facebook.com/ads/manage/advanced_mobile_measurement/app_based_tos/">here</a> and accept the term.</p>
+</div>
+
+<p><img src="/amrapi/images/appsflyer_push_api_ss.png?classes=shadow&amp;width=10pc" alt="Appsflyer Push API SS"></p>
 
 
 
@@ -691,7 +701,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -707,7 +716,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -722,9 +730,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -741,7 +746,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -761,9 +765,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -849,6 +850,7 @@
             
             
                 
+                    
                     
                 
                 

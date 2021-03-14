@@ -53,6 +53,11 @@
   </url>
   
   <url>
+    <loc>/amrapi/appsflyer-raw-data-export/</loc>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/amrapi/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
   </url>

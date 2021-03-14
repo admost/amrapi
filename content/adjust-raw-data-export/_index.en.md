@@ -3,7 +3,7 @@ title: Adjust Raw Data Integration
 date: 2020-09-08
 weight: 7
 pre: "<b>3. </b>"
-description : "You can see UA user install and cost information on the dashboard with adjust integration"
+description : "You can see UA's user install information on the dashboard with adjust integration"
 ---
 
 {{% notice info %}}
@@ -54,7 +54,7 @@ To fully integrate with Adjust, we need the APP token and API tokens of the appl
 ![Adjust CSV Upload Settings](/amrapi/images/adjust-csv-upload.png?classes=shadow&width=20pc)
 
 **3. Select Events for Export:** 
-- install and updated attribution
+- select install and updated attribution events
 
 ![Adjust Select Event for Export](/amrapi/images/adjust-events-for-export.png?classes=shadow)
 
