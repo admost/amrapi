@@ -1,5 +1,5 @@
 ---
-title: Appsflyer raw data export
+title: Appsflyer Raw data export
 date: 2021-03-12
 weight: 10
 pre: "<b>7. </b>"
@@ -14,9 +14,9 @@ You can find Appsflyer SDK integration document on their [help page](https://sup
 
 In this step, we need your domain address with `callback` subdomain. You’ll add a new `callback` hostname to your domain and point it to a `195.244.38.50` IP address by your domain registrar.
 
-![Domain DNS A Record](/amrapi/images/dns_a_record.png?classes=shadow&width=10pc)
+![Domain DNS A Record](/amrapi/images/dns_a_record.png?classes=shadow)
 
-### AppsFlyer Push API Settings
+### AppsFlyer Push API Settings
 
 1. Go to [AppsFlyer’s dashboard](https://hq.appsflyer.com/login), and select Apps -> Integration -> API access -> Push API. Push API is available only for AppsFlyer premium plan, so please contact AppsFlyer if you don't see it.
 2. Click **Add Endpoint**.
@@ -33,4 +33,4 @@ In this step, we need your domain address with `callback` subdomain. You’ll ad
 If you are using Facebook, you have to accept terms&conditions. Go [here](https://www.facebook.com/ads/manage/advanced_mobile_measurement/app_based_tos/) and accept the term.
 {{% /notice %}}
 
-![Appsflyer Push API SS](/amrapi/images/appsflyer_push_api_ss.png?classes=shadow&width=10pc)
+![Appsflyer Push API SS](/amrapi/images/appsflyer_push_api_ss.png?classes=shadow)
