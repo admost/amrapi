@@ -43,20 +43,20 @@ Next we need to create a service account. This is done from the Google API Conso
 
 When you hit create, a JSON file will be downloaded. These are the credentials that Admost will need to communicate with Google
 
-![Play Account Create](/amrapi/images/google_play_account_details2.png?chasses=shadow)
+![Play Account Create](/amrapi/images/google_play_account_details2.png?chasses=shadow&width=40pc&height=40pc)
 
 Add two Roles:
 
 * Pub/Sub Admin (to enable [Platform Server Notifications](https://admost.github.io/amrapi/subscription/google/realtime-notification/))
 * Monitoring Viewer (to allow monitoring of the notification queue)
 
-![Grant this service](/amrapi/images/google-play-grant-service-account-project.png?chasses=shadow)
+![Grant this service](/amrapi/images/google-play-grant-service-account-project.png?chasses=shadow&width=40pc&height=40pc)
 
 You can skip the optional third step, "Grant users access to this service account" by clicking Done.
 
-![Grant this user](amrapi/images/google-play-grant-this-user-service-account.png?chasses=shadow)
+![Grant this user](/amrapi/images/google-play-grant-this-user-service-account.png?chasses=shadow&width=40pc&height=40pc)
 
-### 2e. Create the public key
+#### 2e. Create Public Key
 
 In the Google Cloud Console, click on Actions > Manage keys.
 
