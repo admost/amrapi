@@ -56,7 +56,7 @@ You can skip the optional third step, "Grant users access to this service accoun
 
 ![Grant this user](/amrapi/images/google-play-grant-this-user-service-account.png?chasses=shadow&width=40pc&height=40pc)
 
-#### 2e. Create Public Key
+#### 2e. Create Public Key
 
 In the Google Cloud Console, click on Actions > Manage keys.
 
@@ -70,7 +70,7 @@ Make sure JSON is selected and click Create to create and download the JSON key.
 
 ![Create Credential JSON](/amrapi/images/google-credential-json-create.png?chasses=shadow)
 
-![Save Private Key](/amrapi/images/google-private-key-saved-to-your-pc.png?chasses=shadow)
+![Save Private Key](/amrapi/images/google-private-key-saved-to-your-pc.png?chasses=shadow&width=40pc)
 
 The downloaded JSON key is what you will need to enter in Admost in step 4.
 ### 3. Grant Financial Access to Admost
