@@ -43,19 +43,38 @@ Next we need to create a service account. This is done from the Google API Conso
 
 When you hit create, a JSON file will be downloaded. These are the credentials that Admost will need to communicate with Google
 
-![Play Account Create](/amrapi/images/google_play_account_details.png?chasses=shadow)
+![Play Account Create](/amrapi/images/google_play_account_details2.png?chasses=shadow)
 
-+ Set the Role to Project > Owner
+Add two Roles:
 
-![Play Set Project Owner](/amrapi/images/google-play-project-owner.png?chasses=shadow)
+* Pub/Sub Admin (to enable [Platform Server Notifications](https://admost.github.io/amrapi/subscription/google/realtime-notification/))
+* Monitoring Viewer (to allow monitoring of the notification queue)
 
-+ Download your JSON credential
+![Grant this service](/amrapi/images/google-play-grant-service-account-project.png?chasses=shadow)
 
-![Play Download JSON](/amrapi/images/google-play-download-json.png?chasses=shadow)
+You can skip the optional third step, "Grant users access to this service account" by clicking Done.
 
+![Grant this user](amrapi/images/google-play-grant-this-user-service-account.png?chasses=shadow)
+
+### 2e. Create the public key
+
+In the Google Cloud Console, click on Actions > Manage keys.
+
+![Service Account Manage Keys.png](/amrapi/images/google-play-service-account-manage-keys.png?chasses=shadow)
+
+Click ADD KEY > Create new key.
+
+![Manage Credentials Create New Key](/amrapi/images/google-play-service-credentials-create-new-key.png?chasses=shadow)
+
+Make sure JSON is selected and click Create to create and download the JSON key.
+
+![Create Credential JSON](/amrapi/images/google-credential-json-create.png?chasses=shadow)
+
+![Save Private Key](/amrapi/images/google-private-key-saved-to-your-pc.png?chasses=shadow)
+
+The downloaded JSON key is what you will need to enter in Admost in step 4.
 ### 3. Grant Financial Access to Admost
-
-#### 3a. Back in the Play Console, select Grant Access on the newly created RevenueCat service account
+#### 3a. Back in the Play Console, select Grant Access on the newly created Admost service account
 
 ![Play Grant Access](/amrapi/images/google_play_grant_access.png?chasses=shadow&width=700px)
 
@@ -84,7 +103,9 @@ In the Users and Permissions section, click on the service account and add your 
 
 Hit save and you're done. 
 
-Add the credential JSON that were downloaded in step 2 to `Android Store Credentials` and we'll be ready to handle Google Play purchases!
+### 4. Enter the credentials JSON in Admost
+
+Add the credential JSON that were downloaded in to `Android Store Credentials` and we'll be ready to handle Google Play purchases!
 
 ![Add Google Store Credential](/amrapi/images/google-subscription-credential.png?chasses=shadow&width=20pc)
 
