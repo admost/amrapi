@@ -103,7 +103,7 @@ In the Users and Permissions section, click on the service account and add your 
 
 Hit save and you're done. 
 
-### 4. Enter the credentials JSON in Admost
+#### 4. Enter the credential Json in Admost
 
 Add the credential JSON that were downloaded in to `Android Store Credentials` and we'll be ready to handle Google Play purchases!
 
