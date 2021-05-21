@@ -10,7 +10,8 @@ description : "You can see UA's user install information on the dashboard with a
 You can find Adjust SDK integration document on their [help page](https://help.adjust.com/en/sdk).
 {{% /notice %}}
 
-To fully integrate with Adjust, we need the APP token and API tokens of the application
+With this integration, we'll able to get paid campaign installs from Adjust.
+We need the APP token of the application and API token
 
 ### APP token and API token Settings
 
