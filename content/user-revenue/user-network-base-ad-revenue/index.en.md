@@ -10,9 +10,6 @@ description : "You can get user ad revenue information with ad network"
   
     - If you are getting **404 response** status when trying to download the file. The file is not prepared yet. Please wait a while and try again.
 
-- The date parameter must belong to 2 days before (however our suggestion is `4 days` for more accuracy)
-  - If you want to get current date data. You can use `is_realtime` parameter.
-
 - The download file name is generated with appID, date and timestamp
     - :appID:\_:date:\_bynetwork\_:timestamp:.tar.gz
     - Extracted file format: csv
@@ -39,7 +36,6 @@ description : "You can get user ad revenue information with ad network"
 | app_id          | string | Application admost id                             |
 | report_type     | int    | Optional. Default value 1 ( 1 -  User Ad Revenue) |
 | create_new_file | int    | Optional. Default value false 0-> false, 1-> true |
-| is_realtime     | int    | Optional. Default value false.0-> false, 1-> true |
 
 #### Request Example URL:
 

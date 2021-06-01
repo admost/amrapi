@@ -14,7 +14,7 @@
       
       <guid>/amrapi/user-revenue/user-ad-revenue/</guid>
       <description>Updates: 2021-01-28 - Added new report columns    InterstitialRevenue RewardedRevenue NativeInterstitialRevenue OfferwallRevenue BannerRevenue NativeRevenue      Download the report from the api response when ready.
- If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The date parameter must belong to 2 days before (however our suggestion is 4 days for more accuracy)</description>
+ If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The download file name is generated with appID, date and timestamp</description>
     </item>
     
     <item>
@@ -24,8 +24,8 @@
       
       <guid>/amrapi/user-revenue/user-network-base-ad-revenue/</guid>
       <description>Download the report from the api response when ready.
- If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The date parameter must belong to 2 days before (however our suggestion is 4 days for more accuracy)
- If you want to get current date data. You can use is_realtime parameter.</description>
+ If you are getting 404 response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The download file name is generated with appID, date and timestamp
+ :appID:_:date:_bynetwork_:timestamp:.tar.gz Extracted file format: csv    Allows only a request per minute per application id</description>
     </item>
     
   </channel>
