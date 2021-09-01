@@ -6,12 +6,8 @@ function endsWith(str, suffix) {
 
 // Initialize lunrjs using our generated index file
 function initLunr() {
-    if (!endsWith(baseurl,"/")){
-        baseurl = baseurl+'/'
-    };
-
     // First retrieve the index file
-    $.getJSON(baseurl +"index.json")
+    $.getJSON(index_url)
         .done(function(index) {
             pagesIndex = index;
             // Set up lunrjs by declaring the fields we use
@@ -27,10 +23,10 @@ function initLunr() {
                 this.field("content", {
 		    boost: 5
                 });
-				
+
                 this.pipeline.remove(lunr.stemmer);
                 this.searchPipeline.remove(lunr.stemmer);
-				
+
                 // Feed lunr with each file and let lunr actually index them
                 pagesIndex.forEach(function(page) {
 		    this.add(page);
@@ -51,7 +47,8 @@ function initLunr() {
  */
 function search(queryTerm) {
     // Find the item in our index corresponding to the lunr one to have more info
-    return lunrIndex.search(queryTerm+"^100"+" "+queryTerm+"*^10"+" "+"*"+queryTerm+"^10"+" "+queryTerm+"~2^1").map(function(result) {
+    var searchTerm = queryTerm.match(/\w+/g).map(word => word+"^100"+" "+word+"*^10"+" "+"*"+word+"^10"+" "+word+"~2^1").join(" ");
+    return lunrIndex.search(searchTerm).map(function(result) {
             return pagesIndex.filter(function(page) {
                 return page.uri === result.ref;
             })[0];
@@ -73,21 +70,29 @@ $( document ).ready(function() {
             var numContextWords = 2;
             var text = item.content.match(
                 "(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}" +
-                    term+"(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}");
+                    term.trim()+"(?:\\s?(?:[\\w]+)\\s?){0,"+numContextWords+"}");
             item.context = text;
-            return '<div class="autocomplete-suggestion" ' +
-                'data-term="' + term + '" ' +
-                'data-title="' + item.title + '" ' +
-                'data-uri="'+ item.uri + '" ' +
-                'data-context="' + item.context + '">' +
-                '» ' + item.title +
-                '<div class="context">' +
-                (item.context || '') +'</div>' +
-                '</div>';
+            var divcontext = document.createElement("div");
+            divcontext.className = "context";
+            divcontext.innerText = (item.context || '');
+            var divsuggestion = document.createElement("div");
+            divsuggestion.className = "autocomplete-suggestion";
+            divsuggestion.setAttribute("data-term", term);
+            divsuggestion.setAttribute("data-title", item.title);
+            divsuggestion.setAttribute("data-uri", baseUri + item.uri);
+            divsuggestion.setAttribute("data-context", item.context);
+            divsuggestion.innerText = '» ' + item.title;
+            divsuggestion.appendChild(divcontext);
+            return divsuggestion.outerHTML;
         },
         /* onSelect callback fires when a search suggestion is chosen */
         onSelect: function(e, term, item) {
             location.href = item.getAttribute('data-uri');
         }
     });
+
+    // JavaScript-autoComplete only registers the focus event when minChars is 0 which doesn't make sense, let's do it ourselves
+    // https://github.com/Pixabay/JavaScript-autoComplete/blob/master/auto-complete.js#L191
+    var selector = $("#search-by").get(0);
+    $(selector).focus(selector.focusHandler);
 });
