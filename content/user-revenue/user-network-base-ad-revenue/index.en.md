@@ -65,7 +65,7 @@ https:\//partners.admost.com/downloads/reports/userAdRevenue/c9e86d87-453e-0d9a-
 | LaunchedAt                 | User first session time ( UTC )            |
 | Network                    | Ad network                                 |
 | Country                    | User country                               |
-| IDFA                       | User idfa id                               |
+| IDFA                       | User device id (android/ios)               |
 | AdjustUserID               | User adjust device id                      |
 | AdRevenue                  | Network user revenue                       |
 | InterstitialImpCount       | Number of interstitials seen by user       |

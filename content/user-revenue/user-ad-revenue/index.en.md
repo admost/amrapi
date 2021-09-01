@@ -73,7 +73,7 @@ https:\//partners.admost.com/downloads/reports/userAdRevenue/c9e86d87-453e-0d9a-
 | UserID                       | Admost user id                                                                                                              |
 | LaunchedAt                   | User first session time ( UTC )                                                                                             |
 | Country                      | User country                                                                                                                |
-| IDFA                         | User idfa id                                                                                                                |
+| IDFA                         | User device id  (android/ios)                                                                                               |
 | AdjustUserID                 | User adjust device id                                                                                                       |
 | AdRevenue                    | User revenue                                                                                                                |
 | IAPRevenue                   | User in-app revenue                                                                                                         |
