@@ -8,7 +8,7 @@ description : "You can get user ad revenue information with ad network"
 
 - Download the report from the api response when ready.  
   
-    - If you are getting **404 response** status when trying to download the file. The file is not prepared yet. Please wait a while and try again.
+    - If you are getting **404 http status response** status when trying to download the file. The file is not prepared yet. Please wait a while and try again.
 
 - The download file name is generated with appID, date and timestamp
     - :appID:\_:date:\_bynetwork\_:timestamp:.tar.gz
@@ -18,6 +18,8 @@ description : "You can get user ad revenue information with ad network"
 
 - By default, when a request is made twice for the same day, it returns the previously created csv file. If you want to get a new file from the same day, you must use `create_new_file` parameter.
 
+- You can increase your match score using the `attribution_partner` parameter. With this parameter you can get attribution partner device id as `AttributionPartnerDeviceID` in csv file.
+
 - You can get the admost application id using by Admost [Publisher Applications API](https://admost.github.io/amrapi/publisher-app-api/)
 
 
@@ -26,24 +28,24 @@ description : "You can get user ad revenue information with ad network"
 
 `Method:` GET
 
-`URL:` https:\//partners.admost.com/v2/userAdRevenue
+`URL:` https:\//partners.admost.com/v3/adrevenue/networkbase
 
 #### Request Parameters:
 
-| Name            | Type   | Description                                       |
-| --------------- | ------ | ------------------------------------------------- |
-| date            | string | YYYY-MM-DD                                        |
-| app_id          | string | Application admost id                             |
-| report_type     | int    | Optional. Default value 1 ( 1 -  User Ad Revenue) |
-| create_new_file | int    | Optional. Default value false 0-> false, 1-> true |
+| Name                | Type   | Description                                                             |
+| ------------------- | ------ | ----------------------------------------------------------------------- |
+| date                | string | YYYY-MM-DD                                                              |
+| app_id              | string | Application admost id                                                   |
+| attribution_partner | string | Optional. Publisher attribution partner name. values: adjust, appsflyer |
+| create_new_file     | int    | Optional. Default value false 0-> false, 1-> true                       |
 
 #### Request Example URL:
 
-https:\//partners.admost.com/v2/userAdRevenue?app_id={application_id}&date={date}
+https:\//partners.admost.com/v3/adrevenue/networkbase?app_id={application_id}&date={date}
 
 #### Response Example URL:
 
-https:\//partners.admost.com/downloads/reports/userAdRevenue/c9e86d87-453e-0d9a-3d00-56adc9ec4dc3_bynetwork_1554291219.tar.gz
+https:\//partners.admost.com/download/report/c9e86d87-453e-0d9a-3d00-56adc9ec4dc3_bynetwork_1554291219.tar.gz
 
 #### Response Status Codes:
 
@@ -59,18 +61,20 @@ https:\//partners.admost.com/downloads/reports/userAdRevenue/c9e86d87-453e-0d9a-
 
 - The report is generated with columns titles.
 
-| Name                       | Description                                |
-| -------------------------- | ------------------------------------------ |
-| UserID                     | Admost user id                             |
-| LaunchedAt                 | User first session time ( UTC )            |
-| Network                    | Ad network                                 |
-| Country                    | User country                               |
-| IDFA                       | User device id (android/ios)               |
-| AdjustUserID               | User adjust device id                      |
-| AdRevenue                  | Network user revenue                       |
-| InterstitialImpCount       | Number of interstitials seen by user       |
-| RewardedImpCount           | Number of rewarded seen by user            |
-| OfferwallImpCount          | Number of offerwall seen by user           |
-| NativeInterstitialImpCount | Number of native interstitial seen by user |
-| BannerImpCount             | Number of banner seen by user              |
-| NativeImpCount             | Number of native banner seen by user       |
+| Name                       | Description                                         |
+| -------------------------- | --------------------------------------------------- |
+| UserID                     | Admost user id                                      |
+| LaunchedAt                 | User first session time ( UTC )                     |
+| Network                    | Ad network                                          |
+| Country                    | User country                                        |
+| IDFA                       | User resettable advertising ID found on iOS devices |
+| IDFV                       | Vendor ID provided by iOS                           |
+| GAID                       | Google Advertising ID.                              |
+| AttributionPartnerDeviceID | A unique ID generated by attribution partner SDK    |
+| AdRevenue                  | Network user revenue                                |
+| InterstitialImpCount       | Number of interstitials seen by user                |
+| RewardedImpCount           | Number of rewarded seen by user                     |
+| OfferwallImpCount          | Number of offerwall seen by user                    |
+| NativeInterstitialImpCount | Number of native interstitial seen by user          |
+| BannerImpCount             | Number of banner seen by user                       |
+| NativeImpCount             | Number of native banner seen by user                |
