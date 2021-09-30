@@ -8,7 +8,7 @@ description : "You can get user ad revenue information with ad network"
 
 - Download the report from the api response when ready.  
   
-    - If you are getting **404 http status response** status when trying to download the file. The file is not prepared yet. Please wait a while and try again.
+    - If you are getting **404 http response status** when trying to download the file. The file is not prepared yet. Please wait a while and try again.
 
 - The download file name is generated with appID, date and timestamp
     - :appID:\_:date:\_bynetwork\_:timestamp:.tar.gz

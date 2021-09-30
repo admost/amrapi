@@ -14,7 +14,7 @@
       
       <guid>/amrapi/user-revenue/user-ad-revenue/</guid>
       <description>Download the report from the api response when ready.
- If you are getting 404 http status response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The download file name is generated with appID, date and timestamp
+ If you are getting 404 http response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The download file name is generated with appID, date and timestamp
  :appID:_:date:_:timestamp:.tar.gz Extracted file format: csv    Allows only a request per minute per application id</description>
     </item>
     
@@ -25,7 +25,7 @@
       
       <guid>/amrapi/user-revenue/user-network-base-ad-revenue/</guid>
       <description>Download the report from the api response when ready.
- If you are getting 404 http status response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The download file name is generated with appID, date and timestamp
+ If you are getting 404 http response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The download file name is generated with appID, date and timestamp
  :appID:_:date:_bynetwork_:timestamp:.tar.gz Extracted file format: csv    Allows only a request per minute per application id</description>
     </item>
     
