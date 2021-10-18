@@ -8,7 +8,7 @@ description : "Publisher's application informations. application id, application
 
 - Publisher's application informations
   
-`URL` : https:\//partners.admost.com/v1/apps?key=[key]
+`URL` : https:\//partners.admost.com/v3/apps?key=[key]
 
 `METHOD` : **GET**
 
