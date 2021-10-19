@@ -6,7 +6,9 @@ pre: "<b>5. </b>"
 description : "Tells how to use admost server to server validation in rewarded videos"
 ---
 
-For this integration, you should active some s2s settings on admost dashboard.
+With this integration, you can be sure whether the user is watching a rewarded video or not. In case of watching the rewarded video successfully, a callback is made to the publisher url.
+
+You should active some s2s settings on admost dashboard.
 
 * Add your endpoint and generate customer s2s verification token.
   * My Apps -> Edit App 
