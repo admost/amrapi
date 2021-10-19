@@ -12,11 +12,11 @@ For this integration, you should active some s2s settings on admost dashboard.
   * My Apps -> Edit App 
 
     ![s2sMyAppEnableS2s](/amrapi/images/s2sMyAppEnableS2s.png?classes=shadow&width=10pc)
-    ![s2sRewardedEndpointAndVerifier](/amrapi/images/s2sRewardedEndpointAndVerifier.png?classes=shadow&width=10pc)
+    ![s2sRewardedEndpointAndVerifier](/amrapi/images/s2sRewardedEndpointAndVerifier.png?classes=shadow&width=20pc)
 
   * Activate s2s from Rewarded zone
 
-    ![s2sRewardedZoneEdit](/amrapi/images/s2sRewardedZoneEdit.png?classes=shadow&width=10pc)
+    ![s2sRewardedZoneEdit](/amrapi/images/s2sRewardedZoneEdit.png?classes=shadow&width=20pc)
     ![S2sZoneEdit](/amrapi/images/S2sZoneEdit.png?classes=shadow&width=10pc)
 
 
