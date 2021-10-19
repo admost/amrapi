@@ -4,25 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.87.0" />
-    <meta name="description" content="Tells how to use admost server to server validation in rewarded or offerwall videos">
+    <meta name="description" content="Tells how to use admost server to server validation in rewarded videos">
 <meta name="author" content="Gokhan MANKARA">
 
     <link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
     <title>Server to Server Rewarded Structure :: Documentation for Admost API Services</title>
 
     
-    <link href="/amrapi/css/nucleus.css?1634550881" rel="stylesheet">
-    <link href="/amrapi/css/fontawesome-all.min.css?1634550881" rel="stylesheet">
-    <link href="/amrapi/css/featherlight.min.css?1634550881" rel="stylesheet">
-    <link href="/amrapi/css/perfect-scrollbar.min.css?1634550881" rel="stylesheet">
-    <link href="/amrapi/css/auto-complete.css?1634550881" rel="stylesheet">
-    <link href="/amrapi/css/theme.css?1634550881" rel="stylesheet">
-    <link href="/amrapi/css/tabs.css?1634550881" rel="stylesheet">
-    <link href="/amrapi/css/hugo-theme.css?1634550881" rel="stylesheet">
+    <link href="/amrapi/css/nucleus.css?1634632636" rel="stylesheet">
+    <link href="/amrapi/css/fontawesome-all.min.css?1634632636" rel="stylesheet">
+    <link href="/amrapi/css/featherlight.min.css?1634632636" rel="stylesheet">
+    <link href="/amrapi/css/perfect-scrollbar.min.css?1634632636" rel="stylesheet">
+    <link href="/amrapi/css/auto-complete.css?1634632636" rel="stylesheet">
+    <link href="/amrapi/css/theme.css?1634632636" rel="stylesheet">
+    <link href="/amrapi/css/tabs.css?1634632636" rel="stylesheet">
+    <link href="/amrapi/css/hugo-theme.css?1634632636" rel="stylesheet">
     
     
 
-    <script src="/amrapi/js/jquery.min.js?1634550881"></script>
+    <script src="/amrapi/js/jquery.min.js?1634632636"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -582,8 +582,8 @@ Cohort Analysis API
       <ul>
         <li><a href="#parameters">Parameters</a></li>
         <li><a href="#s2s-callback-verification">S2S callback verification</a></li>
-        <li><a href="#callback-sample">Callback Sample</a></li>
-        <li><a href="#expected-response-codes-by-request">Expected Response Codes by Request</a></li>
+        <li><a href="#callback-sample">Callback sample</a></li>
+        <li><a href="#expected-response-codes-by-request-from-publisher-endpoint">Expected response codes by request from publisher endpoint</a></li>
       </ul>
     </li>
   </ul>
@@ -611,8 +611,25 @@ Cohort Analysis API
 
 
 
-    <p><code>Publisher URL:</code> Callback URL identified by the publisher.</p>
-<p><code>Method:</code> you must have the capacity to receive GET syntax requests to a valid endpoint</p>
+    <p>For this integration, you should active some s2s settings on admost dashboard.</p>
+<ul>
+<li>Add your endpoint and generate customer s2s verification token.
+<ul>
+<li>
+<p>My Apps -&gt; Edit App</p>
+<p><img src="/amrapi/images/s2sMyAppEnableS2s.png?classes=shadow&amp;width=10pc" alt="s2sMyAppEnableS2s">
+<img src="/amrapi/images/s2sRewardedEndpointAndVerifier.png?classes=shadow&amp;width=10pc" alt="s2sRewardedEndpointAndVerifier"></p>
+</li>
+<li>
+<p>Activate s2s from Rewarded zone</p>
+<p><img src="/amrapi/images/s2sRewardedZoneEdit.png?classes=shadow&amp;width=10pc" alt="s2sRewardedZoneEdit">
+<img src="/amrapi/images/S2sZoneEdit.png?classes=shadow&amp;width=10pc" alt="S2sZoneEdit"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><code>Publisher URL:</code> Callback URL identified by the publisher on admost dashboard.</p>
+<p><code>Publisher Method:</code> You must have the capacity to receive GET request for your endpoint</p>
 <h3 id="parameters">Parameters</h3>
 <table>
 <thead>
@@ -644,7 +661,7 @@ Cohort Analysis API
 </tr>
 <tr>
 <td>custom_data</td>
-<td>It’s not required. Query string typed, will be sent url encoded. Custom information that is set when the users watched rewarded video. <code>Must be set with the corresponding method at SDK side</code></td>
+<td>It’s not required. Query string typed, will be sent url encoded. Custom information that is set when the users watched rewarded video. <code>Must be set with the corresponding method at SDK side</code> <a href="https://admost.github.io/amrandroid/#sscallbacks">android sdk method</a> / <a href="https://admost.github.io/amrios/#sscallbacks">ios sdk method</a></td>
 </tr>
 <tr>
 <td>event_id</td>
@@ -660,7 +677,7 @@ Cohort Analysis API
 </tr>
 <tr>
 <td>activity_kind</td>
-<td>Ad network activity type. Rewarded or offerwall</td>
+<td>Ad network activity type. Rewarded</td>
 </tr>
 </tbody>
 </table>
@@ -669,10 +686,10 @@ Cohort Analysis API
 <li>Calculation of the md5 hash verifier</li>
 </ul>
 <p>verifier = md5(app_id + app_user_id + currency + event_id + network + reward + created_at + customer_S2S_Verifier)</p>
-<p><code>customer_S2S_Verifier:</code> The secret token identified by Admost</p>
-<h3 id="callback-sample">Callback Sample</h3>
+<p><code>customer_S2S_Verifier:</code> The secret token. You can generate token on admost dashboard.</p>
+<h3 id="callback-sample">Callback sample</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">http://publisher.doman.com?app_id=c9e86d87-453e-0d9a-3d00-56adc9ec4dc3&amp;app_user_id=00054aee-2021-38fd-db3f-053403ad937a&amp;created_at=1552308270&amp;currency=Coin&amp;custom_data=rewarded%3Dlobby&amp;event_id=855912E3-7637-4359-9461-81C41492AF08&amp;network=applovin&amp;reward=3&amp;verifier=d3721f221c163890f90742b5c2d710e9&amp;activity_kind=rewarded
-</code></pre></div><h3 id="expected-response-codes-by-request">Expected Response Codes by Request</h3>
+</code></pre></div><h3 id="expected-response-codes-by-request-from-publisher-endpoint">Expected response codes by request from publisher endpoint</h3>
 <table>
 <thead>
 <tr>
@@ -1219,16 +1236,16 @@ Cohort Analysis API
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/amrapi/js/clipboard.min.js?1634550881"></script>
-    <script src="/amrapi/js/perfect-scrollbar.min.js?1634550881"></script>
-    <script src="/amrapi/js/perfect-scrollbar.jquery.min.js?1634550881"></script>
-    <script src="/amrapi/js/jquery.sticky.js?1634550881"></script>
-    <script src="/amrapi/js/jquery.svg.pan.zoom.js?1634550881"></script>
-    <script src="/amrapi/js/featherlight.min.js?1634550881"></script>
-    <script src="/amrapi/js/modernizr.custom-3.6.0.js?1634550881"></script>
+    <script src="/amrapi/js/clipboard.min.js?1634632636"></script>
+    <script src="/amrapi/js/perfect-scrollbar.min.js?1634632636"></script>
+    <script src="/amrapi/js/perfect-scrollbar.jquery.min.js?1634632636"></script>
+    <script src="/amrapi/js/jquery.sticky.js?1634632636"></script>
+    <script src="/amrapi/js/jquery.svg.pan.zoom.js?1634632636"></script>
+    <script src="/amrapi/js/featherlight.min.js?1634632636"></script>
+    <script src="/amrapi/js/modernizr.custom-3.6.0.js?1634632636"></script>
     
         
-            <script src="/amrapi/js/mermaid.min.js?1634550881"></script>
+            <script src="/amrapi/js/mermaid.min.js?1634632636"></script>
         
         
             
@@ -1239,7 +1256,7 @@ Cohort Analysis API
             }
         </script>
     
-    <script src="/amrapi/js/relearn.js?1634550881"></script>
+    <script src="/amrapi/js/relearn.js?1634632636"></script>
     
 
   </body>
