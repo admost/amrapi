@@ -63,7 +63,9 @@ We need the APP token of the application and API token
 - It is enough to use the csv definitions below. Just copy and paste
 
 ```text
-{idfa||gps_adid},{idfv},{adid},{tracker},{tracker_name},{app_name},{activity_kind},{created_at},{installed_at},{installed_at_hour},{conversion_duration},{cost_type},{cost_amount},{cost_currency},{nonce},{reporting_cost},{match_type},{network_name},{campaign_name},{adgroup_name},{creative_name},{is_organic},{country},{city},{os_name},{mac_md5},{device_name},{device_type},{device_manufacturer},{ip_address},{fb_campaign_id},{fb_campaign_group_id},{fb_adgroup_id},{store}
+{idfa||gps_adid},{idfv},{adid},{tracker},{tracker_name},{app_name},{activity_kind},{created_at},{installed_at},{installed_at_hour},{conversion_duration},{cost_type},{cost_amount},{cost_currency},{nonce},{reporting_cost},{match_type},{network_name},{campaign_name},{adgroup_name},{creative_name},{is_organic},{country},{city},{os_name},{mac_md5},{device_name},{device_type},{device_manufacturer},{ip_address},{fb_campaign_id},{fb_campaign_group_id},{fb_adgroup_id},{store},{fb_install_referrer}, {fb_install_referrer_ad_id}, {fb_install_referrer_adgroup_id}, {fb_install_referrer_adgroup_name},
+{fb_install_referrer_campaign_id}, {fb_install_referrer_campaign_name}, {fb_install_referrer_campaign_group_id}, 
+{fb_install_referrer_campaign_group_name}, {fb_install_referrer_account_id}, {fb_install_referrer_ad_objective_name}
 ```
 
 ### Adjust Partner Terms&Conditions Settings
@@ -73,6 +75,14 @@ If you have an UA from one of these adjust partners, you have to accept terms&co
 {{% /notice %}}
 
 ##### 1. Facebook Terms&Conditions
+
+{{% notice warning %}}
+Facebook announced plans to deprecate the current iteration of the Advanced Mobile Measurement (AMM) program that Facebook has with Adjust and other MMPs. On October 29, 2021, access to AMM data will be removed from adjust reporting interfaces such that only aggregated data will be available.
+
+Campaign metadata is appended to the Install Referrer in an encrypted format. To read the metadata, you need to use a Facebook-provided [decryption key](https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution) for your app.
+
+For more details, please check [adjust help page document](https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution)
+{{% /notice %}}
 
  * make sure sign the facebook terms and conditions 
 
