@@ -77,6 +77,9 @@ If you have an UA from one of these adjust partners, you have to accept terms&co
 {{% notice warning %}}
 Facebook announced plans to deprecate the current iteration of the Advanced Mobile Measurement (AMM) program that Facebook has with Adjust and other MMPs. On October 29, 2021, access to AMM data will be removed from adjust reporting interfaces such that only aggregated data will be available.
 
+
+To receive FB campaign traffic information in the future, please make sure that you have integrated the following SDK parts into your Android application.
+
 Campaign metadata is appended to the Install Referrer in an encrypted format. To read the metadata, you need to use a Facebook-provided [decryption key](https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution) for your app.
 
 For more details, please check [adjust help page document](https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution)
