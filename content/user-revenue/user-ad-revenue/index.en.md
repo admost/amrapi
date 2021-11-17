@@ -97,9 +97,9 @@ https:\//partners.admost.com/download/report/c9e86d87-453e-0d9a-3d00-56adc9ec4dc
 | CampaignName                 | Campaign name if exists                                                                                                     |
 | CampaignAdgroup              | Campaign adgroup if exists                                                                                                  |
 | CampaignCreative             | Campaign creative if exists                                                                                                 |
-| AppVersion                   | Application version if exists                                                                                               |
-| AdmostSDKVersion             | Admost SDK Version in application if exists                                                                                 |
-| OSVersion                    | User's device OS version if exists                                                                                          |
-| DeviceBrand                  | User's device brand if exists                                                                                               |
-| DeviceModel                  | User's device model if exists                                                                                               |
-| DeviceType                   | User's device type if exists                                                                                                |
+| AppVersion                   | Application version                                                                                                         |
+| AdmostSDKVersion             | Admost SDK Version in application                                                                                           |
+| OSVersion                    | User's device OS version                                                                                                    |
+| DeviceBrand                  | User's device brand                                                                                                         |
+| DeviceModel                  | User's device model                                                                                                         |
+| DeviceType                   | User's device type                                                                                                          |
