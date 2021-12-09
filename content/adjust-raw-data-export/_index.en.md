@@ -55,9 +55,9 @@ We need the APP token of the application and API token
 ![Adjust CSV Upload Settings](/amrapi/images/adjust-csv-upload.png?classes=shadow&width=20pc)
 
 **3. Select Events for Export:** 
-- select install and updated attribution events
+- select install, reattribution and updated attribution events
 
-![Adjust Select Event for Export](/amrapi/images/adjust-events-for-export.png?classes=shadow)
+![Adjust Select Event for Export](/amrapi/images/adjust-events-for-export1.png?classes=shadow)
 
 **4. Add CSV Definition:**
 - It is enough to use the csv definitions below. Just copy and paste
