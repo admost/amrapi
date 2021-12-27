@@ -11,18 +11,18 @@
     <title>Adjust Raw Data Integration :: Documentation for Admost API Services</title>
 
     
-    <link href="/amrapi/css/nucleus.css?1639063811" rel="stylesheet">
-    <link href="/amrapi/css/fontawesome-all.min.css?1639063811" rel="stylesheet">
-    <link href="/amrapi/css/featherlight.min.css?1639063811" rel="stylesheet">
-    <link href="/amrapi/css/perfect-scrollbar.min.css?1639063811" rel="stylesheet">
-    <link href="/amrapi/css/auto-complete.css?1639063811" rel="stylesheet">
-    <link href="/amrapi/css/theme.css?1639063811" rel="stylesheet">
-    <link href="/amrapi/css/tabs.css?1639063811" rel="stylesheet">
-    <link href="/amrapi/css/hugo-theme.css?1639063811" rel="stylesheet">
+    <link href="/amrapi/css/nucleus.css?1640592987" rel="stylesheet">
+    <link href="/amrapi/css/fontawesome-all.min.css?1640592987" rel="stylesheet">
+    <link href="/amrapi/css/featherlight.min.css?1640592987" rel="stylesheet">
+    <link href="/amrapi/css/perfect-scrollbar.min.css?1640592987" rel="stylesheet">
+    <link href="/amrapi/css/auto-complete.css?1640592987" rel="stylesheet">
+    <link href="/amrapi/css/theme.css?1640592987" rel="stylesheet">
+    <link href="/amrapi/css/tabs.css?1640592987" rel="stylesheet">
+    <link href="/amrapi/css/hugo-theme.css?1640592987" rel="stylesheet">
     
     
 
-    <script src="/amrapi/js/jquery.min.js?1639063811"></script>
+    <script src="/amrapi/js/jquery.min.js?1640592987"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -621,6 +621,31 @@ Cohort Analysis API
 
 <p>With this integration, we&rsquo;ll able to get paid campaign installs from Adjust.
 We need the APP token of the application and API token</p>
+
+
+
+<div class="notices warning">
+    <div class="label">Warning</div>
+    <p>### Facebook Campaigns
+On October 29th 2021, Facebook deprecated their Advanced Mobile Measurement (AMM) program. This means that Facebook Marketing Partners and advertisers may not receive device-level campaign data for any iOS users attributed to Facebook, and only partial data for Android users. This is enforced regardless of the user&rsquo;s ATT status.</p>
+<p>For IOS apps:</p>
+<ul>
+<li>We can not get anymore ios FB campaigns</li>
+</ul>
+<p>For ANDROID apps:</p>
+<ul>
+<li>You have to do some extra integration steps</li>
+</ul>
+<ol>
+<li>Set up install referrer
+<a href="https://help.adjust.com/en/article/get-started-android-sdk#set-up-install-referrer">https://help.adjust.com/en/article/get-started-android-sdk#set-up-install-referrer</a></li>
+<li>Campaign metadata is appended to the Install Referrer in an encrypted format. To read the metadata, you need to use a Facebook-provided <a href="https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution">decryption key</a> for your app.</li>
+<li>Add <code>{fb_install_referrer}</code> csv definition if not exist on adjust dashboard -&gt; app all settings -&gt; raw data export -&gt; csv upload -&gt; CSV DEFINITION</li>
+</ol>
+<p>For more details, please check <a href="https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution">adjust help page document</a></p>
+
+</div>
+
 <h3 id="app-token-and-api-token-settings">APP token and API token Settings</h3>
 <p><strong>1. Get API Token from Adjust Dashboard Menu</strong></p>
 <ul>
@@ -672,24 +697,6 @@ We need the APP token of the application and API token</p>
 
 </div>
 
-<h5 id="1-facebook-termsconditions">1. Facebook Terms&amp;Conditions</h5>
-
-
-
-<div class="notices warning">
-    <div class="label">Warning</div>
-    <p>Facebook announced plans to deprecate the current iteration of the Advanced Mobile Measurement (AMM) program that Facebook has with Adjust and other MMPs. On October 29, 2021, access to AMM data will be removed from adjust reporting interfaces such that only aggregated data will be available.</p>
-<p>To receive FB campaign traffic information in the future, please make sure that you have integrated the following SDK parts into your Android application.</p>
-<p><a href="https://github.com/adjust/android_sdk#install-referrer">https://github.com/adjust/android_sdk#install-referrer</a></p>
-<p>Campaign metadata is appended to the Install Referrer in an encrypted format. To read the metadata, you need to use a Facebook-provided <a href="https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution">decryption key</a> for your app.</p>
-<p>For more details, please check <a href="https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution">adjust help page document</a></p>
-
-</div>
-
-<ul>
-<li>make sure sign the facebook terms and conditions</li>
-</ul>
-<p><img src="/amrapi/images/facebook-terms.png?classes=shadow" alt="Facebook Terms"></p>
 <h5 id="2-twitter-termsconditions">2. Twitter Terms&amp;Conditions</h5>
 <p>Ask your twitter account manager to enable the data access between your account and Adjust in Twitter’s AMM Program</p>
 <ul>
@@ -1201,16 +1208,16 @@ We need the APP token of the application and API token</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/amrapi/js/clipboard.min.js?1639063811"></script>
-    <script src="/amrapi/js/perfect-scrollbar.min.js?1639063811"></script>
-    <script src="/amrapi/js/perfect-scrollbar.jquery.min.js?1639063811"></script>
-    <script src="/amrapi/js/jquery.sticky.js?1639063811"></script>
-    <script src="/amrapi/js/jquery.svg.pan.zoom.js?1639063811"></script>
-    <script src="/amrapi/js/featherlight.min.js?1639063811"></script>
-    <script src="/amrapi/js/modernizr.custom-3.6.0.js?1639063811"></script>
+    <script src="/amrapi/js/clipboard.min.js?1640592987"></script>
+    <script src="/amrapi/js/perfect-scrollbar.min.js?1640592987"></script>
+    <script src="/amrapi/js/perfect-scrollbar.jquery.min.js?1640592987"></script>
+    <script src="/amrapi/js/jquery.sticky.js?1640592987"></script>
+    <script src="/amrapi/js/jquery.svg.pan.zoom.js?1640592987"></script>
+    <script src="/amrapi/js/featherlight.min.js?1640592987"></script>
+    <script src="/amrapi/js/modernizr.custom-3.6.0.js?1640592987"></script>
     
         
-            <script src="/amrapi/js/mermaid.min.js?1639063811"></script>
+            <script src="/amrapi/js/mermaid.min.js?1640592987"></script>
         
         
             
@@ -1221,7 +1228,7 @@ We need the APP token of the application and API token</p>
             }
         </script>
     
-    <script src="/amrapi/js/relearn.js?1639063811"></script>
+    <script src="/amrapi/js/relearn.js?1640592987"></script>
     
 
   </body>

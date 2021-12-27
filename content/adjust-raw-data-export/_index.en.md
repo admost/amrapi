@@ -13,6 +13,24 @@ You can find Adjust SDK integration document on their [help page](https://help.a
 With this integration, we'll able to get paid campaign installs from Adjust.
 We need the APP token of the application and API token
 
+{{% notice warning %}}
+### Facebook Campaigns
+On October 29th 2021, Facebook deprecated their Advanced Mobile Measurement (AMM) program. This means that Facebook Marketing Partners and advertisers may not receive device-level campaign data for any iOS users attributed to Facebook, and only partial data for Android users. This is enforced regardless of the user's ATT status.
+
+For IOS apps:
+* We can not get anymore ios FB campaigns
+
+For ANDROID apps:
+* You have to do some extra integration steps
+
+1. Set up install referrer
+https://help.adjust.com/en/article/get-started-android-sdk#set-up-install-referrer
+2. Campaign metadata is appended to the Install Referrer in an encrypted format. To read the metadata, you need to use a Facebook-provided [decryption key](https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution) for your app.
+3. Add `{fb_install_referrer}` csv definition if not exist on adjust dashboard -> app all settings -> raw data export -> csv upload -> CSV DEFINITION
+
+For more details, please check [adjust help page document](https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution)
+{{% /notice %}}
+
 ### APP token and API token Settings
 
  **1. Get API Token from Adjust Dashboard Menu**
@@ -71,25 +89,6 @@ We need the APP token of the application and API token
 {{% notice warning %}}
 If you have an UA from one of these adjust partners, you have to accept terms&conditions. It is important for us to see the content of the campaign.
 {{% /notice %}}
-
-##### 1. Facebook Terms&Conditions
-
-{{% notice warning %}}
-Facebook announced plans to deprecate the current iteration of the Advanced Mobile Measurement (AMM) program that Facebook has with Adjust and other MMPs. On October 29, 2021, access to AMM data will be removed from adjust reporting interfaces such that only aggregated data will be available.
-
-
-To receive FB campaign traffic information in the future, please make sure that you have integrated the following SDK parts into your Android application.
-
-https://github.com/adjust/android_sdk#install-referrer
-
-Campaign metadata is appended to the Install Referrer in an encrypted format. To read the metadata, you need to use a Facebook-provided [decryption key](https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution) for your app.
-
-For more details, please check [adjust help page document](https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution)
-{{% /notice %}}
-
- * make sure sign the facebook terms and conditions 
-
-![Facebook Terms](/amrapi/images/facebook-terms.png?classes=shadow)
 
 ##### 2. Twitter Terms&Conditions
 
