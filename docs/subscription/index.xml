@@ -7,5 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/amrapi/subscription/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apple</title>
+      <link>/amrapi/subscription/apple/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/amrapi/subscription/apple/</guid>
+      <description> Get Shared Secret Tells how to get shared secret from apple store
+Server to Server Notifications Tells how to activate realtime notification
+ </description>
+    </item>
+    <item>
+      <title>Google</title>
+      <link>/amrapi/subscription/google/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/amrapi/subscription/google/</guid>
+      <description> Get Credential Tells how to get credential from google play
+Server to Server Notification Tells how to activate realtime notification in google play
+ </description>
+    </item>
   </channel>
 </rss>

@@ -8,26 +8,69 @@
     <language>en-US</language>
     <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/amrapi/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ad Revenue</title>
-      <link>/amrapi/user-revenue/user-ad-revenue/</link>
+      <title>User Ad Revenue</title>
+      <link>/amrapi/user-revenue/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/amrapi/user-revenue/user-ad-revenue/</guid>
-      <description>Download the report from the api response when ready.
- If you are getting 404 http response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The download file name is generated with appID, date and timestamp
- :appID:_:date:_:timestamp:.tar.gz Extracted file format: csv    Allows only a request per minute per application id</description>
+      <guid>/amrapi/user-revenue/</guid>
+      <description>User Ad Revenue Ad Revenue You can get user ad revenue information without ad network
+Network Base Ad Revenue You can get user ad revenue information with ad network
+ </description>
     </item>
-    
     <item>
-      <title>Network Base Ad Revenue</title>
-      <link>/amrapi/user-revenue/user-network-base-ad-revenue/</link>
-      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/amrapi/user-revenue/user-network-base-ad-revenue/</guid>
-      <description>Download the report from the api response when ready.
- If you are getting 404 http response status when trying to download the file. The file is not prepared yet. Please wait a while and try again.    The download file name is generated with appID, date and timestamp
- :appID:_:date:_bynetwork_:timestamp:.tar.gz Extracted file format: csv    Allows only a request per minute per application id</description>
+      <title>Publisher Applications</title>
+      <link>/amrapi/publisher-app-api/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/amrapi/publisher-app-api/</guid>
+      <description>Publisher&amp;rsquo;s application informations  URL : https://partners.admost.com/v3/apps?key=[key]
+METHOD : GET
+Request Parameters    Name Type Description     key string Publisher Token    Response    Name Description     app_id Admost Application ID   name Application Name   package_name Application bundle id/package name   platform (ios, android etc.)    Response Status Codes    Code Description     200 OK.</description>
     </item>
-    
+    <item>
+      <title>Adjust Raw Data Integration</title>
+      <link>/amrapi/adjust-raw-data-export/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/amrapi/adjust-raw-data-export/</guid>
+      <description>InfoYou can find Adjust SDK integration document on their help page.
+ With this integration, we&amp;rsquo;ll able to get paid campaign installs from Adjust. We need the APP token of the application and API token
+Warning### Facebook Campaigns On October 29th 2021, Facebook deprecated their Advanced Mobile Measurement (AMM) program. This means that Facebook Marketing Partners and advertisers may not receive device-level campaign data for any iOS users attributed to Facebook, and only partial data for Android users.</description>
+    </item>
+    <item>
+      <title>Subscription Settings</title>
+      <link>/amrapi/subscription/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/amrapi/subscription/</guid>
+      <description> Apple Tells how to get credential and activate realtime subscription notification in apple store
+Google Tells how to get credential and activate realtime subscription notification in google play
+ </description>
+    </item>
+    <item>
+      <title>Server to Server Rewarded Structure</title>
+      <link>/amrapi/server-to-server/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/amrapi/server-to-server/</guid>
+      <description>With this integration, you can be sure whether the user is watching a rewarded video or not. In case of watching the rewarded video successfully, a callback is made to the publisher url.
+You should active some s2s settings on admost dashboard.
+ Add your endpoint and generate customer s2s verification token.   My Apps -&amp;gt; Edit App
+  Activate s2s from Rewarded zone
+    Publisher URL: Callback URL identified by the publisher on admost dashboard.</description>
+    </item>
+    <item>
+      <title>Impression and Revenue API</title>
+      <link>/amrapi/impression-revenue/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>/amrapi/impression-revenue/</guid>
+      <description> Application&amp;rsquo;s placement and country base impression and revenue data  Endpoint: http://amr-api.admost.com/api/publisher/v1/reporting?apiKey=[apiKey]&amp;amp;startdate=[YYYY-MM-DD]&amp;amp;enddate=[YYYY-MM-DD]&amp;amp;app=[appid]
+METHOD : GET
+Request Parameters    Name Type Description     apiKey string Publisher&amp;rsquo;s token   startdate string Report start date   enddate string Report end date   appid string Admost application ID    Response    Name Description     AdNetwork Ad Network Name   AppName Application Name   AppType Application type android/ios   Placement Placement Name   CountryCode Country short code   Country Country Name   Impression Impression count   Revenue Revenue amount ($)   Date Which day the data belongs to    </description>
+    </item>
+    <item>
+      <title>Cohort Analysis API</title>
+      <link>/amrapi/cohort-analysis/</link>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>/amrapi/cohort-analysis/</guid>
+      <description>Endpoint: http://amr-api.admost.com/api/publisher/v1/cohort
+METHOD : POST
+Request Parameters    Name Type Description     apiKey string Publisher&amp;rsquo;s token   startdate string Start date (yyyy-MM-dd)   enddate string End date (yyyy-MM-dd)   groupBy string Comma seperated values (day, week, month, app, country, source, campaign, adgroup, creative, source_type, test)   apps string Filters app ids (comma seperated, can be found on Admost Dashboard -&amp;gt; My Apps)   appType string Filters app type (Allowed values (&amp;ldquo;android&amp;rdquo;,&amp;ldquo;ios&amp;rdquo;))   userType string Filters user type (Allowed values (&amp;ldquo;organic&amp;rdquo;,&amp;ldquo;paid&amp;rdquo;))   revenueType string Filters revenue type (Allowed values (&amp;ldquo;adRevenue&amp;rdquo;,&amp;ldquo;inAppPurchase&amp;rdquo;))   countries string Filters countries (comma seperated, ISO 3166-1 alpha-2 )   countryIn string Determines how the values of previous parameter is used, Allowed values (&amp;ldquo;in&amp;rdquo;,&amp;ldquo;notin&amp;rdquo;), &amp;ldquo;in&amp;rdquo; is default   sources string Filters sources (comma seperated)   sourceIn string Determines how the values of previous parameter is used, Allowed values (&amp;ldquo;in&amp;rdquo;,&amp;ldquo;notin&amp;rdquo;), &amp;ldquo;in&amp;rdquo; is default   campaigns string Filters campaigns (comma seperated)   adgroups string Filters adgroups (comma seperated)   creatives string Filters creatives (comma seperated)   tests string Filters A/B tests (comma seperated)   minCohortSize integer Filters cohort size which are greater than the value specified   revenueCostRatioDay integer Filters rows which has day N revenue/cost ratio greater or less than following parameter   revenueCostRatioPercent integer Filters rows which has day N revenue/cost ratio greater or less than specified %   revenueCostRatioType integer Allowed values(&amp;ldquo;min&amp;rdquo;,&amp;ldquo;max&amp;rdquo;)   retentionFilterDay string Filters rows which has day N retention greater or less than following parameter   retentionFilterPercent integer Filters rows which has day N retention greater or less than specified %   retentionFilterType string Allowed values(&amp;ldquo;min&amp;rdquo;,&amp;ldquo;max&amp;rdquo;)   currency string Currency, ISO 4217 alpha-3, Default value USD   showExpected boolean Allowed values (true,false)   showAllDays boolean Allowed values (true,false)    Request Example curl --location --request POST &amp;#39;http://amr-api.</description>
+    </item>
   </channel>
 </rss>
