@@ -10,7 +10,7 @@ description : "You can see UA's user install information on the dashboard with a
 You can find Adjust SDK integration document on their [help page](https://help.adjust.com/en/sdk).
 {{% /notice %}}
 
-With this integration, we'll able to get paid campaign installs from Adjust.
+With this raw data export settings, we'll able to get paid campaign installs from Adjust.
 We need the APP token of the application and API token
 
 {{% notice warning %}}
@@ -22,7 +22,7 @@ For IOS apps:
 * We can not get anymore ios FB campaigns
 
 For ANDROID apps:
-* You have to do some extra integration steps
+* You have to do some extra steps
 
 1. Set up install referrer
 https://help.adjust.com/en/article/get-started-android-sdk#set-up-install-referrer
