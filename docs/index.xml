@@ -26,7 +26,7 @@ METHOD : GET
 Request Parameters    Name Type Description     key string Publisher Token    Response    Name Description     app_id Admost Application ID   name Application Name   package_name Application bundle id/package name   platform (ios, android etc.)    Response Status Codes    Code Description     200 OK.</description>
     </item>
     <item>
-      <title>Adjust Raw Data Integration</title>
+      <title>Adjust Raw Data Export Settings</title>
       <link>/amrapi/adjust-raw-data-export/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/amrapi/adjust-raw-data-export/</guid>

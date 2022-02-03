@@ -1,9 +1,9 @@
 ---
-title: Adjust Raw Data Integration
+title: Adjust Raw Data Export Settings
 date: 2020-09-08
 weight: 7
 pre: "<b>3. </b>"
-description : "You can see UA's user install information on the dashboard with adjust integration"
+description : "You can see UA's user install information on the dashboard with adjust raw data export settings"
 ---
 
 {{% notice info %}}
