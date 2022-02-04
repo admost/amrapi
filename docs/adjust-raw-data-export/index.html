@@ -11,14 +11,14 @@
     <meta name="author" content="Gokhan MANKARA">
     <link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
     <title>Adjust Raw Data Export Settings :: Documentation for Admost API Services</title>
-    <link href="/amrapi/css/nucleus.css?1643988306" rel="stylesheet">
-    <link href="/amrapi/css/fontawesome-all.min.css?1643988306" rel="stylesheet">
-    <link href="/amrapi/css/featherlight.min.css?1643988306" rel="stylesheet">
-    <link href="/amrapi/css/perfect-scrollbar.min.css?1643988306" rel="stylesheet">
-    <link href="/amrapi/css/auto-complete.css?1643988306" rel="stylesheet">
-    <link href="/amrapi/css/theme.css?1643988306" rel="stylesheet">
-    <link href="/amrapi/css/print.css?1643988306" rel="stylesheet" media="print">
-    <script src="/amrapi/js/jquery.min.js?1643988306"></script>
+    <link href="/amrapi/css/nucleus.css?1643988556" rel="stylesheet">
+    <link href="/amrapi/css/fontawesome-all.min.css?1643988556" rel="stylesheet">
+    <link href="/amrapi/css/featherlight.min.css?1643988556" rel="stylesheet">
+    <link href="/amrapi/css/perfect-scrollbar.min.css?1643988556" rel="stylesheet">
+    <link href="/amrapi/css/auto-complete.css?1643988556" rel="stylesheet">
+    <link href="/amrapi/css/theme.css?1643988556" rel="stylesheet">
+    <link href="/amrapi/css/print.css?1643988556" rel="stylesheet" media="print">
+    <script src="/amrapi/js/jquery.min.js?1643988556"></script>
     <style>
       :root #header + #content > #left > #rlblock_left{
         display:none !important;
@@ -149,15 +149,15 @@ check <a href="https://help.adjust.com/en/article/api-authentication">adjust hel
     <a class="expand-label" onclick="$t=$(this); if($t.parent('.expand-expanded.expand-marked').length){ $t.next().css('display','none') }else if($t.parent('.expand-marked').length){ $t.next().css('display','block') }else{ $t.next('.expand-content').slideToggle(100); } $t.parent().toggleClass('expand-expanded');">
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
-        For Admin Users
+        API Token for Admin Users
     </a>
     <div class="expand-content" style="display: none;">
-        <pre><code> * Open your Adjust dashboard.
- * Click on the menu icon in the top left to open the main menu.
- * Click on My Account.
- * In the Your Data tab that opens, find the User Details section. Click on the cog icon at the bottom of this segment to open the user details panel.
- * In the panel that opens, click on API Token. This opens the API token panel.
- * Copy your API token from the API Token panel.
+        <pre><code> - Open your Adjust dashboard.
+ - Click on the menu icon in the top left to open the main menu.
+ - Click on My Account.
+ - In the Your Data tab that opens, find the User Details section. Click on the cog icon at the bottom of this segment to open the user details panel.
+ - In the panel that opens, click on API Token. This opens the API token panel.
+ - Copy your API token from the API Token panel.
 </code></pre>
 
     </div>
@@ -168,15 +168,15 @@ check <a href="https://help.adjust.com/en/article/api-authentication">adjust hel
     <a class="expand-label" onclick="$t=$(this); if($t.parent('.expand-expanded.expand-marked').length){ $t.next().css('display','none') }else if($t.parent('.expand-marked').length){ $t.next().css('display','block') }else{ $t.next('.expand-content').slideToggle(100); } $t.parent().toggleClass('expand-expanded');">
         <i class="fas fa-chevron-down"></i>
         <i class="fas fa-chevron-right"></i>
-        Non-admin Users
+        API Token for Non-admin Users
     </a>
     <div class="expand-content" style="display: none;">
         <pre><code>**You have to give to user cost data access permission.**
- * Open your Adjust dashboard.
- * Click on the menu icon in the top left to open the main menu.
- * Click on My Profile to open the user details panel.
- * In the panel that opens, click on API Token. This opens the API token panel.
- * Copy your API token from the API Token panel.
+ - Open your Adjust dashboard.
+ - Click on the menu icon in the top left to open the main menu.
+ - Click on My Profile to open the user details panel.
+ - In the panel that opens, click on API Token. This opens the API token panel.
+ - Copy your API token from the API Token panel.
 </code></pre>
 
     </div>
@@ -242,18 +242,18 @@ check <a href="https://help.adjust.com/en/article/api-authentication">adjust hel
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/amrapi/js/clipboard.min.js?1643988306"></script>
-    <script src="/amrapi/js/perfect-scrollbar.min.js?1643988306"></script>
-    <script src="/amrapi/js/perfect-scrollbar.jquery.min.js?1643988306"></script>
-    <script src="/amrapi/js/jquery.svg.pan.zoom.js?1643988306"></script>
-    <script src="/amrapi/js/featherlight.min.js?1643988306"></script>
-    <script src="/amrapi/js/modernizr.custom-3.6.0.js?1643988306"></script>
-    <script src="/amrapi/js/mermaid.min.js?1643988306"></script>
+    <script src="/amrapi/js/clipboard.min.js?1643988556"></script>
+    <script src="/amrapi/js/perfect-scrollbar.min.js?1643988556"></script>
+    <script src="/amrapi/js/perfect-scrollbar.jquery.min.js?1643988556"></script>
+    <script src="/amrapi/js/jquery.svg.pan.zoom.js?1643988556"></script>
+    <script src="/amrapi/js/featherlight.min.js?1643988556"></script>
+    <script src="/amrapi/js/modernizr.custom-3.6.0.js?1643988556"></script>
+    <script src="/amrapi/js/mermaid.min.js?1643988556"></script>
     <script>
       if (typeof mermaid != 'undefined' && typeof mermaid.mermaidAPI != 'undefined') {
         mermaid.mermaidAPI.initialize( Object.assign( { "securityLevel": "antiscript" }, JSON.parse("{ \"startOnLoad\": true }"), { startOnLoad: false } ) );
       }
     </script>
-    <script src="/amrapi/js/relearn.js?1643988306"></script>
+    <script src="/amrapi/js/relearn.js?1643988556"></script>
   </body>
 </html>

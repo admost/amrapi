@@ -40,22 +40,22 @@ For more details, please check [adjust help page document](https://help.adjust.c
    - The Adjust APIs are available to all clients on a **Business Pro package or above**. For more details please 
       check [adjust help page document](https://help.adjust.com/en/article/api-authentication)
 
-    {{% expand "For Admin Users" "false" %}}    
-     * Open your Adjust dashboard.
-     * Click on the menu icon in the top left to open the main menu.
-     * Click on My Account.
-     * In the Your Data tab that opens, find the User Details section. Click on the cog icon at the bottom of this segment to open the user details panel.
-     * In the panel that opens, click on API Token. This opens the API token panel.
-     * Copy your API token from the API Token panel.
+    {{% expand "API Token for Admin Users" "false" %}}    
+     - Open your Adjust dashboard.
+     - Click on the menu icon in the top left to open the main menu.
+     - Click on My Account.
+     - In the Your Data tab that opens, find the User Details section. Click on the cog icon at the bottom of this segment to open the user details panel.
+     - In the panel that opens, click on API Token. This opens the API token panel.
+     - Copy your API token from the API Token panel.
     {{% /expand %}}
 
-    {{% expand "Non-admin Users" "false" %}}
+    {{% expand "API Token for Non-admin Users" "false" %}}
     **You have to give to user cost data access permission.**
-     * Open your Adjust dashboard.
-     * Click on the menu icon in the top left to open the main menu.
-     * Click on My Profile to open the user details panel.
-     * In the panel that opens, click on API Token. This opens the API token panel.
-     * Copy your API token from the API Token panel.
+     - Open your Adjust dashboard.
+     - Click on the menu icon in the top left to open the main menu.
+     - Click on My Profile to open the user details panel.
+     - In the panel that opens, click on API Token. This opens the API token panel.
+     - Copy your API token from the API Token panel.
     {{% /expand %}}
 
  **2. Add API Token to Adjust Settings in Admost Dashboard**
