@@ -37,25 +37,25 @@ For more details, please check [adjust help page document](https://help.adjust.c
  **1. Get API Token from Adjust Dashboard Menu**
 
  - Adjust Dashboard Menu -> My Account -> User Details
-   - The Adjust APIs are available to all clients on a Business Pro package or above. For more details please 
+   - The Adjust APIs are available to all clients on a **Business Pro package or above**. For more details please 
       check [adjust help page document](https://help.adjust.com/en/article/api-authentication)
 
     {{% expand "For Admin Users" "false" %}}    
      1. Open your Adjust dashboard.
-     2. Click on the menu icon in the top left to open the main menu.
-     3. Click on My Account.
-     4. In the Your Data tab that opens, find the User Details section. Click on the cog icon at the bottom of this segment to open the user details panel.
-     5. In the panel that opens, click on API Token. This opens the API token panel.
-     6. Copy your API token from the API Token panel.
+     1. Click on the menu icon in the top left to open the main menu.
+     1. Click on My Account.
+     1. In the Your Data tab that opens, find the User Details section. Click on the cog icon at the bottom of this segment to open the user details panel.
+     1. In the panel that opens, click on API Token. This opens the API token panel.
+     1. Copy your API token from the API Token panel.
     {{% /expand %}}
 
     {{% expand "Non-admin Users" "false" %}}
-    <strong>You have to give to user cost data access permission.</strong>
+    **You have to give to user cost data access permission.**
      1. Open your Adjust dashboard.
-     2. Click on the menu icon in the top left to open the main menu.
-     3. Click on My Profile to open the user details panel.
-     4. In the panel that opens, click on API Token. This opens the API token panel.
-     5. Copy your API token from the API Token panel.
+     1. Click on the menu icon in the top left to open the main menu.
+     1. Click on My Profile to open the user details panel.
+     1. In the panel that opens, click on API Token. This opens the API token panel.
+     1. Copy your API token from the API Token panel.
     {{% /expand %}}
 
  **2. Add API Token to Adjust Settings in Admost Dashboard**
