@@ -50,7 +50,7 @@ For more details, please check [adjust help page document](https://help.adjust.c
 {{% /expand %}}
 
 {{% expand "API Token for Non-admin Users" "false" %}}
-**For Non-admin Users, you have to give to user cost data access permission.**
+**For Non-admin users, you have to give to user cost data access permission.**
 1. Open your Adjust dashboard.
 1. Click on the menu icon in the top left to open the main menu.
 1. Click on My Profile to open the user details panel.
