@@ -36,7 +36,7 @@ WarningFacebook Campaigns
 On October 29th 2021, Facebook deprecated their Advanced Mobile Measurement (AMM) program. This means that Facebook Marketing Partners and advertisers may not receive device-level campaign data for any iOS users attributed to Facebook, and only partial data for Android users.</description>
     </item>
     <item>
-      <title>Subscription Settings</title>
+      <title>Service Subscription Credentials &amp; Settings</title>
       <link>/amrapi/subscription/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/amrapi/subscription/</guid>

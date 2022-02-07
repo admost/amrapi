@@ -1,5 +1,5 @@
 ---
-title: Subscription Settings
+title: Service Subscription Credentials & Settings
 date: 2020-09-08
 weight: 7
 pre: "<b>4. </b>"
