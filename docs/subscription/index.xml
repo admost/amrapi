@@ -25,5 +25,13 @@ Server to Server Notifications Tells how to activate realtime notification
 Server to Server Notification Tells how to activate realtime notification in google play
  </description>
     </item>
+    <item>
+      <title>Huawei</title>
+      <link>/amrapi/subscription/huawei/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/amrapi/subscription/huawei/</guid>
+      <description> Get app id and app secret Tells how to get your app&amp;#39;s app id and app secret from huawei developer console
+ </description>
+    </item>
   </channel>
 </rss>
