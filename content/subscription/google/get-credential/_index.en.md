@@ -98,7 +98,7 @@ In the Users and Permissions section, click on the service account and add your 
 
 ![Play App Permission](/amrapi/images/google_play_app_permission.png?chasses=shadow)
 
-![App Permission](/amrapi/images/google_play_permission_for_app.png?chasses=shadow&width=700px)
+![App Permission](/amrapi/images/google_play_permission_for_app2.png?chasses=shadow&width=700px)
 
 
 Hit save and you're done. 
