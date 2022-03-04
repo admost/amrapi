@@ -78,3 +78,9 @@ https:\//partners.admost.com/download/report/c9e86d87-453e-0d9a-3d00-56adc9ec4dc
 | NativeInterstitialImpCount | Number of native interstitial seen by user          |
 | BannerImpCount             | Number of banner seen by user                       |
 | NativeImpCount             | Number of native banner seen by user                |
+| InterstitialImpRevenue     | Interstitial Ad Revenue                             |
+| RewardedImpRevenue         | Rewarded Ad Revenue                                 |
+| OfferwallImpRevenue        | Offerwall Ad Revenue                                |
+| NativeInterstitialRevenue  | Native interstitial Ad Reveue                       |
+| BannerImpRevenue           | Banner Ad Revenue                                   |
+| NativeBannerImpRevenue     | Native Banner Ad Revenue                            |
