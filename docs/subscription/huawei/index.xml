@@ -15,5 +15,12 @@
       <description>Getting your app&amp;rsquo;s app id and app secret from huawei developer console App id and app secret allow Admost to connect with Huawei on your behalf.
  Log in to Huawei Developer Consol Navigate to &amp;ldquo;App Services&amp;rdquo; and click AppGalery Connect Click My Apps and select your app In App Information, you can see App ID and App Secret  </description>
     </item>
+    <item>
+      <title>Get app public key</title>
+      <link>/amrapi/subscription/huawei/get-pulickey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/amrapi/subscription/huawei/get-pulickey/</guid>
+      <description>Getting your app&amp;rsquo;s public key from huawei developer console  Log in to Huawei Developer Consol Navigate to &amp;ldquo;App Services&amp;rdquo; and click AppGalery Connect Click My Apps and select your app From All Services, click In-App Purchases  </description>
+    </item>
   </channel>
 </rss>

@@ -12,4 +12,4 @@ App id and app secret allow Admost to connect with Huawei on your behalf.
 3. Click My Apps and select your app
 4. In App Information, you can see App ID and App Secret
 
-![Apple Shared Secret](/amrapi/images/huawei_appID_appSecret.png?classes=shadow)
+![Huawei App id and app secret](/amrapi/images/huawei_appID_appSecret.png?classes=shadow)

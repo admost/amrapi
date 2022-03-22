@@ -59,6 +59,9 @@
     <loc>/amrapi/subscription/huawei/get-appid-appsecret/</loc>
   </url>
   <url>
+    <loc>/amrapi/subscription/huawei/get-pulickey/</loc>
+  </url>
+  <url>
     <loc>/amrapi/subscription/google/get-credential/</loc>
   </url>
   <url>
