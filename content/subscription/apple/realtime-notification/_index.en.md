@@ -9,5 +9,5 @@ description = "Tells how to activate realtime notification"
 
 `Admost Subscription Status URL:` **https:\//subscription.admost.com/v1/notification/ios**
 
-![IOSRealtimeNotification1](/amrapi/images/ios-v1-notification-1.png?classes=shadow&width=20pc)
-![IOSRealtimeNotification2](/amrapi/images/ios-v1-notification-2.png?classes=shadow&width=20pc)
+![IOSRealtimeNotification1](/amrapi/images/ios-v1-notification-1.png?classes=shadow&width=50pc)
+![IOSRealtimeNotification2](/amrapi/images/ios-v1-notification-2.png?classes=shadow&width=50pc)
