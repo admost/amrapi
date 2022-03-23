@@ -15,7 +15,7 @@ description : "You can get user ad revenue information without ad network"
 
 - Allows only a request per minute per application id
 
-- By default, when a request is made twice for the same day, it returns the previously created csv file. If you want to get a new file from the same day, you must use `create_new_file` parameter.
+- By default, when a request is made twice for the same day, it returns the previously created csv file.
 
 - If you are using attribution partner like Adjust/Appsflyer. You can increase your match score using the `attribution_partner` parameter. With this parameter you can get attribution partner device id as `AttributionPartnerDeviceID` in csv file.
 
@@ -36,7 +36,6 @@ description : "You can get user ad revenue information without ad network"
 | date                | string | YYYY-MM-DD                                                              |
 | app_id              | string | Application admost id                                                   |
 | attribution_partner | string | Optional. Publisher attribution partner name. values: adjust, appsflyer |
-| create_new_file     | int    | Optional. Default value false 0-> false, 1-> true                       |
 
 
 #### Request Example URL:
