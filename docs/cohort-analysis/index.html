@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta name="generator" content="Relearn 2.9.2
 ">
     <link rel="alternate" type="application/rss&#43;xml" href="/amrapi/cohort-analysis/index.xml" title="Documentation for Admost API Services" />
@@ -11,14 +11,14 @@
     <meta name="author" content="Gokhan MANKARA">
     <link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
     <title>Cohort Analysis API :: Documentation for Admost API Services</title>
-    <link href="/amrapi/css/nucleus.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/fontawesome-all.min.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/featherlight.min.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/perfect-scrollbar.min.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/auto-complete.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/theme.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/print.css?1648019946" rel="stylesheet" media="print">
-    <script src="/amrapi/js/jquery.min.js?1648019946"></script>
+    <link href="/amrapi/css/nucleus.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/fontawesome-all.min.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/featherlight.min.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/perfect-scrollbar.min.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/auto-complete.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/theme.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/print.css?1650358677" rel="stylesheet" media="print">
+    <script src="/amrapi/js/jquery.min.js?1650358677"></script>
     <style>
       :root #header + #content > #left > #rlblock_left{
         display:none !important;
@@ -252,156 +252,156 @@
 </tbody>
 </table>
 <h4 id="request-example">Request Example</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">curl --location --request POST &#39;http://amr-api.admost.com/api/publisher/v1/cohort&#39; \
---header &#39;Content-Type: application/json&#39; \
---data-raw &#39;{
-    &#34;apps&#34; : &#34;13236a79-3769-4de0-a8b2-bfedcb2ebc36,32a70329-1971-4934-81fc-c926710fec46&#34;,
-    &#34;apiKey&#34;:&#34;hdxpKfQmttuYK557GH2hWf1Lg2ad6c6b&#34;,
-    &#34;startDate&#34;:&#34;2021-04-01&#34;,
-    &#34;endDate&#34;:&#34;2021-04-07&#34;,
-    &#34;groupBy&#34;:&#34;day,app&#34;,
-    &#34;minCohortSize&#34; : 500,
-    &#34;showAllDays&#34; : true,
-    &#34;countries&#34; : &#34;US,UK&#34;
-}&#39;
-</code></pre></div><h4 id="response-example">Response Example</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-    <span style="color:#f92672">&#34;rows&#34;</span>: [
-        {
-            <span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;2021-04-01&#34;</span>,
-            <span style="color:#f92672">&#34;app&#34;</span>: <span style="color:#e6db74">&#34;13236a79-3769-4de0-a8b2-bfedcb2ebc36&#34;</span>,
-            <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">10</span>,
-            <span style="color:#f92672">&#34;cost&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-            <span style="color:#f92672">&#34;ecpi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-            <span style="color:#f92672">&#34;impression_ua&#34;</span>: <span style="color:#ae81ff">0</span>,
-            <span style="color:#f92672">&#34;ecpm_ua&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-            <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.4560423169992503</span>,
-            <span style="color:#f92672">&#34;profit&#34;</span>: <span style="color:#ae81ff">0.4560423169992503</span>,
-            <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-            <span style="color:#f92672">&#34;paying_users&#34;</span>: <span style="color:#ae81ff">0</span>,
-            <span style="color:#f92672">&#34;days&#34;</span>: [
-                {
-                    <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">10</span>,
-                    <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0053</span>,
-                    <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">100.0</span>,
-                    <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">10</span>,
-                    <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.053355720999409183</span>,
-                    <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-                    <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
-                    <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">10.0</span>,
-                    <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">30.0</span>,
-                    <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">0.2</span>,
-                    <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">2.5</span>,
-                    <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">0</span>
-                },
-                {
-                    <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">10</span>,
-                    <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0175</span>,
-                    <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">60.0</span>,
-                    <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">6</span>,
-                    <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.17509613351213407</span>,
-                    <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-                    <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
-                    <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">16.666666666666668</span>,
-                    <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">50.0</span>,
-                    <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">0.66666666666666663</span>,
-                    <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">5.666666666666667</span>,
-                    <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">1</span>
-                },
-                {
-                    <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">10</span>,
-                    <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0247</span>,
-                    <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">50.0</span>,
-                    <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">5</span>,
-                    <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.24746051454861129</span>,
-                    <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-                    <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
-                    <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">20.0</span>,
-                    <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">60.0</span>,
-                    <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">0.4</span>,
-                    <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">4.0</span>,
-                    <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">2</span>
-                },
-                {
-                    <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">10</span>,
-                    <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0273</span>,
-                    <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">40.0</span>,
-                    <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">4</span>,
-                    <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.272978108058449</span>,
-                    <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-                    <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
-                    <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-                    <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">50.0</span>,
-                    <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-                    <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">3.25</span>,
-                    <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">3</span>
-                }
-				<span style="color:#960050;background-color:#1e0010">...</span>
-            ]
-        },
-        {
-            <span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;2021-04-02&#34;</span>,
-            <span style="color:#f92672">&#34;app&#34;</span>: <span style="color:#e6db74">&#34;32a70329-1971-4934-81fc-c926710fec46&#34;</span>,
-            <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">9</span>,
-            <span style="color:#f92672">&#34;cost&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-            <span style="color:#f92672">&#34;ecpi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-            <span style="color:#f92672">&#34;impression_ua&#34;</span>: <span style="color:#ae81ff">0</span>,
-            <span style="color:#f92672">&#34;ecpm_ua&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-            <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.26141788889868828</span>,
-            <span style="color:#f92672">&#34;profit&#34;</span>: <span style="color:#ae81ff">0.26141788889868828</span>,
-            <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-            <span style="color:#f92672">&#34;paying_users&#34;</span>: <span style="color:#ae81ff">0</span>,
-            <span style="color:#f92672">&#34;days&#34;</span>: [
-                {
-				<span style="color:#960050;background-color:#1e0010">...</span>
-				}
-            ]
-        }
-    ],
-    <span style="color:#f92672">&#34;mean&#34;</span>: {
-        <span style="color:#f92672">&#34;install&#34;</span>: <span style="color:#ae81ff">73</span>,
-        <span style="color:#f92672">&#34;cost&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-        <span style="color:#f92672">&#34;ecpi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-        <span style="color:#f92672">&#34;impression_ua&#34;</span>: <span style="color:#ae81ff">0</span>,
-        <span style="color:#f92672">&#34;ecpm_ua&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-        <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">1.6675287341379905</span>,
-        <span style="color:#f92672">&#34;profit&#34;</span>: <span style="color:#ae81ff">1.6675287341379905</span>,
-        <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-        <span style="color:#f92672">&#34;paying_users&#34;</span>: <span style="color:#ae81ff">0</span>,
-        <span style="color:#f92672">&#34;days&#34;</span>: [
-            {
-                <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">73</span>,
-                <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0058</span>,
-                <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">100.0</span>,
-                <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">73</span>,
-                <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.41995835787414187</span>,
-                <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-                <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
-                <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">15.068493150684931</span>,
-                <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">27.397260273972602</span>,
-                <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">1.3561643835616439</span>,
-                <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">2.7123287671232879</span>,
-                <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">0</span>
-            },
-            {
-                <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">73</span>,
-                <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0132</span>,
-                <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">39.726027397260275</span>,
-                <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">29</span>,
-                <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.962708437683715</span>,
-                <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
-                <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
-                <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">41.379310344827587</span>,
-                <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">51.724137931034484</span>,
-                <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">1.1724137931034482</span>,
-                <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">7.9655172413793105</span>,
-                <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">1</span>
-            }
-			<span style="color:#960050;background-color:#1e0010">...</span>
-        ]
-    }
-}
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>curl --location --request POST &#39;http://amr-api.admost.com/api/publisher/v1/cohort&#39; \
+</span></span><span style="display:flex;"><span>--header &#39;Content-Type: application/json&#39; \
+</span></span><span style="display:flex;"><span>--data-raw &#39;{
+</span></span><span style="display:flex;"><span>    &#34;apps&#34; : &#34;13236a79-3769-4de0-a8b2-bfedcb2ebc36,32a70329-1971-4934-81fc-c926710fec46&#34;,
+</span></span><span style="display:flex;"><span>    &#34;apiKey&#34;:&#34;hdxpKfQmttuYK557GH2hWf1Lg2ad6c6b&#34;,
+</span></span><span style="display:flex;"><span>    &#34;startDate&#34;:&#34;2021-04-01&#34;,
+</span></span><span style="display:flex;"><span>    &#34;endDate&#34;:&#34;2021-04-07&#34;,
+</span></span><span style="display:flex;"><span>    &#34;groupBy&#34;:&#34;day,app&#34;,
+</span></span><span style="display:flex;"><span>    &#34;minCohortSize&#34; : 500,
+</span></span><span style="display:flex;"><span>    &#34;showAllDays&#34; : true,
+</span></span><span style="display:flex;"><span>    &#34;countries&#34; : &#34;US,UK&#34;
+</span></span><span style="display:flex;"><span>}&#39;
+</span></span></code></pre></div><h4 id="response-example">Response Example</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;rows&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;2021-04-01&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;app&#34;</span>: <span style="color:#e6db74">&#34;13236a79-3769-4de0-a8b2-bfedcb2ebc36&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;cost&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;ecpi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;impression_ua&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;ecpm_ua&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.4560423169992503</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;profit&#34;</span>: <span style="color:#ae81ff">0.4560423169992503</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;paying_users&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;days&#34;</span>: [
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0053</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">100.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.053355720999409183</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">10.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">30.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">0.2</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">2.5</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0175</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">60.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">6</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.17509613351213407</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">16.666666666666668</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">50.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">0.66666666666666663</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">5.666666666666667</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0247</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">50.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">5</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.24746051454861129</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">20.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">60.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">0.4</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">4.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0273</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">40.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">4</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.272978108058449</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">50.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">3.25</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>				<span style="color:#960050;background-color:#1e0010">...</span>
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;2021-04-02&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;app&#34;</span>: <span style="color:#e6db74">&#34;32a70329-1971-4934-81fc-c926710fec46&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">9</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;cost&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;ecpi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;impression_ua&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;ecpm_ua&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.26141788889868828</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;profit&#34;</span>: <span style="color:#ae81ff">0.26141788889868828</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;paying_users&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;days&#34;</span>: [
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>				<span style="color:#960050;background-color:#1e0010">...</span>
+</span></span><span style="display:flex;"><span>				}
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;mean&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;install&#34;</span>: <span style="color:#ae81ff">73</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;cost&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ecpi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;impression_ua&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ecpm_ua&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">1.6675287341379905</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;profit&#34;</span>: <span style="color:#ae81ff">1.6675287341379905</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;paying_users&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;days&#34;</span>: [
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">73</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0058</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">100.0</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">73</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.41995835787414187</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">15.068493150684931</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">27.397260273972602</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">1.3561643835616439</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">2.7123287671232879</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;install_count&#34;</span>: <span style="color:#ae81ff">73</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;arpu&#34;</span>: <span style="color:#ae81ff">0.0132</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;retention&#34;</span>: <span style="color:#ae81ff">39.726027397260275</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;user_count&#34;</span>: <span style="color:#ae81ff">29</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;revenue&#34;</span>: <span style="color:#ae81ff">0.962708437683715</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;roi&#34;</span>: <span style="color:#ae81ff">0.0</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;converted&#34;</span>: <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;rv_engagement&#34;</span>: <span style="color:#ae81ff">41.379310344827587</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;int_engagement&#34;</span>: <span style="color:#ae81ff">51.724137931034484</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;rv_imp_over_user&#34;</span>: <span style="color:#ae81ff">1.1724137931034482</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;int_imp_over_user&#34;</span>: <span style="color:#ae81ff">7.9655172413793105</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;day&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>			<span style="color:#960050;background-color:#1e0010">...</span>
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
           <footer class=" footline">
           </footer>
         </main>
@@ -412,18 +412,18 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/amrapi/js/clipboard.min.js?1648019946"></script>
-    <script src="/amrapi/js/perfect-scrollbar.min.js?1648019946"></script>
-    <script src="/amrapi/js/perfect-scrollbar.jquery.min.js?1648019946"></script>
-    <script src="/amrapi/js/jquery.svg.pan.zoom.js?1648019946"></script>
-    <script src="/amrapi/js/featherlight.min.js?1648019946"></script>
-    <script src="/amrapi/js/modernizr.custom-3.6.0.js?1648019946"></script>
-    <script src="/amrapi/js/mermaid.min.js?1648019946"></script>
+    <script src="/amrapi/js/clipboard.min.js?1650358677"></script>
+    <script src="/amrapi/js/perfect-scrollbar.min.js?1650358677"></script>
+    <script src="/amrapi/js/perfect-scrollbar.jquery.min.js?1650358677"></script>
+    <script src="/amrapi/js/jquery.svg.pan.zoom.js?1650358677"></script>
+    <script src="/amrapi/js/featherlight.min.js?1650358677"></script>
+    <script src="/amrapi/js/modernizr.custom-3.6.0.js?1650358677"></script>
+    <script src="/amrapi/js/mermaid.min.js?1650358677"></script>
     <script>
       if (typeof mermaid != 'undefined' && typeof mermaid.mermaidAPI != 'undefined') {
         mermaid.mermaidAPI.initialize( Object.assign( { "securityLevel": "antiscript" }, JSON.parse("{ \"startOnLoad\": true }"), { startOnLoad: false } ) );
       }
     </script>
-    <script src="/amrapi/js/relearn.js?1648019946"></script>
+    <script src="/amrapi/js/relearn.js?1650358677"></script>
   </body>
 </html>

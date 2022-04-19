@@ -14,7 +14,7 @@ With this raw data export settings, we'll able to get paid campaign installs fro
 We need the APP token of the application and API token
 
 {{% notice warning %}}
-**Facebook Campaigns**
+[**Facebook Campaigns**]({{ ref . "#facebook-campaigns" }})
 
 On October 29th 2021, Facebook deprecated their Advanced Mobile Measurement (AMM) program. This means that Facebook Marketing Partners and advertisers may not receive device-level campaign data for any iOS users attributed to Facebook, and only partial data for Android users. This is enforced regardless of the user's ATT status.
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta name="generator" content="Relearn 2.9.2
 ">
     <link rel="alternate" type="application/rss&#43;xml" href="/amrapi/adjust-raw-data-export/index.xml" title="Documentation for Admost API Services" />
@@ -11,14 +11,14 @@
     <meta name="author" content="Gokhan MANKARA">
     <link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
     <title>Adjust Raw Data Export Settings :: Documentation for Admost API Services</title>
-    <link href="/amrapi/css/nucleus.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/fontawesome-all.min.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/featherlight.min.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/perfect-scrollbar.min.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/auto-complete.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/theme.css?1648019946" rel="stylesheet">
-    <link href="/amrapi/css/print.css?1648019946" rel="stylesheet" media="print">
-    <script src="/amrapi/js/jquery.min.js?1648019946"></script>
+    <link href="/amrapi/css/nucleus.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/fontawesome-all.min.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/featherlight.min.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/perfect-scrollbar.min.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/auto-complete.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/theme.css?1650358677" rel="stylesheet">
+    <link href="/amrapi/css/print.css?1650358677" rel="stylesheet" media="print">
+    <script src="/amrapi/js/jquery.min.js?1650358677"></script>
     <style>
       :root #header + #content > #left > #rlblock_left{
         display:none !important;
@@ -118,7 +118,7 @@
 We need the APP token of the application and API token</p>
 
 <div class="notices warning">
-    <div class="label">Warning</div><p><strong>Facebook Campaigns</strong></p>
+    <div class="label">Warning</div><p>[<strong>Facebook Campaigns</strong>]({{ ref . &ldquo;#facebook-campaigns&rdquo; }})</p>
 <p>On October 29th 2021, Facebook deprecated their Advanced Mobile Measurement (AMM) program. This means that Facebook Marketing Partners and advertisers may not receive device-level campaign data for any iOS users attributed to Facebook, and only partial data for Android users. This is enforced regardless of the user&rsquo;s ATT status.</p>
 <p>For IOS apps:</p>
 <ul>
@@ -221,8 +221,8 @@ check <a href="https://help.adjust.com/en/article/api-authentication">adjust hel
 <ul>
 <li>It is enough to use the csv definitions below. Just copy and paste</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{idfa||gps_adid},{idfv},{adid},{tracker},{tracker_name},{app_name},{activity_kind},{created_at},{installed_at},{installed_at_hour},{conversion_duration},{cost_type},{cost_amount},{cost_currency},{nonce},{reporting_cost},{match_type},{network_name},{campaign_name},{adgroup_name},{creative_name},{is_organic},{country},{city},{os_name},{mac_md5},{device_name},{device_type},{device_manufacturer},{ip_address},{fb_campaign_id},{fb_campaign_group_id},{fb_adgroup_id},{store},{att_status},{fb_install_referrer}
-</code></pre></div><h3 id="adjust-partner-termsconditions-settings">Adjust Partner Terms&amp;Conditions Settings</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{idfa||gps_adid},{idfv},{adid},{tracker},{tracker_name},{app_name},{activity_kind},{created_at},{installed_at},{installed_at_hour},{conversion_duration},{cost_type},{cost_amount},{cost_currency},{nonce},{reporting_cost},{match_type},{network_name},{campaign_name},{adgroup_name},{creative_name},{is_organic},{country},{city},{os_name},{mac_md5},{device_name},{device_type},{device_manufacturer},{ip_address},{fb_campaign_id},{fb_campaign_group_id},{fb_adgroup_id},{store},{att_status},{fb_install_referrer}
+</span></span></code></pre></div><h3 id="adjust-partner-termsconditions-settings">Adjust Partner Terms&amp;Conditions Settings</h3>
 
 <div class="notices warning">
     <div class="label">Warning</div><p>If you have an UA from one of these adjust partners, you have to accept terms&amp;conditions. It is important for us to see the content of the campaign.</p>
@@ -246,18 +246,18 @@ check <a href="https://help.adjust.com/en/article/api-authentication">adjust hel
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/amrapi/js/clipboard.min.js?1648019946"></script>
-    <script src="/amrapi/js/perfect-scrollbar.min.js?1648019946"></script>
-    <script src="/amrapi/js/perfect-scrollbar.jquery.min.js?1648019946"></script>
-    <script src="/amrapi/js/jquery.svg.pan.zoom.js?1648019946"></script>
-    <script src="/amrapi/js/featherlight.min.js?1648019946"></script>
-    <script src="/amrapi/js/modernizr.custom-3.6.0.js?1648019946"></script>
-    <script src="/amrapi/js/mermaid.min.js?1648019946"></script>
+    <script src="/amrapi/js/clipboard.min.js?1650358677"></script>
+    <script src="/amrapi/js/perfect-scrollbar.min.js?1650358677"></script>
+    <script src="/amrapi/js/perfect-scrollbar.jquery.min.js?1650358677"></script>
+    <script src="/amrapi/js/jquery.svg.pan.zoom.js?1650358677"></script>
+    <script src="/amrapi/js/featherlight.min.js?1650358677"></script>
+    <script src="/amrapi/js/modernizr.custom-3.6.0.js?1650358677"></script>
+    <script src="/amrapi/js/mermaid.min.js?1650358677"></script>
     <script>
       if (typeof mermaid != 'undefined' && typeof mermaid.mermaidAPI != 'undefined') {
         mermaid.mermaidAPI.initialize( Object.assign( { "securityLevel": "antiscript" }, JSON.parse("{ \"startOnLoad\": true }"), { startOnLoad: false } ) );
       }
     </script>
-    <script src="/amrapi/js/relearn.js?1648019946"></script>
+    <script src="/amrapi/js/relearn.js?1650358677"></script>
   </body>
 </html>
