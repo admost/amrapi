@@ -32,7 +32,7 @@ Request Parameters    Name Type Description     key string Publisher Token    Re
       <guid>/amrapi/adjust-raw-data-export/</guid>
       <description>Info You can find Adjust SDK integration document on their help page.
   With this raw data export settings, we&amp;rsquo;ll able to get paid campaign installs from Adjust. We need the APP token of the application and API token
- Warning [Facebook Campaigns]({{ ref . &amp;ldquo;#facebook-campaigns&amp;rdquo; }})
+ Warning Facebook Campaigns
 On October 29th 2021, Facebook deprecated their Advanced Mobile Measurement (AMM) program. This means that Facebook Marketing Partners and advertisers may not receive device-level campaign data for any iOS users attributed to Facebook, and only partial data for Android users.</description>
     </item>
     <item>
