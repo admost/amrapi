@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.96.0" />
+    <meta name="generator" content="Hugo 0.98.0" />
     <meta name="generator" content="Relearn 3.4.1&#43;tip">
     <meta name="description" content="You can get user ad revenue information with ad network">
     <meta name="author" content="Gokhan MANKARA">
     <title>Network Base Ad Revenue :: Documentation for Admost API Services</title><link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
-    <link href="/amrapi/css/nucleus.css?1650463581" rel="stylesheet">
-    <link href="/amrapi/css/fontawesome-all.min.css?1650463581" rel="stylesheet">
-    <link href="/amrapi/css/featherlight.min.css?1650463581" rel="stylesheet">
-    <link href="/amrapi/css/perfect-scrollbar.min.css?1650463581" rel="stylesheet">
-    <link href="/amrapi/css/auto-complete.css?1650463581" rel="stylesheet">
-    <link href="/amrapi/css/theme.css?1650463581" rel="stylesheet">
-    <link href="/amrapi/css/theme-learn.css?1650463581" rel="stylesheet" id="variant-style">
-    <link href="/amrapi/css/variant.css?1650463581" rel="stylesheet">
-    <link href="/amrapi/css/print.css?1650463581" rel="stylesheet" media="print">
-    <script src="/amrapi/js/variant.js?1650463581"></script>
+    <link href="/amrapi/css/nucleus.css?1653820966" rel="stylesheet">
+    <link href="/amrapi/css/fontawesome-all.min.css?1653820966" rel="stylesheet">
+    <link href="/amrapi/css/featherlight.min.css?1653820966" rel="stylesheet">
+    <link href="/amrapi/css/perfect-scrollbar.min.css?1653820966" rel="stylesheet">
+    <link href="/amrapi/css/auto-complete.css?1653820966" rel="stylesheet">
+    <link href="/amrapi/css/theme.css?1653820966" rel="stylesheet">
+    <link href="/amrapi/css/theme-learn.css?1653820966" rel="stylesheet" id="variant-style">
+    <link href="/amrapi/css/variant.css?1653820966" rel="stylesheet">
+    <link href="/amrapi/css/print.css?1653820966" rel="stylesheet" media="print">
+    <script src="/amrapi/js/variant.js?1653820966"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -33,7 +33,7 @@
       var baseUriFull='amrapi/';
       variants.init( [ 'learn' ] );
     </script>
-    <script src="/amrapi/js/jquery.min.js?1650463581"></script>
+    <script src="/amrapi/js/jquery.min.js?1653820966"></script>
   </head>
   <body class="mobile-support" data-url="/amrapi/user-revenue/user-network-base-ad-revenue/">
     <div id="body" class="default-animation">
@@ -93,7 +93,7 @@
 <p>Allows only a request per minute per application id</p>
 </li>
 <li>
-<p>By default, when a request is made twice for the same day, it returns the previously created csv file.</p>
+<p>By default, when a request is made twice for the same day, it returns the previously created csv file. After 4 hours, the API clear the previously created csv file. So if you want to get a new calculated csv file. you can make a rew request after 4 hours.</p>
 </li>
 <li>
 <p>If you are using attribution partner like Adjust/Appsflyer. You can increase your match score using the <code>attribution_partner</code> parameter. With this parameter you can get attribution partner device id as <code>AttributionPartnerDeviceID</code> in csv file.</p>
@@ -343,9 +343,9 @@
         </div>
       </div>
     </aside>
-    <script src="/amrapi/js/clipboard.min.js?1650463581"></script>
-    <script src="/amrapi/js/perfect-scrollbar.min.js?1650463581"></script>
-    <script src="/amrapi/js/featherlight.min.js?1650463581"></script>
-    <script src="/amrapi/js/theme.js?1650463581"></script>
+    <script src="/amrapi/js/clipboard.min.js?1653820966"></script>
+    <script src="/amrapi/js/perfect-scrollbar.min.js?1653820966"></script>
+    <script src="/amrapi/js/featherlight.min.js?1653820966"></script>
+    <script src="/amrapi/js/theme.js?1653820966"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@ description : "You can get user ad revenue information without ad network"
 
 - Allows only a request per minute per application id
 
-- By default, when a request is made twice for the same day, it returns the previously created csv file.
+- By default, when a request is made twice for the same day, it returns the previously created csv file. After 4 hours, the API clear the previously created csv file. So if you want to get a new calculated csv file. you can make a rew request after 4 hours. 
 
 - If you are using attribution partner like Adjust/Appsflyer. You can increase your match score using the `attribution_partner` parameter. With this parameter you can get attribution partner device id as `AttributionPartnerDeviceID` in csv file.
 
