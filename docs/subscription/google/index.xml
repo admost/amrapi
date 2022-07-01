@@ -21,7 +21,7 @@ In order for Admost&amp;rsquo;s servers to communicate with Google on your behal
       <link>/amrapi/subscription/google/realtime-notification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/amrapi/subscription/google/realtime-notification/</guid>
-      <description> Ensure Google Cloud Pub/Sub is enabled for your project. You can enable it here  </description>
+      <description> Ensure Google Cloud Pub/Sub is enabled for your project. You can enable it here </description>
     </item>
   </channel>
 </rss>

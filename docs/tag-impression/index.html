@@ -5,9 +5,10 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.101.0" />
     <meta name="generator" content="Relearn 3.4.1&#43;tip">
-    <meta name="description" content="You can get user ad revenue information without ad network">
+    <meta name="description" content="You can get impression and estimated revenue data by tags.">
     <meta name="author" content="Gokhan MANKARA">
-    <title>Ad Revenue :: Documentation for Admost API Services</title><link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
+    <title>Tag Impression Api :: Documentation for Admost API Services</title>
+    <link rel="alternate" type="application/rss&#43;xml" href="/amrapi/tag-impression/index.xml" title="Documentation for Admost API Services" /><link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
     <link href="/amrapi/css/nucleus.css?1656686321" rel="stylesheet">
     <link href="/amrapi/css/fontawesome-all.min.css?1656686321" rel="stylesheet">
     <link href="/amrapi/css/featherlight.min.css?1656686321" rel="stylesheet">
@@ -35,7 +36,7 @@
     </script>
     <script src="/amrapi/js/jquery.min.js?1656686321"></script>
   </head>
-  <body class="mobile-support" data-url="/amrapi/user-revenue/user-ad-revenue/">
+  <body class="mobile-support" data-url="/amrapi/tag-impression/">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
@@ -48,9 +49,8 @@
             <span id="toc-menu" title='Table of Contents'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <meta itemprop="itemListOrder" content="Descending" />
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="3" /><a itemprop="item" href="/amrapi/"><span itemprop="name">Admost API Documentations</span></a> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="2" /><a itemprop="item" href="/amrapi/user-revenue/"><span itemprop="name">User Ad Revenue</span></a> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="1" /><a itemprop="item" href="/amrapi/user-revenue/user-ad-revenue/" aria-disabled="true"><span itemprop="name">Ad Revenue</span></a></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="2" /><a itemprop="item" href="/amrapi/"><span itemprop="name">Admost API Documentations</span></a> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><meta itemprop="position" content="1" /><a itemprop="item" href="/amrapi/tag-impression/" aria-disabled="true"><span itemprop="name">Tag Impression Api</span></a></li>
             </ol>
           </div>
           <div class="default-animation progress">
@@ -74,38 +74,10 @@
           </div>
           <article>
 
-<h1>Ad Revenue</h1>
-<ul>
-<li>
-<p>We are providing a download link for a file even before it is available. Download the report from the api response when ready.</p>
-<ul>
-<li>If you are getting <strong>404 http response status</strong> when trying to download the file. The file is not prepared yet. Please wait a while and try again.</li>
-</ul>
-</li>
-<li>
-<p>The download file name is generated with appID, date and timestamp</p>
-<ul>
-<li>:appID:_:date:_:timestamp:.tar.gz</li>
-<li>Extracted file format: csv</li>
-</ul>
-</li>
-<li>
-<p>Allows only a request per minute per application id</p>
-</li>
-<li>
-<p>By default, when a request is made twice for the same day, it returns the previously created csv file. After 4 hours, the API clear the previously created csv file. So if you want to get a new calculated csv file. you can make a rew request after 4 hours.</p>
-</li>
-<li>
-<p>If you are using attribution partner like Adjust/Appsflyer. You can increase your match score using the <code>attribution_partner</code> parameter. With this parameter you can get attribution partner device id as <code>AttributionPartnerDeviceID</code> in csv file.</p>
-</li>
-<li>
-<p>You can get the admost application id using by Admost <a href="https://admost.github.io/amrapi/publisher-app-api/">Publisher Applications API</a></p>
-</li>
-</ul>
-<p><code>Authentication:</code> Bearer Token authentication.</p>
-<p><code>Method:</code> GET</p>
-<p><code>URL:</code> https://partners.admost.com/v3/adrevenue/userbase</p>
-<h4 id="request-parameters">Request Parameters:</h4>
+<h1>Tag Impression Api</h1>
+<p><code>Endpoint:</code> http://amr-api.admost.com/api/publisher/v1/tagimpression</p>
+<p><code>METHOD</code> : <strong>POST</strong></p>
+<h4 id="request-parameters">Request Parameters</h4>
 <table>
 <thead>
 <tr>
@@ -116,232 +88,90 @@
 </thead>
 <tbody>
 <tr>
-<td>date</td>
+<td>apiKey</td>
 <td>string</td>
-<td>YYYY-MM-DD</td>
+<td>Publisher&rsquo;s token</td>
 </tr>
 <tr>
-<td>app_id</td>
+<td>startdate</td>
 <td>string</td>
-<td>Application admost id</td>
+<td>Start date (yyyy-MM-dd)</td>
 </tr>
 <tr>
-<td>attribution_partner</td>
+<td>enddate</td>
 <td>string</td>
-<td>Optional. Publisher attribution partner name. values: adjust, appsflyer</td>
+<td>End date    (yyyy-MM-dd)</td>
+</tr>
+<tr>
+<td>groupBy</td>
+<td>string</td>
+<td>Comma seperated values (day, app, zone, tag, country, placement)</td>
+</tr>
+<tr>
+<td>apps</td>
+<td>string</td>
+<td>Filters app ids (comma seperated, can be found on Admost Dashboard -&gt; My Apps)</td>
+</tr>
+<tr>
+<td>appType</td>
+<td>string</td>
+<td>Filters app type (Allowed values (&ldquo;android&rdquo;,&ldquo;ios&rdquo;))</td>
+</tr>
+<tr>
+<td>countries</td>
+<td>string</td>
+<td>Filters countries (comma seperated, ISO 3166-1 alpha-2 )</td>
+</tr>
+<tr>
+<td>countryIn</td>
+<td>string</td>
+<td>Determines how the values of previous parameter is used, Allowed values (&ldquo;in&rdquo;,&ldquo;notin&rdquo;), &ldquo;in&rdquo; is default</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>string</td>
+<td>Filters tags (comma seperated, can be found on Admost Dashboard -&gt; My Apps)</td>
 </tr>
 </tbody>
 </table>
-<h4 id="request-example-url">Request Example URL:</h4>
-<p>https://partners.admost.com/v3/adrevenue/userbase?app_id={application_id}&amp;date={date}</p>
-<h4 id="response-example-url">Response Example URL:</h4>
-<p>https://partners.admost.com/download/report/c9e86d87-453e-0d9a-3d00-56adc9ec4dc3_2019-04-01_1554291219.tar.gz</p>
-<h4 id="response-status-codes">Response Status Codes:</h4>
-<table>
-<thead>
-<tr>
-<th>Code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td>OK. The request has succeeded. Returns with a link to download the report</td>
-</tr>
-<tr>
-<td>400</td>
-<td>BAD REQUEST. The request must belong to two days before etc.</td>
-</tr>
-<tr>
-<td>401</td>
-<td>UNAUTHORIZED</td>
-</tr>
-<tr>
-<td>429</td>
-<td>TOO MANY REQUESTS. The user has sent too many requests in a given amount of time (&ldquo;rate limiting&rdquo;).</td>
-</tr>
-<tr>
-<td>500</td>
-<td>INTERNAL SERVER ERROR</td>
-</tr>
-</tbody>
-</table>
-<h4 id="report-column-description">Report Column Description</h4>
-<ul>
-<li>The report is generated with columns titles.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>UserID</td>
-<td>Admost user id</td>
-</tr>
-<tr>
-<td>LaunchedAt</td>
-<td>User first session time ( UTC )</td>
-</tr>
-<tr>
-<td>Country</td>
-<td>User country</td>
-</tr>
-<tr>
-<td>IDFA</td>
-<td>User resettable advertising ID found on iOS devices</td>
-</tr>
-<tr>
-<td>IDFV</td>
-<td>Vendor ID provided by iOS</td>
-</tr>
-<tr>
-<td>GAID</td>
-<td>Google Advertising ID.</td>
-</tr>
-<tr>
-<td>AttributionPartnerDeviceID</td>
-<td>A unique ID generated by attribution partner SDK</td>
-</tr>
-<tr>
-<td>AdRevenue</td>
-<td>User  ad revenue</td>
-</tr>
-<tr>
-<td>IAPRevenue</td>
-<td>User in-app revenue</td>
-</tr>
-<tr>
-<td>SessionCount</td>
-<td>User session count</td>
-</tr>
-<tr>
-<td>SessionLength</td>
-<td>User session length ( second )</td>
-</tr>
-<tr>
-<td>InterstitialImpCount</td>
-<td>Number of interstitials seen by user</td>
-</tr>
-<tr>
-<td>RewardedImpCount</td>
-<td>Number of rewarded seen by user</td>
-</tr>
-<tr>
-<td>OfferwallImpCount</td>
-<td>Number of offerwall seen by user</td>
-</tr>
-<tr>
-<td>NativeInterstitialImpCount</td>
-<td>Number of native interstitial seen by user</td>
-</tr>
-<tr>
-<td>BannerImpCount</td>
-<td>Number of banner seen by user</td>
-</tr>
-<tr>
-<td>NativeImpCount</td>
-<td>Number of native banner seen by user</td>
-</tr>
-<tr>
-<td>InterstitialClickCount</td>
-<td>Number of total interstitial click by user</td>
-</tr>
-<tr>
-<td>RewardedClickCount</td>
-<td>Number of total rewarded click by user</td>
-</tr>
-<tr>
-<td>OfferwallClickCount</td>
-<td>Number of total offer click by user</td>
-</tr>
-<tr>
-<td>NativeInterstitialClickCount</td>
-<td>Number of total native interstitial click by user</td>
-</tr>
-<tr>
-<td>BannerClickCount</td>
-<td>Number of banner click by user</td>
-</tr>
-<tr>
-<td>NativeClickCount</td>
-<td>Number of native click by user</td>
-</tr>
-<tr>
-<td>PublisherApplicationUserID</td>
-<td>Publisher&rsquo;s custom user ID/IDs. They are separated with &ldquo;##&rdquo; if a publisher sent multiple ids for this user with Admost SDK</td>
-</tr>
-<tr>
-<td>InterstitialRevenue</td>
-<td>User interstitials Revenue</td>
-</tr>
-<tr>
-<td>RewardedRevenue</td>
-<td>User rewarded revenue</td>
-</tr>
-<tr>
-<td>NativeInterstitialRevenue</td>
-<td>User native interstitial revenue</td>
-</tr>
-<tr>
-<td>OfferwallRevenue</td>
-<td>User offerwall revenue</td>
-</tr>
-<tr>
-<td>BannerRevenue</td>
-<td>User banner revenue</td>
-</tr>
-<tr>
-<td>NativeRevenue</td>
-<td>User native revenue</td>
-</tr>
-<tr>
-<td>CampaignNetwork</td>
-<td>Campaign Network name if exists</td>
-</tr>
-<tr>
-<td>CampaignName</td>
-<td>Campaign name if exists</td>
-</tr>
-<tr>
-<td>CampaignAdgroup</td>
-<td>Campaign adgroup if exists</td>
-</tr>
-<tr>
-<td>CampaignCreative</td>
-<td>Campaign creative if exists</td>
-</tr>
-<tr>
-<td>AppVersion</td>
-<td>Application version</td>
-</tr>
-<tr>
-<td>AdmostSDKVersion</td>
-<td>Admost SDK Version in application</td>
-</tr>
-<tr>
-<td>OSVersion</td>
-<td>User&rsquo;s device OS version</td>
-</tr>
-<tr>
-<td>DeviceBrand</td>
-<td>User&rsquo;s device brand</td>
-</tr>
-<tr>
-<td>DeviceModel</td>
-<td>User&rsquo;s device model</td>
-</tr>
-<tr>
-<td>DeviceType</td>
-<td>User&rsquo;s device type</td>
-</tr>
-</tbody>
-</table>
-
+<h4 id="request-example">Request Example</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>curl --location --request POST &#39;http://amr-api.admost.com/api/publisher/v1/tags&#39; \
+</span></span><span style="display:flex;"><span>--header &#39;Content-Type: application/json&#39; \
+</span></span><span style="display:flex;"><span>--data-raw &#39;{
+</span></span><span style="display:flex;"><span>    &#34;apps&#34; : &#34;13236a79-3769-4de0-a8b2-bfedcb2ebc36&#34;,
+</span></span><span style="display:flex;"><span>    &#34;apiKey&#34;:&#34;hdxpKfQmttuYK557GH2hWf1Lg2ad6c6b&#34;,
+</span></span><span style="display:flex;"><span>    &#34;startDate&#34;:&#34;2022-06-20&#34;,
+</span></span><span style="display:flex;"><span>    &#34;endDate&#34;:&#34;2021-06-30&#34;,
+</span></span><span style="display:flex;"><span>    &#34;groupBy&#34;:&#34;tag,app&#34;    
+</span></span><span style="display:flex;"><span>}&#39;
+</span></span></code></pre></div><h4 id="response-example">Response Example</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ecpm&#34;</span>: <span style="color:#ae81ff">4.3112116404222012995456</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;tag&#34;</span>: <span style="color:#e6db74">&#34;tag1&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;sum_revenue&#34;</span>: <span style="color:#ae81ff">30772.4198658098140810520543</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;app_name&#34;</span>: <span style="color:#e6db74">&#34;appname1&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;sum_tag_impression&#34;</span>: <span style="color:#ae81ff">7137766.0</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;application_id&#34;</span>: <span style="color:#e6db74">&#34;77c38280-b985-459c-8f82-c18c81089c2d&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ecpm&#34;</span>: <span style="color:#ae81ff">6.675818990577592693769709</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;tag&#34;</span>: <span style="color:#e6db74">&#34;tag2&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;sum_revenue&#34;</span>: <span style="color:#ae81ff">24385.878888654199290512475850</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;app_name&#34;</span>: <span style="color:#e6db74">&#34;appname1&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;sum_tag_impression&#34;</span>: <span style="color:#ae81ff">3652867.0</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;application_id&#34;</span>: <span style="color:#e6db74">&#34;77c38280-b985-459c-8f82-c18c81089c2d&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;ecpm&#34;</span>: <span style="color:#ae81ff">3.83853119177000496403693</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;tag&#34;</span>: <span style="color:#e6db74">&#34;tag3&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;sum_revenue&#34;</span>: <span style="color:#ae81ff">6287.01124453314626044220545</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;app_name&#34;</span>: <span style="color:#e6db74">&#34;appname2&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;sum_tag_impression&#34;</span>: <span style="color:#ae81ff">1637869.0</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;application_id&#34;</span>: <span style="color:#e6db74">&#34;1dd05dd6-f8fc-45d7-a47e-1a15951a5e20&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -364,8 +194,8 @@
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics">
-          <li data-nav-id="/amrapi/user-revenue/" title="User Ad Revenue" class="dd-item parent"><input type="checkbox" id="section-08885a7388099900ede4136afad15151" class="toggle" checked/><label for="section-08885a7388099900ede4136afad15151" ></label><a href="/amrapi/user-revenue/"><b>1. </b>User Ad Revenue</a><ul>
-          <li data-nav-id="/amrapi/user-revenue/user-ad-revenue/" title="Ad Revenue" class="dd-item active"><a href="/amrapi/user-revenue/user-ad-revenue/">Ad Revenue</a></li>
+          <li data-nav-id="/amrapi/user-revenue/" title="User Ad Revenue" class="dd-item"><input type="checkbox" id="section-08885a7388099900ede4136afad15151" class="toggle"/><label for="section-08885a7388099900ede4136afad15151" ></label><a href="/amrapi/user-revenue/"><b>1. </b>User Ad Revenue</a><ul>
+          <li data-nav-id="/amrapi/user-revenue/user-ad-revenue/" title="Ad Revenue" class="dd-item"><a href="/amrapi/user-revenue/user-ad-revenue/">Ad Revenue</a></li>
           <li data-nav-id="/amrapi/user-revenue/user-network-base-ad-revenue/" title="Network Base Ad Revenue" class="dd-item"><a href="/amrapi/user-revenue/user-network-base-ad-revenue/">Network Base Ad Revenue</a></li></ul></li>
           <li data-nav-id="/amrapi/publisher-app-api/" title="Publisher Applications" class="dd-item"><a href="/amrapi/publisher-app-api/"><b>2. </b>Publisher Applications</a></li>
           <li data-nav-id="/amrapi/adjust-raw-data-export/" title="Adjust Raw Data Export Settings" class="dd-item"><a href="/amrapi/adjust-raw-data-export/"><b>3. </b>Adjust Raw Data Export Settings</a></li>
@@ -381,7 +211,7 @@
           <li data-nav-id="/amrapi/subscription/huawei/get-pulickey/" title="Get app public key" class="dd-item"><a href="/amrapi/subscription/huawei/get-pulickey/">Get app public key</a></li></ul></li></ul></li>
           <li data-nav-id="/amrapi/server-to-server/" title="Server to Server Rewarded Structure" class="dd-item"><a href="/amrapi/server-to-server/"><b>5. </b>Server to Server Rewarded Structure</a></li>
           <li data-nav-id="/amrapi/impression-revenue/" title="Impression and Revenue API" class="dd-item"><a href="/amrapi/impression-revenue/"><b>6. </b>Impression and Revenue API</a></li>
-          <li data-nav-id="/amrapi/tag-impression/" title="Tag Impression Api" class="dd-item"><a href="/amrapi/tag-impression/"><b>8. </b>Tag Impression Api</a></li>
+          <li data-nav-id="/amrapi/tag-impression/" title="Tag Impression Api" class="dd-item active"><a href="/amrapi/tag-impression/"><b>8. </b>Tag Impression Api</a></li>
           <li data-nav-id="/amrapi/cohort-analysis/" title="Cohort Analysis API" class="dd-item"><a href="/amrapi/cohort-analysis/"><b>7. </b>Cohort Analysis API</a></li>
         </ul>
         <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>

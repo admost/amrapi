@@ -12,27 +12,24 @@
       <link>/amrapi/subscription/apple/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/amrapi/subscription/apple/</guid>
-      <description> Get Shared Secret Tells how to get shared secret from apple store
-Server to Server Notifications Tells how to activate realtime notification
- </description>
+      <description>Get Shared SecretTells how to get shared secret from apple store
+Server to Server NotificationsTells how to activate realtime notification</description>
     </item>
     <item>
       <title>Google</title>
       <link>/amrapi/subscription/google/</link>
       <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/amrapi/subscription/google/</guid>
-      <description> Get Credential Tells how to get credential from google play
-Server to Server Notification Tells how to activate realtime notification in google play
- </description>
+      <description>Get CredentialTells how to get credential from google play
+Server to Server NotificationTells how to activate realtime notification in google play</description>
     </item>
     <item>
       <title>Huawei</title>
       <link>/amrapi/subscription/huawei/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
       <guid>/amrapi/subscription/huawei/</guid>
-      <description> Get app id and app secret Tells how to get your app&amp;#39;s app id and app secret from huawei developer console
-Get app public key Tells how to get your app&amp;#39;s public key from huawei developer console
- </description>
+      <description>Get app id and app secretTells how to get your app&amp;#39;s app id and app secret from huawei developer console
+Get app public keyTells how to get your app&amp;#39;s public key from huawei developer console</description>
     </item>
   </channel>
 </rss>
