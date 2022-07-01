@@ -1,7 +1,7 @@
 ---
 title: Tag Impression Api
 date: 2022-07-01
-weight: 10
+weight: 11
 pre: "<b>8. </b>"
 description : "You can get impression and estimated revenue data by tags."
 ---
@@ -48,7 +48,7 @@ curl --location --request POST 'http://amr-api.admost.com/api/publisher/v1/tags'
         "sum_revenue": 30772.4198658098140810520543,
         "app_name": "appname1",
         "sum_tag_impression": 7137766.0,
-        "application_id": "77c38280-b985-459c-8f82-c18c81089c2d"
+        "application_id": "13236a79-3769-4de0-a8b2-bfedcb2ebc36"
     },
     {
         "ecpm": 6.675818990577592693769709,
@@ -56,15 +56,15 @@ curl --location --request POST 'http://amr-api.admost.com/api/publisher/v1/tags'
         "sum_revenue": 24385.878888654199290512475850,
         "app_name": "appname1",
         "sum_tag_impression": 3652867.0,
-        "application_id": "77c38280-b985-459c-8f82-c18c81089c2d"
+        "application_id": "13236a79-3769-4de0-a8b2-bfedcb2ebc36"
     },
     {
         "ecpm": 3.83853119177000496403693,
         "tag": "tag3",
         "sum_revenue": 6287.01124453314626044220545,
-        "app_name": "appname2",
+        "app_name": "appname1",
         "sum_tag_impression": 1637869.0,
-        "application_id": "1dd05dd6-f8fc-45d7-a47e-1a15951a5e20"
+        "application_id": "13236a79-3769-4de0-a8b2-bfedcb2ebc36"
     }
 ]
 ```
