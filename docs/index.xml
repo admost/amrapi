@@ -64,15 +64,6 @@ METHOD : GET
 Request Parameters Name Type Description apiKey string Publisher&amp;rsquo;s token startdate string Report start date enddate string Report end date appid string Admost application ID Response Name Description AdNetwork Ad Network Name AppName Application Name AppType Application type android/ios Placement Placement Name CountryCode Country short code Country Country Name Impression Impression count Revenue Revenue amount ($) Date Which day the data belongs to </description>
     </item>
     <item>
-      <title>Tag Impression Api</title>
-      <link>/amrapi/tag-impression/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>/amrapi/tag-impression/</guid>
-      <description>Endpoint: http://amr-api.admost.com/api/publisher/v1/tagimpression
-METHOD : POST
-Request Parameters Name Type Description apiKey string Publisher&amp;rsquo;s token startdate string Start date (yyyy-MM-dd) enddate string End date (yyyy-MM-dd) groupBy string Comma seperated values (day, app, zone, tag, country, placement) apps string Filters app ids (comma seperated, can be found on Admost Dashboard -&amp;gt; My Apps) appType string Filters app type (Allowed values (&amp;ldquo;android&amp;rdquo;,&amp;ldquo;ios&amp;rdquo;)) countries string Filters countries (comma seperated, ISO 3166-1 alpha-2 ) countryIn string Determines how the values of previous parameter is used, Allowed values (&amp;ldquo;in&amp;rdquo;,&amp;ldquo;notin&amp;rdquo;), &amp;ldquo;in&amp;rdquo; is default tags string Filters tags (comma seperated, can be found on Admost Dashboard -&amp;gt; My Apps) Request Example curl --location --request POST &amp;#39;http://amr-api.</description>
-    </item>
-    <item>
       <title>Cohort Analysis API</title>
       <link>/amrapi/cohort-analysis/</link>
       <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
@@ -80,6 +71,15 @@ Request Parameters Name Type Description apiKey string Publisher&amp;rsquo;s tok
       <description>Endpoint: http://amr-api.admost.com/api/publisher/v1/cohort
 METHOD : POST
 Request Parameters Name Type Description apiKey string Publisher&amp;rsquo;s token startdate string Start date (yyyy-MM-dd) enddate string End date (yyyy-MM-dd) groupBy string Comma seperated values (day, week, month, app, country, source, campaign, adgroup, creative, source_type, test) apps string Filters app ids (comma seperated, can be found on Admost Dashboard -&amp;gt; My Apps) appType string Filters app type (Allowed values (&amp;ldquo;android&amp;rdquo;,&amp;ldquo;ios&amp;rdquo;)) userType string Filters user type (Allowed values (&amp;ldquo;organic&amp;rdquo;,&amp;ldquo;paid&amp;rdquo;)) revenueType string Filters revenue type (Allowed values (&amp;ldquo;adRevenue&amp;rdquo;,&amp;ldquo;inAppPurchase&amp;rdquo;)) countries string Filters countries (comma seperated, ISO 3166-1 alpha-2 ) countryIn string Determines how the values of previous parameter is used, Allowed values (&amp;ldquo;in&amp;rdquo;,&amp;ldquo;notin&amp;rdquo;), &amp;ldquo;in&amp;rdquo; is default sources string Filters sources (comma seperated) sourceIn string Determines how the values of previous parameter is used, Allowed values (&amp;ldquo;in&amp;rdquo;,&amp;ldquo;notin&amp;rdquo;), &amp;ldquo;in&amp;rdquo; is default campaigns string Filters campaigns (comma seperated) adgroups string Filters adgroups (comma seperated) creatives string Filters creatives (comma seperated) tests string Filters A/B tests (comma seperated) minCohortSize integer Filters cohort size which are greater than the value specified revenueCostRatioDay integer Filters rows which has day N revenue/cost ratio greater or less than following parameter revenueCostRatioPercent integer Filters rows which has day N revenue/cost ratio greater or less than specified % revenueCostRatioType integer Allowed values(&amp;ldquo;min&amp;rdquo;,&amp;ldquo;max&amp;rdquo;) retentionFilterDay string Filters rows which has day N retention greater or less than following parameter retentionFilterPercent integer Filters rows which has day N retention greater or less than specified % retentionFilterType string Allowed values(&amp;ldquo;min&amp;rdquo;,&amp;ldquo;max&amp;rdquo;) currency string Currency, ISO 4217 alpha-3, Default value USD showExpected boolean Allowed values (true,false) showAllDays boolean Allowed values (true,false) Request Example curl --location --request POST &amp;#39;http://amr-api.</description>
+    </item>
+    <item>
+      <title>Tag Impression Api</title>
+      <link>/amrapi/tag-impression/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>/amrapi/tag-impression/</guid>
+      <description>Endpoint: http://amr-api.admost.com/api/publisher/v1/tagimpression
+METHOD : POST
+Request Parameters Name Type Description apiKey string Publisher&amp;rsquo;s token startdate string Start date (yyyy-MM-dd) enddate string End date (yyyy-MM-dd) groupBy string Comma seperated values (day, app, zone, tag, country, placement) apps string Filters app ids (comma seperated, can be found on Admost Dashboard -&amp;gt; My Apps) appType string Filters app type (Allowed values (&amp;ldquo;android&amp;rdquo;,&amp;ldquo;ios&amp;rdquo;)) countries string Filters countries (comma seperated, ISO 3166-1 alpha-2 ) countryIn string Determines how the values of previous parameter is used, Allowed values (&amp;ldquo;in&amp;rdquo;,&amp;ldquo;notin&amp;rdquo;), &amp;ldquo;in&amp;rdquo; is default tags string Filters tags (comma seperated, can be found on Admost Dashboard -&amp;gt; My Apps) Request Example curl --location --request POST &amp;#39;http://amr-api.</description>
     </item>
   </channel>
 </rss>
