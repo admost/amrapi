@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on Documentation for Admost API Services</title>
+    <link>/amrapi/subscription/google/</link>
+    <description>Recent content in Google on Documentation for Admost API Services</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/amrapi/subscription/google/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Get Credential</title>
+      <link>/amrapi/subscription/google/get-credential/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/amrapi/subscription/google/get-credential/</guid>
+      <description>Step-by-step guide for creating your Play service credentials
+In order for Admost&amp;rsquo;s servers to communicate with Google on your behalf you need to provide a set of service credentials. The process for configuring these credentials is a bit complex, but the added level of control improves security by only providing Admost with the access we need.
+1. Link to a Google Developer Project Your Play Developer account needs to be linked to a Google Developer Project.</description>
+    </item>
+    <item>
+      <title>Server to Server Notification</title>
+      <link>/amrapi/subscription/google/realtime-notification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/amrapi/subscription/google/realtime-notification/</guid>
+      <description> Ensure Google Cloud Pub/Sub is enabled for your project. You can enable it here </description>
+    </item>
+  </channel>
+</rss>

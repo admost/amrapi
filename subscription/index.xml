@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service Subscription Credentials &amp; Settings on Documentation for Admost API Services</title>
+    <link>/amrapi/subscription/</link>
+    <description>Recent content in Service Subscription Credentials &amp; Settings on Documentation for Admost API Services</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/amrapi/subscription/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apple</title>
+      <link>/amrapi/subscription/apple/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/amrapi/subscription/apple/</guid>
+      <description>Get Shared SecretTells how to get shared secret from apple store
+Server to Server NotificationsTells how to activate realtime notification</description>
+    </item>
+    <item>
+      <title>Google</title>
+      <link>/amrapi/subscription/google/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/amrapi/subscription/google/</guid>
+      <description>Get CredentialTells how to get credential from google play
+Server to Server NotificationTells how to activate realtime notification in google play</description>
+    </item>
+    <item>
+      <title>Huawei</title>
+      <link>/amrapi/subscription/huawei/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/amrapi/subscription/huawei/</guid>
+      <description>Get app id and app secretTells how to get your app&amp;#39;s app id and app secret from huawei developer console
+Get app public keyTells how to get your app&amp;#39;s public key from huawei developer console</description>
+    </item>
+  </channel>
+</rss>

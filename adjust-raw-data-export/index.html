@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.104.3">
+    <meta name="generator" content="Relearn 5.3.3+tip">
+    <meta name="description" content="You can see UA&#39;s user install information on the dashboard with adjust raw data export settings">
+    <meta name="author" content="Gokhan MANKARA">
+    <title>Adjust Raw Data Export Settings :: Documentation for Admost API Services</title>
+    <link href="/amrapi/adjust-raw-data-export/index.xml" rel="alternate" type="application/rss+xml" title="Documentation for Admost API Services"><link rel="shortcut icon" href="https://admost.com/img/admostfavicon.png" type="image/x-icon" />
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/amrapi/css/fontawesome-all.min.css?1666947151" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/amrapi/css/fontawesome-all.min.css?1666947151" rel="stylesheet"></noscript>
+    <link href="/amrapi/css/featherlight.min.css?1666947151" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/amrapi/css/featherlight.min.css?1666947151" rel="stylesheet"></noscript>
+    <link href="/amrapi/css/auto-complete.css?1666947151" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/amrapi/css/auto-complete.css?1666947151" rel="stylesheet"></noscript>
+    <link href="/amrapi/css/perfect-scrollbar.min.css?1666947151" rel="stylesheet">
+    <link href="/amrapi/css/nucleus.css?1666947151" rel="stylesheet">
+    <link href="/amrapi/css/fonts.css?1666947151" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/amrapi/css/fonts.css?1666947151" rel="stylesheet"></noscript>
+    <link href="/amrapi/css/theme.css?1666947151" rel="stylesheet">
+    <link href="/amrapi/css/theme-learn.css?1666947151" rel="stylesheet" id="variant-style">
+    <link href="/amrapi/css/ie.css?1666947151" rel="stylesheet">
+    <link href="/amrapi/css/variant.css?1666947151" rel="stylesheet">
+    <link href="/amrapi/css/print.css?1666947151" rel="stylesheet" media="print">
+    <script src="/amrapi/js/variant.js?1666947151"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      var index_url="/amrapi/index.json";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      // some further base stuff
+      var baseUriFull='amrapi/';
+      window.variants && variants.init( [ 'learn' ] );
+    </script>
+    <script src="/amrapi/js/jquery.min.js?1666947151" defer></script>
+  </head>
+  <body class="mobile-support html" data-url="/amrapi/adjust-raw-data-export/">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/amrapi/"><span itemprop="name">Admost API Documentations</span></a><meta itemprop="position" content="1"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Adjust Raw Data Export Settings</span><meta itemprop="position" content="2"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#app-token-and-api-token-settings">APP token and API token Settings</a></li>
+        <li><a href="#configure-amazon-s3-csv-upload-settings-in-adjust-app-settings">Configure Amazon S3 CSV Upload Settings in Adjust App Settings</a></li>
+        <li><a href="#adjust-partner-termsconditions-settings">Adjust Partner Terms&amp;Conditions Settings</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <div id="head-tags">
+          </div>
+          <article class="default">
+<h1>Adjust Raw Data Export Settings</h1>
+
+
+<div class="box notices cstyle info">
+    <div class="box-label"><i class="fa-fw fas fa-info-circle"></i> Info</div>
+    <div class="box-content">
+<p>You can find Adjust SDK integration document on their <a href="https://help.adjust.com/en/sdk">help page</a>.</p>
+    </div>
+</div>
+<p>With this raw data export settings, we&rsquo;ll able to get paid campaign installs from Adjust.
+We need the APP token of the application and API token</p>
+
+<div class="box notices cstyle warning">
+    <div class="box-label"><i class="fa-fw fas fa-exclamation-triangle"></i> Warning</div>
+    <div class="box-content">
+<p><strong>Facebook Campaigns</strong></p>
+<p>On October 29th 2021, Facebook deprecated their Advanced Mobile Measurement (AMM) program. This means that Facebook Marketing Partners and advertisers may not receive device-level campaign data for any iOS users attributed to Facebook, and only partial data for Android users. This is enforced regardless of the user&rsquo;s ATT status.</p>
+<p>For IOS apps:</p>
+<ul>
+<li>We can not get anymore ios FB campaigns</li>
+</ul>
+<p>For ANDROID apps:</p>
+<ul>
+<li>You have to do some extra steps</li>
+</ul>
+<ol>
+<li>Set up install referrer
+<a href="https://help.adjust.com/en/article/get-started-android-sdk#set-up-install-referrer">https://help.adjust.com/en/article/get-started-android-sdk#set-up-install-referrer</a></li>
+<li>Campaign metadata is appended to the Install Referrer in an encrypted format. To read the metadata, you need to use a Facebook-provided <a href="https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution">decryption key</a> for your app.</li>
+<li>Add <code>{fb_install_referrer}</code> csv definition if not exist on adjust dashboard -&gt; app all settings -&gt; raw data export -&gt; csv upload -&gt; CSV DEFINITION</li>
+</ol>
+<p>For more details, please check <a href="https://help.adjust.com/en/article/facebook-raw-data-reporting-for-android#set-up-the-install-referrer-solution">adjust help page document</a></p>
+    </div>
+</div>
+<h3 id="app-token-and-api-token-settings">APP token and API token Settings</h3>
+<p><strong>1. Get API Token from Adjust Dashboard Menu</strong></p>
+<ul>
+<li>Adjust Dashboard Menu -&gt; My Account -&gt; User Details
+<ul>
+<li>The Adjust APIs are available to all clients on a <strong>Business Pro package or above</strong>. For more details please
+check <a href="https://help.adjust.com/en/article/api-authentication">adjust help page document</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="expand">
+    <a class="expand-label" onclick="$t=$(this); if($t.parent('.expand-expanded.expand-marked').length){ $t.next().css('display','none') }else if($t.parent('.expand-marked').length){ $t.next().css('display','block') }else{ $t.next('.expand-content').slideToggle(100); } $t.parent().toggleClass('expand-expanded');">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-right"></i>
+        API Token for Admin Users
+    </a>
+    <div class="expand-content" style="display: none;">
+<ol>
+<li>Open your Adjust dashboard.</li>
+<li>Click on the menu icon in the top left to open the main menu.</li>
+<li>Click on My Account.</li>
+<li>In the Your Data tab that opens, find the User Details section. Click on the cog icon at the bottom of this segment to open the user details panel.</li>
+<li>In the panel that opens, click on API Token. This opens the API token panel.</li>
+<li>Copy your API token from the API Token panel.</li>
+</ol>
+
+    </div>
+</div>
+
+<div class="expand">
+    <a class="expand-label" onclick="$t=$(this); if($t.parent('.expand-expanded.expand-marked').length){ $t.next().css('display','none') }else if($t.parent('.expand-marked').length){ $t.next().css('display','block') }else{ $t.next('.expand-content').slideToggle(100); } $t.parent().toggleClass('expand-expanded');">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-right"></i>
+        API Token for Non-admin Users
+    </a>
+    <div class="expand-content" style="display: none;">
+<p><strong>For Non-admin users, you have to give to user cost data access permission.</strong></p>
+<ol>
+<li>Open your Adjust dashboard.</li>
+<li>Click on the menu icon in the top left to open the main menu.</li>
+<li>Click on My Profile to open the user details panel.</li>
+<li>In the panel that opens, click on API Token. This opens the API token panel.</li>
+<li>Copy your API token from the API Token panel.</li>
+</ol>
+
+    </div>
+</div>
+<p><strong>2. Add API Token to Adjust Settings in Admost Dashboard</strong></p>
+<ul>
+<li>Admost Dashboard -&gt; Settings -&gt; Adjust Key</li>
+</ul>
+<p><img src="/amrapi/images/admost-adjust-settings.png?classes=shadow&amp;width=10pc" alt="Admost Adjust Settings">
+<img src="/amrapi/images/adjust-key.png?classes=shadow&amp;width=20pc" alt="Admost Adjust Key Setting"></p>
+<p><strong>3. Get App Token from Adjust Dashboard Menu -&gt; Apps</strong></p>
+<p><img src="/amrapi/images/adjust-app-token.png?classes=shadow" alt="Admost App Token"></p>
+<p><strong>4. Add App Token to Admost Dashboard -&gt; My Apps -&gt; Edit App -&gt; Adjust App Token</strong></p>
+<p><img src="/amrapi/images/admost-app-token.png?classes=shadow" alt="Admost App Token Setting"></p>
+<h3 id="configure-amazon-s3-csv-upload-settings-in-adjust-app-settings">Configure Amazon S3 CSV Upload Settings in Adjust App Settings</h3>
+<p><strong>1. Create AWS Bucket</strong></p>
+<ul>
+<li>Admost Dashboard -&gt; Settings -&gt; Adjust Key</li>
+</ul>
+<p><img src="/amrapi/images/adjust-key.png?classes=shadow&amp;width=20pc" alt="Create AWS Bucket"></p>
+<p><strong>2. Add AWS S3 Bucket Information to Adjust Raw Data Export Settings</strong></p>
+<ul>
+<li>You can get your AWS Bucket information from Admost Dashboard -&gt; Settings -&gt; Adjust Settings. If you can&rsquo;t see the informations, click <code>Create AWS Bucket</code> button.</li>
+</ul>
+<p><img src="/amrapi/images/aws-bucket-info.png?classes=shadow&amp;width=20pc" alt="AWS Bucket Info"></p>
+<ul>
+<li>Adjust App Settings -&gt; All Settings -&gt; Raw Data Export -&gt; CSV Upload -&gt; Storage Provider -&gt; Amazon S3 Bucket</li>
+</ul>
+<p><img src="/amrapi/images/adjust-csv-upload.png?classes=shadow&amp;width=20pc" alt="Adjust CSV Upload Settings"></p>
+<p><strong>3. Select Events for Export:</strong></p>
+<ul>
+<li>select install, reattribution and updated attribution events</li>
+</ul>
+<p><img src="/amrapi/images/adjust-events-for-export1.png?classes=shadow&amp;width=20pc" alt="Adjust Select Event for Export"></p>
+<p><strong>4. Add CSV Definition:</strong></p>
+<ul>
+<li>It is enough to use the csv definitions below. Just copy and paste</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{idfa||gps_adid},{idfv},{adid},{tracker},{tracker_name},{app_name},{activity_kind},{created_at},{installed_at},{installed_at_hour},{conversion_duration},{cost_type},{cost_amount},{cost_currency},{nonce},{reporting_cost},{match_type},{network_name},{campaign_name},{adgroup_name},{creative_name},{is_organic},{country},{city},{os_name},{mac_md5},{device_name},{device_type},{device_manufacturer},{ip_address},{fb_campaign_id},{fb_campaign_group_id},{fb_adgroup_id},{store},{att_status},{fb_install_referrer}
+</span></span></code></pre></div><h3 id="adjust-partner-termsconditions-settings">Adjust Partner Terms&amp;Conditions Settings</h3>
+
+<div class="box notices cstyle warning">
+    <div class="box-label"><i class="fa-fw fas fa-exclamation-triangle"></i> Warning</div>
+    <div class="box-content">
+<p>If you have an UA from one of these adjust partners, you have to accept terms&amp;conditions. It is important for us to see the content of the campaign.</p>
+    </div>
+</div>
+<h5 id="2-twitter-termsconditions">2. Twitter Terms&amp;Conditions</h5>
+<p>Ask your twitter account manager to enable the data access between your account and Adjust in Twitter’s AMM Program</p>
+<ul>
+<li>Twitter’s AMM Program via <a href="https://business.twitter.com/en/form/mact-data-opt-in.html?ref=adjust">this form</a>.</li>
+</ul>
+<p>Also ask your adjust account manager to check <code>Approved By Twitter</code> settings.</p>
+<p><img src="/amrapi/images/approved-by-twitter.png?classes=shadow" alt="Approved By Twitter"></p>
+
+            <footer class="footline">
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a href="https://admost.github.io/amrapi" style="width:60%;"> <img src="https://www.admost.com/img/logo-white.svg"
+        alt="logo-white"></a>
+        </div>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li>
+              <a class="padding" href="/amrapi/"><i class="fas fa-home"></i> Home</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics">
+          <li data-nav-id="/amrapi/user-revenue/" class="dd-item"><a href="/amrapi/user-revenue/"><b>1. </b>User Ad Revenue</a><ul id="subsections-08885a7388099900ede4136afad15151">
+          <li data-nav-id="/amrapi/user-revenue/user-ad-revenue/" class="dd-item"><a href="/amrapi/user-revenue/user-ad-revenue/">Ad Revenue</a></li>
+          <li data-nav-id="/amrapi/user-revenue/user-network-base-ad-revenue/" class="dd-item"><a href="/amrapi/user-revenue/user-network-base-ad-revenue/">Network Base Ad Revenue</a></li></ul></li>
+          <li data-nav-id="/amrapi/publisher-app-api/" class="dd-item"><a href="/amrapi/publisher-app-api/"><b>2. </b>Publisher Applications</a></li>
+          <li data-nav-id="/amrapi/adjust-raw-data-export/" class="dd-item active"><a href="/amrapi/adjust-raw-data-export/"><b>3. </b>Adjust Raw Data Export Settings</a></li>
+          <li data-nav-id="/amrapi/subscription/" class="dd-item"><a href="/amrapi/subscription/"><b>4. </b>Service Subscription Credentials &amp; Settings</a><ul id="subsections-448131caaa31cd0a91ce19763498fd20">
+          <li data-nav-id="/amrapi/subscription/apple/" class="dd-item alwaysopen"><a href="/amrapi/subscription/apple/"><b>4.1 </b>Apple</a><ul id="subsections-848f5e22a9748bd8eff16c5e03c17645">
+          <li data-nav-id="/amrapi/subscription/apple/shared-secret/" class="dd-item"><a href="/amrapi/subscription/apple/shared-secret/">Get Shared Secret</a></li>
+          <li data-nav-id="/amrapi/subscription/apple/realtime-notification/" class="dd-item"><a href="/amrapi/subscription/apple/realtime-notification/">Server to Server Notifications</a></li></ul></li>
+          <li data-nav-id="/amrapi/subscription/google/" class="dd-item alwaysopen"><a href="/amrapi/subscription/google/"><b>4.2 </b>Google</a><ul id="subsections-5db4743ec774080bf0f86cf9f8760356">
+          <li data-nav-id="/amrapi/subscription/google/get-credential/" class="dd-item"><a href="/amrapi/subscription/google/get-credential/">Get Credential</a></li>
+          <li data-nav-id="/amrapi/subscription/google/realtime-notification/" class="dd-item"><a href="/amrapi/subscription/google/realtime-notification/">Server to Server Notification</a></li></ul></li>
+          <li data-nav-id="/amrapi/subscription/huawei/" class="dd-item alwaysopen"><a href="/amrapi/subscription/huawei/"><b>4.3 </b>Huawei</a><ul id="subsections-382e4a5455ae7bcbefc6675d6162053d">
+          <li data-nav-id="/amrapi/subscription/huawei/get-appid-appsecret/" class="dd-item"><a href="/amrapi/subscription/huawei/get-appid-appsecret/">Get app id and app secret</a></li>
+          <li data-nav-id="/amrapi/subscription/huawei/get-pulickey/" class="dd-item"><a href="/amrapi/subscription/huawei/get-pulickey/">Get app public key</a></li></ul></li></ul></li>
+          <li data-nav-id="/amrapi/server-to-server/" class="dd-item"><a href="/amrapi/server-to-server/"><b>5. </b>Server to Server Rewarded Structure</a></li>
+          <li data-nav-id="/amrapi/impression-revenue/" class="dd-item"><a href="/amrapi/impression-revenue/"><b>6. </b>Impression and Revenue API</a></li>
+          <li data-nav-id="/amrapi/cohort-analysis/" class="dd-item"><a href="/amrapi/cohort-analysis/"><b>7. </b>Cohort Analysis API</a></li>
+          <li data-nav-id="/amrapi/tag-impression/" class="dd-item"><a href="/amrapi/tag-impression/"><b>8. </b>Tag Impression Api</a></li>
+        </ul>
+        <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <hr class="default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="learn" value="learn" selected>Learn</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><a class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        </div>
+      </div>
+    </aside>
+    <script src="/amrapi/js/clipboard.min.js?1666947151" defer></script>
+    <script src="/amrapi/js/perfect-scrollbar.min.js?1666947151" defer></script>
+    <script src="/amrapi/js/featherlight.min.js?1666947151" defer></script>
+    <script src="/amrapi/js/theme.js?1666947151" defer></script>
+  </body>
+</html>
