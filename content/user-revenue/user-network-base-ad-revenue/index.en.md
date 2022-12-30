@@ -6,7 +6,9 @@ description : "You can get user ad revenue information with ad network"
 ---
 
 
-- We are providing a download link for a file even before it is available. Download the report from the api response when ready.  
+- We are providing a download link for a file even before it is available. Download the report from the api response when ready.
+
+    - If you are getting **202 http response status** when making the request, your request is accepted and proccessing. Please wait a while and try to download the prepared file again.
   
     - If you are getting **404 http response status** when trying to download the file. The file is not prepared yet. Please wait a while and try again.
 
