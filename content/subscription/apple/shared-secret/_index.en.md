@@ -9,12 +9,14 @@ The App-Specific Shared Secret allows Admost to connect with Apple on your behal
 
 1. Log in to [App Store Connect](https://appstoreconnect.apple.com/)
 2. Navigate to "My Apps" and select your app
-3. Navigate to Features in the top bar
-4. Select "In-App Purchases" from the left side menu
-5. Select App-Specific Share Secret from the right side above your in-app products.
-6. Generate and copy your shared secret
+3. Select "App Information" under the "General" section from the left side menu
+4. Select "Manage" under the App-Specific Share Secret section from the right side
 
-![Apple Shared Secret](/amrapi/images/apple-shared-secret.png?classes=shadow)
+![Apple Shared Secret](/amrapi/images/apple_subs_1.png?classes=shadow)
+
+5. Generate and copy your shared secret
+
+![Apple Shared Secret](/amrapi/images/apple_subs_2.png?classes=shadow)
 
 Add the App-Specific Share Secret to `iOS App-Specific Shared Secret` on Admost dashboard and we’ll be ready to handle Apple subscription purchases!
 
