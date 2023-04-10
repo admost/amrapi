@@ -22,9 +22,9 @@ You should active some s2s settings on admost dashboard.
     ![S2sZoneEdit](/amrapi/images/S2sZoneEdit.png?classes=shadow&width=10pc)
 
 
-`Publisher URL:` Callback URL identified by the publisher on admost dashboard.
+**Publisher URL:** Callback URL identified by the publisher on admost dashboard.
 
-`Publisher Method:` You must have the capacity to receive GET request for your endpoint
+**Publisher Method:** You must have the capacity to receive GET request for your endpoint
 
 ### Parameters 
 
@@ -48,7 +48,7 @@ You should active some s2s settings on admost dashboard.
 
 verifier = md5(app_id + app_user_id + currency + event_id + network + reward + created_at + customer_S2S_Verifier)
 
-`customer_S2S_Verifier:` The secret token. You can generate token on admost dashboard.
+**customer_S2S_Verifier:** The secret token. You can generate token on admost dashboard.
 
 ### Callback sample
 

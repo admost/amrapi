@@ -26,9 +26,9 @@ description : "You can get user ad revenue information with ad network"
 
 
 
-`Authentication:` Bearer Token authentication.
+**Authentication:** **Bearer Token authentication.**
 
-`Method:` GET
+**Method:** **GET**
 
 `URL:` https:\//partners.admost.com/v3/adrevenue/networkbase
 

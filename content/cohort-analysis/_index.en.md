@@ -7,40 +7,40 @@ description : "Cohort Analysis gives you the option to segregate this group of p
 ---
 
 
-`Endpoint:` http:\//amr-api.admost.com/api/publisher/v1/cohort
+**Endpoint:** `http:\//amr-api.admost.com/api/publisher/v1/cohort`
 
 `METHOD` : **POST**
 
 #### Request Parameters
 
-| Name      | Type   | Description           |
-| --------- | ------ | --------------------- |
-| apiKey    | string | Publisher's token     |
-| startdate | string | Start date (yyyy-MM-dd)     |
-| enddate   | string | End date    (yyyy-MM-dd)   |
-| groupBy   | string | Comma seperated values (day, week, month, app, country, source, campaign, adgroup, creative, source_type, test)   |
-| apps      | string | Filters app ids (comma seperated, can be found on Admost Dashboard -> My Apps)   |
-| appType   | string | Filters app type (Allowed values ("android","ios"))   |
-| userType  | string | Filters user type (Allowed values ("organic","paid"))   |
-| revenueType| string | Filters revenue type (Allowed values ("adRevenue","inAppPurchase"))   |
-| countries | string | Filters countries (comma seperated, ISO 3166-1 alpha-2 )   |
-| countryIn | string | Determines how the values of previous parameter is used, Allowed values ("in","notin"), "in" is default    |
-| sources | string | Filters sources (comma seperated)   |
-| sourceIn | string | Determines how the values of previous parameter is used, Allowed values ("in","notin"), "in" is default    |
-| campaigns | string | Filters campaigns (comma seperated)   |
-| adgroups | string | Filters adgroups (comma seperated)   |
-| creatives | string | Filters creatives (comma seperated)   |
-| tests | string | Filters A/B tests (comma seperated)   |
-| minCohortSize | integer | Filters cohort size which are greater than the value specified   |
-| revenueCostRatioDay | integer | Filters rows which has day N revenue/cost ratio greater or less than following parameter |
-| revenueCostRatioPercent | integer | Filters rows which has day N revenue/cost ratio greater or less than specified % |
-| revenueCostRatioType | integer | Allowed values("min","max")|
-| retentionFilterDay | string | Filters rows which has day N retention greater or less than following parameter |
-| retentionFilterPercent | integer | Filters rows which has day N retention greater or less than specified % |
-| retentionFilterType | string | Allowed values("min","max")|
-| currency | string | Currency, ISO 4217 alpha-3, Default value USD|
-| showExpected | boolean | Allowed values (true,false)|
-| showAllDays | boolean | Allowed values (true,false)|
+| Name                    | Type    | Description                                                                                                     |
+| ----------------------- | ------- | --------------------------------------------------------------------------------------------------------------- |
+| apiKey                  | string  | Publisher's token                                                                                               |
+| startdate               | string  | Start date (yyyy-MM-dd)                                                                                         |
+| enddate                 | string  | End date    (yyyy-MM-dd)                                                                                        |
+| groupBy                 | string  | Comma seperated values (day, week, month, app, country, source, campaign, adgroup, creative, source_type, test) |
+| apps                    | string  | Filters app ids (comma seperated, can be found on Admost Dashboard -> My Apps)                                  |
+| appType                 | string  | Filters app type (Allowed values ("android","ios"))                                                             |
+| userType                | string  | Filters user type (Allowed values ("organic","paid"))                                                           |
+| revenueType             | string  | Filters revenue type (Allowed values ("adRevenue","inAppPurchase"))                                             |
+| countries               | string  | Filters countries (comma seperated, ISO 3166-1 alpha-2 )                                                        |
+| countryIn               | string  | Determines how the values of previous parameter is used, Allowed values ("in","notin"), "in" is default         |
+| sources                 | string  | Filters sources (comma seperated)                                                                               |
+| sourceIn                | string  | Determines how the values of previous parameter is used, Allowed values ("in","notin"), "in" is default         |
+| campaigns               | string  | Filters campaigns (comma seperated)                                                                             |
+| adgroups                | string  | Filters adgroups (comma seperated)                                                                              |
+| creatives               | string  | Filters creatives (comma seperated)                                                                             |
+| tests                   | string  | Filters A/B tests (comma seperated)                                                                             |
+| minCohortSize           | integer | Filters cohort size which are greater than the value specified                                                  |
+| revenueCostRatioDay     | integer | Filters rows which has day N revenue/cost ratio greater or less than following parameter                        |
+| revenueCostRatioPercent | integer | Filters rows which has day N revenue/cost ratio greater or less than specified %                                |
+| revenueCostRatioType    | integer | Allowed values("min","max")                                                                                     |
+| retentionFilterDay      | string  | Filters rows which has day N retention greater or less than following parameter                                 |
+| retentionFilterPercent  | integer | Filters rows which has day N retention greater or less than specified %                                         |
+| retentionFilterType     | string  | Allowed values("min","max")                                                                                     |
+| currency                | string  | Currency, ISO 4217 alpha-3, Default value USD                                                                   |
+| showExpected            | boolean | Allowed values (true,false)                                                                                     |
+| showAllDays             | boolean | Allowed values (true,false)                                                                                     |
 
 #### Request Example
 ```text

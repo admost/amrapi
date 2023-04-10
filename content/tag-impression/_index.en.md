@@ -7,23 +7,23 @@ description : "You can get impression and estimated revenue data by tags."
 ---
 
 
-`Endpoint:` http:\//amr-api.admost.com/api/publisher/v1/tagimpression
+**Endpoint:** `http:\//amr-api.admost.com/api/publisher/v1/tagimpression`
 
-`METHOD` : **POST**
+**METHOD** : **POST**
 
 #### Request Parameters
 
-| Name      | Type   | Description           |
-| --------- | ------ | --------------------- |
-| apiKey    | string | Publisher's token     |
-| startdate | string | Start date (yyyy-MM-dd)     |
-| enddate   | string | End date    (yyyy-MM-dd)   |
-| groupBy   | string | Comma seperated values (day, app, zone, tag, country, placement)   |
-| apps      | string | Filters app ids (comma seperated, can be found on Admost Dashboard -> My Apps)   |
-| appType   | string | Filters app type (Allowed values ("android","ios"))   |
-| countries | string | Filters countries (comma seperated, ISO 3166-1 alpha-2 )   |
-| countryIn | string | Determines how the values of previous parameter is used, Allowed values ("in","notin"), "in" is default    |
-| tags      | string | Filters tags (comma seperated, can be found on Admost Dashboard -> My Apps)   |
+| Name      | Type   | Description                                                                                             |
+| --------- | ------ | ------------------------------------------------------------------------------------------------------- |
+| apiKey    | string | Publisher's token                                                                                       |
+| startdate | string | Start date (yyyy-MM-dd)                                                                                 |
+| enddate   | string | End date    (yyyy-MM-dd)                                                                                |
+| groupBy   | string | Comma seperated values (day, app, zone, tag, country, placement)                                        |
+| apps      | string | Filters app ids (comma seperated, can be found on Admost Dashboard -> My Apps)                          |
+| appType   | string | Filters app type (Allowed values ("android","ios"))                                                     |
+| countries | string | Filters countries (comma seperated, ISO 3166-1 alpha-2 )                                                |
+| countryIn | string | Determines how the values of previous parameter is used, Allowed values ("in","notin"), "in" is default |
+| tags      | string | Filters tags (comma seperated, can be found on Admost Dashboard -> My Apps)                             |
 
 #### Request Example
 ```text
