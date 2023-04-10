@@ -30,7 +30,7 @@ description : "You can get user ad revenue information with ad network"
 
 **Method:** **GET**
 
-`URL:` https:\//partners.admost.com/v3/adrevenue/networkbase
+**URL:** `https://partners.admost.com/v3/adrevenue/networkbase`
 
 #### Request Parameters:
 

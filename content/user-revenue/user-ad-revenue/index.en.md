@@ -29,7 +29,7 @@ description : "You can get user ad revenue information without ad network"
 
 **Method:** **GET**
 
-`URL:` https:\//partners.admost.com/v3/adrevenue/userbase
+**URL:** `https://partners.admost.com/v3/adrevenue/userbase`
 
 #### Request Parameters:
 

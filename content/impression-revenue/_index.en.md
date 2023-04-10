@@ -8,7 +8,7 @@ description : "You can get placement and country base impression and revenue dat
 
 - Application's placement and country base impression and revenue data
 
-`Endpoint:` http:\//amr-api.admost.com/api/publisher/v1/reporting?apiKey=[apiKey]&startdate=[YYYY-MM-DD]&enddate=[YYYY-MM-DD]&app=[appid]
+**Endpoint:** `http://amr-api.admost.com/api/publisher/v1/reporting?apiKey=[apiKey]&startdate=[YYYY-MM-DD]&enddate=[YYYY-MM-DD]&app=[appid]`
 
 `METHOD` : **GET**
 
