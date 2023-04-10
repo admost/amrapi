@@ -9,7 +9,7 @@ description : "Cohort Analysis gives you the option to segregate this group of p
 
 **Endpoint:** `http://amr-api.admost.com/api/publisher/v1/cohort`
 
-`METHOD` : **POST**
+**METHOD** : POST
 
 #### Request Parameters
 

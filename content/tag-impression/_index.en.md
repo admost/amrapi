@@ -9,7 +9,7 @@ description : "You can get impression and estimated revenue data by tags."
 
 **Endpoint:** `http://amr-api.admost.com/api/publisher/v1/tagimpression`
 
-**METHOD** : **POST**
+**METHOD** : POST
 
 #### Request Parameters
 

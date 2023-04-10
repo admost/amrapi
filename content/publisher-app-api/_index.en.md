@@ -10,7 +10,7 @@ description : "Publisher's application informations. application id, application
   
 **URL** : `https://partners.admost.com/v3/apps?key=[key]`
 
-`METHOD` : **GET**
+**METHOD** : GET
 
 #### Request Parameters
 
