@@ -110,3 +110,4 @@ https:\//partners.admost.com/download/report/c9e86d87-453e-0d9a-3d00-56adc9ec4dc
 | ApplicationName              | Application name                                                                                                            |
 | PackageName                  | Application package name                                                                                                    |
 | OS                           | Application operation name ( android / ios )                                                                                |
+| AppStore                     | The package name of the installer application (com.android.vending etc.)                                                    |
