@@ -100,7 +100,35 @@ For more details, please check [adjust help page document](https://help.adjust.c
 - It is enough to use the csv definitions below. Just copy and paste
 
 ```text
-{idfa||gps_adid},{idfv},{adid},{tracker},{tracker_name},{app_name},{activity_kind},{created_at},{installed_at},{installed_at_hour},{conversion_duration},{cost_type},{cost_amount},{cost_currency},{nonce},{reporting_cost},{match_type},{network_name},{campaign_name},{adgroup_name},{creative_name},{is_organic},{country},{city},{os_name},{mac_md5},{device_name},{device_type},{device_manufacturer},{ip_address},{fb_campaign_id},{fb_campaign_group_id},{fb_adgroup_id},{store},{att_status},{fb_install_referrer}
+{idfa||gps_adid}
+{idfv||google_app_set_id}
+{adid}
+{tracker}
+{tracker_name}
+{app_name}
+{activity_kind}
+{created_at}
+{installed_at}
+{installed_at_hour}
+{nonce}
+{match_type}
+{network_name}
+{campaign_name}
+{adgroup_name}
+{creative_name}
+{is_organic}
+{country}
+{os_name}
+{device_name}
+{device_type}
+{device_manufacturer}
+{ip_address}
+{fb_campaign_id}
+{fb_campaign_group_id}
+{fb_adgroup_id}
+{store}
+{att_status}
+{fb_install_referrer}
 ```
 
 ### Adjust Partner Terms&Conditions Settings
