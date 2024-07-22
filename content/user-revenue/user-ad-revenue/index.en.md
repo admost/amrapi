@@ -33,11 +33,11 @@ description : "You can get user ad revenue information without ad network"
 
 #### Request Parameters:
 
-| Name                | Type   | Description                                                             |
-| ------------------- | ------ | ----------------------------------------------------------------------- |
-| date                | string | YYYY-MM-DD                                                              |
-| app_id              | string | Application admost id                                                   |
-| attribution_partner | string | Optional. Publisher attribution partner name. values: adjust, appsflyer |
+| Name                | Type   | Description                                                                         |
+| ------------------- | ------ | ----------------------------------------------------------------------------------- |
+| date                | string | YYYY-MM-DD                                                                          |
+| app_id              | string | Application admost id                                                               |
+| attribution_partner | string | Optional. Publisher attribution partner name. values: adjust, appsflyer, airbridge  |
 
 
 #### Request Example URL:
@@ -111,3 +111,4 @@ https:\//partners.admost.com/download/report/c9e86d87-453e-0d9a-3d00-56adc9ec4dc
 | PackageName                  | Application package name                                                                                                    |
 | OS                           | Application operation name ( android / ios )                                                                                |
 | AppStore                     | The package name of the installer application (com.android.vending etc.)                                                    |
+| AppsetID                     | Vendor ID provided by Android                                                                                                   |

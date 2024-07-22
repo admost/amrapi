@@ -38,7 +38,7 @@ description : "You can get user ad revenue information with ad network"
 | ------------------- | ------ | ----------------------------------------------------------------------- |
 | date                | string | YYYY-MM-DD                                                              |
 | app_id              | string | Application admost id                                                   |
-| attribution_partner | string | Optional. Publisher attribution partner name. values: adjust, appsflyer |
+| attribution_partner | string | Optional. Publisher attribution partner name. values: adjust, appsflyer,airbridge |
 
 #### Request Example URL:
 
@@ -85,3 +85,4 @@ https:\//partners.admost.com/download/report/c9e86d87-453e-0d9a-3d00-56adc9ec4dc
 | NativeInterstitialRevenue  | Native interstitial Ad Reveue                       |
 | BannerImpRevenue           | Banner Ad Revenue                                   |
 | NativeBannerImpRevenue     | Native Banner Ad Revenue                            |
+| AppsetID                   | Vendor ID provided by Android                       |
