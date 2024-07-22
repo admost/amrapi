@@ -34,10 +34,10 @@ description : "You can get user ad revenue information with ad network"
 
 #### Request Parameters:
 
-| Name                | Type   | Description                                                             |
-| ------------------- | ------ | ----------------------------------------------------------------------- |
-| date                | string | YYYY-MM-DD                                                              |
-| app_id              | string | Application admost id                                                   |
+| Name                | Type   | Description                                                                       |
+| ------------------- | ------ | --------------------------------------------------------------------------------- |
+| date                | string | YYYY-MM-DD                                                                        |
+| app_id              | string | Application admost id                                                             |
 | attribution_partner | string | Optional. Publisher attribution partner name. values: adjust, appsflyer,airbridge |
 
 #### Request Example URL:
