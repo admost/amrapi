@@ -1,6 +1,7 @@
 +++
 title = "Get Shared Secret"
 description = "Tells how to get shared secret from apple store"
+draft = true
 +++
 
 ### Getting your App Connect App-Specific Shared Secret
